@@ -1,3 +1,4 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Linux概述](history.md)
+* [Shell概述](shell.md)

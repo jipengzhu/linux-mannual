@@ -1,3 +1,3 @@
-# My Awesome Book
-
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+这本书旨在总结我在linux学习过程中遇到的知识，以供我和大家参考。
+说明可能比较简略，基础知识请自行参考其他书籍。
+有些并未实践过，建议读者自己尝试后确认。
