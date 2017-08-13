@@ -43,7 +43,7 @@ ls [选项] [文件或目录...]
 |-S | 按文件的大小降序输出 |
 |-t | 按文件的修改时间降序输出 |
 
-> a -> all | C -> column | d -> directory | l -> long | h -> human-readable | i -> inode |
+> a -> all | C -> column | d -> directory | l -> long | h -> human-readable | i -> inode |  
 I -> ignore | r -> reverse | R -> recursive | s -> size
 
 # cd
