@@ -16,6 +16,7 @@ drwxr-xr-x. 2 root root 6 8月  13 14:47 haha
         - b 块设备
         - c 字符设备
         - p 管道
+        - s 套接字
     - 文件权限
         - r 读权限
         - w 写权限
