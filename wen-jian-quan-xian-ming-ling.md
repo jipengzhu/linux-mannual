@@ -4,7 +4,7 @@
 - `ll <文件名或目录>`
 
 ```   
-➜  test ll
+➜  test-per ll
 total 0
 drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:49 test
 -rw-r--r--  1 zhujipeng  staff     0B  8 13 15:52 test.txt
