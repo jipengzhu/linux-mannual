@@ -102,6 +102,7 @@ d---------  3 zhujipeng  staff   102B  8 13 17:56 test
 ```
 3. 只添加读权限
 ```
+➜  test-per chmod 400 test
 ➜  test-per ls test
 ls: old: Permission denied
 ➜  test-per cd test
