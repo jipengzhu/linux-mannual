@@ -25,6 +25,7 @@ drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:49 test
         - w 写权限
         - x 可执行权限
 
+
 - 第2列，文件被引用的次数
 - 第3列，文件的拥有者（owner）
 - 第4列，文件的所属组（group）
