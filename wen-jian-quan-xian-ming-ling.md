@@ -33,6 +33,32 @@ drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:49 test
 - 最后一列，文件名
 
 
+# 修改文件的权限（chmod）
+格式如下
+```
+chmod [选项] <模式...> <文件...>
+```
+模式由范围＋操作符＋权限组成或八进制数字
+- 范围
+    - u 修改文件拥有者的权限 
+    - g 修改文件所属组的权限
+    - o 修改其他人的权限 
+    - a 修改所有的权限
+    
+- 操作符
+    - 
+    
+选项如下
+
+|选项 | 说明 |
+|--- |--- |
+|-f | 如果文件或目录已经存在，则强制执行 |
+|-i | 如果文件或目录已经存在，则提示用户选择 |
+|-n | 如果文件或目录已经存在，则放弃执行 |
+
+
+
+
 # 文件和目录的权限
 linux中文件和目录的权限有所不同
 
@@ -41,7 +67,7 @@ linux中文件和目录的权限有所不同
     - w 可以写文件
     - x 可以执行文件
 - 目录的权限
-    - r 可以读（cp）和查看（ls）目录的内容（即文件和目录），同时还需要可执行权限
+    - r 可以读（cp）和查看（ls）目录的内容（即文件和目录），同时还需要可执行权限。tab补全只需要读权限
     - w 可以在目录里创建文件（touch）和目录（mkdir)，同时还需要可执行权限，删除文件和目录时还需要读权限
     - x 可以进入目录（cd）和执行文件
     
@@ -49,18 +75,16 @@ linux中文件和目录的权限有所不同
 
 1. 创建一个目录和文件
 ```
-➜  test-per mkdir test
-➜  test-per touch test/test.txt
 ➜  test-per ll
 total 0
-drwxr-xr-x  3 zhujipeng  staff   102B  8 13 16:15 test
+drwxr-xr-x  2 zhujipeng  staff    68B  8 13 16:40 test
 ```
 2. 去除所有权限
 ```
 ➜  test-per chmod 0 test
 ➜  test-per ll
 total 0
-d---------  3 zhujipeng  staff   102B  8 13 16:15 test
+d---------  2 zhujipeng  staff    68B  8 13 16:40 testls 
 ```
 3. 只添加读权限
 ```
@@ -85,20 +109,41 @@ total 0
 dr-x------  3 zhujipeng  staff   102B  8 13 16:15 test
 ➜  test-per ls test
 test.txt
-➜  test-per touch test/test.txt
 ➜  test-per cd test
 ➜  test cd ../
+➜  test-per touch test/test.txt
 ➜  test-per rm test/test.txt
 rm: test/test.txt: Permission denied
 ```
 5. 只添加写权限
 ```
-➜  test-per chmod 200 test
 ➜  test-per ll
 total 0
-d-w-------  2 zhujipeng  staff    68B  8 13 15:51 test
+d-w-------  3 zhujipeng  staff   102B  8 13 16:15 test
+➜  test-per ls test
+ls: test: Permission denied
+➜  test-per cd test
+cd: permission denied: test
+➜  test-per touch test/test.txt
+touch: test/test.txt: Permission denied
+➜  test-per rm test/test.txt
+rm: test/test.txt: Permission denied
 ```
-8. 测试创建和删除
+6. 添加写和执行权限
+```
+test-per ll
+total 0
+d-wx------  3 zhujipeng  staff   102B  8 13 16:15 test
+➜  test-per ls test
+ls: test: Permission denied
+➜  test-per cd test
+➜  test cd ../
+➜  test-per touch test/test.txt
+➜  test-per rm test/test.txt
+➜  test-per ll
+total 0
+d-wx------  2 zhujipeng  staff    68B  8 13 16:37 test
+```
 
 
 强制保存文件的规则      
