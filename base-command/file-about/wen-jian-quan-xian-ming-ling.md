@@ -214,3 +214,9 @@ chgrp [选项] <所属组名> <文件名>
 
 > chgrp -> change group
 
+
+<br/>
+
+---
+# 参考
+[linux文件基本权限讲解](http://zhang789.blog.51cto.com/11045979/1846176)
