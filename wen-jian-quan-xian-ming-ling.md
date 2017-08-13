@@ -4,8 +4,11 @@
 - `ll <文件名或目录>`
 
 ```   
-drwxr-xr-x. 2 root root 6 8月  13 14:47 haha
--rw-r--r--. 1 root root 0 8月  13 14:48 haha.txt
+➜  test ll
+total 0
+drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:49 test
+-rw-r--r--  1 zhujipeng  staff     0B  8 13 15:52 test.txt
+
 ```
 每列的含义如下
 - 第1列，文件属性。由文件类型＋用户权限＋组权限＋他人权限组成。
@@ -38,10 +41,21 @@ linux中文件和目录的权限有所不同
     - w 可以写文件
     - x 可以执行文件
 - 目录的权限
-    - r 可以读（cp）和查看（ls）目录的内容（即文件和目录）
-    - w 可以在目录里创建文件（touch）和目录（mkdir）
+    - r 可以读（cp）和查看（ls）目录的内容（即文件和目录），同时还需要可执行权限
+    - w 可以在目录里创建文件（touch）和目录（mkdir)，同时还需要可执行权限，删除文件和目录时还需要读权限
     - x 可以进入目录（cd）和执行文件
- 
+    
+实践过程
+1. 创建一个目录
+```
+➜  test mkdir test
+➜  test ll
+➜  test-per mkdir test
+➜  test-per ll
+total 0
+drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:51 test
+```
+
 强制保存文件的规则      
 - 当用户对文件没有写权限的时候，保存时会提示你使用!强制保存
 - 文件的所有者，不管对上级目录还是文件本身有何权限，都可以强制保存
