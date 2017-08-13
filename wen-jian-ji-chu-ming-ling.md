@@ -87,6 +87,7 @@ mv [选项] <源文件或目录> <目的文件或目录>
 
 *注意：-f，-i，-n 中后指定选项的会覆盖先指定的*
 
+> f -> force | i -> interactive | n -> no-clobber
 
 # cp
 复制文件或者目录
@@ -106,6 +107,8 @@ cp [选项] <源文件或目录> <目的文件或目录>
 |-r | 递归拷贝目录 |
 
 *注意：-f，-i，-n 中后指定选项的会覆盖先指定的*
+
+> f -> force | i -> interactive | n -> no-clobber | r -> recursive
 
 
 # touch
@@ -135,6 +138,8 @@ rm [选项] <文件或目录>
 |-r | 递归删除目录，删除目录时必须的选项 |
 
 *注意：-f，-i，-n 中后指定选项的会覆盖先指定的*
+
+> f -> force | i -> interactive | n -> no-clobber | r -> recursive
 
 
 # mkdir 
