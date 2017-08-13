@@ -48,8 +48,6 @@ linux中文件和目录的权限有所不同
 实践过程
 1. 创建一个目录
 ```
-➜  test mkdir test
-➜  test ll
 ➜  test-per mkdir test
 ➜  test-per ll
 total 0
