@@ -46,13 +46,60 @@ linux中文件和目录的权限有所不同
     - x 可以进入目录（cd）和执行文件
     
 实践过程
-1. 创建一个目录
+
+1. 创建一个目录和文件
 ```
 ➜  test-per mkdir test
+➜  test-per touch test/test.txt
 ➜  test-per ll
 total 0
-drwxr-xr-x  2 zhujipeng  staff    68B  8 13 15:51 test
+drwxr-xr-x  3 zhujipeng  staff   102B  8 13 16:15 test
 ```
+2. 去除所有权限
+```
+➜  test-per chmod 0 test
+➜  test-per ll
+total 0
+d---------  3 zhujipeng  staff   102B  8 13 16:15 test
+```
+3. 只添加读权限
+```
+➜  test-per chmod 400 test
+➜  test-per ll
+total 0
+dr--------  3 zhujipeng  staff   102B  8 13 16:15 test
+➜  test-per ls test
+ls: test.txt: Permission denied
+➜  test-per cd test
+cd: permission denied: test
+➜  test-per touch test/test.txt
+touch: test/test.txt: Permission denied
+➜  test-per rm test/test.txt
+rm: test/test.txt: Permission denied
+```
+4. 添加读和执行权限
+```
+➜  test-per chmod 500 test
+➜  test-per ll
+total 0
+dr-x------  3 zhujipeng  staff   102B  8 13 16:15 test
+➜  test-per ls test
+test.txt
+➜  test-per touch test/test.txt
+➜  test-per cd test
+➜  test cd ../
+➜  test-per rm test/test.txt
+rm: test/test.txt: Permission denied
+```
+5. 只添加写权限
+```
+➜  test-per chmod 200 test
+➜  test-per ll
+total 0
+d-w-------  2 zhujipeng  staff    68B  8 13 15:51 test
+```
+8. 测试创建和删除
+
 
 强制保存文件的规则      
 - 当用户对文件没有写权限的时候，保存时会提示你使用!强制保存
