@@ -88,87 +88,87 @@ linux中文件和目录的权限有所不同
 1. 创建一个目录和文件
 ```
 ➜  test-per mkdir test
-➜  test-per touch test/test.txt
+➜  test-per touch test/old
 ➜  test-per ll
 total 0
-drwxr-xr-x  3 zhujipeng  staff   102B  8 13 17:06 test
+drwxr-xr-x  3 zhujipeng  staff   102B  8 13 17:56 test
 ```
 2. 去除所有权限
 ```
 ➜  test-per chmod 0 test
 ➜  test-per ll
 total 0
-d---------  3 zhujipeng  staff   102B  8 13 17:06 test 
+d---------  3 zhujipeng  staff   102B  8 13 17:56 test
 ```
 3. 只添加读权限
 ```
-➜  test-per chmod 400 test
 ➜  test-per ls test
-ls: test.txt: Permission denied
+ls: old: Permission denied
 ➜  test-per cd test
 cd: permission denied: test
-➜  test-per touch test/test.txt
-touch: test/test.txt: Permission denied
-➜  test-per rm test/test.txt
-rm: test/test.txt: Permission denied
+➜  test-per touch test/old
+touch: test/old: Permission denied
+➜  test-per touch test/new
+touch: test/new: Permission denied
+➜  test-per rm test/old
+rm: test/old: Permission denied
 ```
 4. 添加读和执行权限
 ```
 ➜  test-per chmod 500 test
-➜  test-per ll
-total 0
-dr-x------  3 zhujipeng  staff   102B  8 13 17:06 test
 ➜  test-per ls test
-test.txt
-➜  test-per cd test/
+old
+➜  test-per cd test
 ➜  test cd ../
-➜  test-per touch test/test.txt
-➜  test-per rm test/test.txt
-rm: test/test.txt: Permission denied
+➜  test-per touch test/old
+➜  test-per touch test/new
+touch: test/new: Permission denied
+➜  test-per rm test/old
+rm: test/old: Permission denied
 ```
 5. 只添加写权限
 ```
 ➜  test-per chmod 200 test
-➜  test-per ll
-total 0
-d-w-------  3 zhujipeng  staff   102B  8 13 17:06 test
 ➜  test-per ls test
 ls: test: Permission denied
 ➜  test-per cd test
 cd: permission denied: test
-➜  test-per touch test/test.txt
-touch: test/test.txt: Permission denied
-➜  test-per rm test/test.txt
-rm: test/test.txt: Permission denied
+➜  test-per touch test/old
+touch: test/old: Permission denied
+➜  test-per touch test/new
+touch: test/new: Permission denied
+➜  test-per rm test/old
+rm: test/old: Permission denied
 ```
 6. 添加写和执行权限
 ```
 ➜  test-per chmod 300 test
-➜  test-per ll
-total 0
-d-wx------  3 zhujipeng  staff   102B  8 13 17:06 test
 ➜  test-per ls test
 ls: test: Permission denied
 ➜  test-per cd test
 ➜  test cd ../
-➜  test-per touch test/test.txt
-➜  test-per rm test/test.txt
+➜  test-per touch test/old
+➜  test-per touch test/new
+➜  test-per rm test/new
 ```
 7. 只添加执行权限
 ```
-➜  test-per touch test/test.txt
 ➜  test-per chmod 100 test
-➜  test-per ll
-total 0
-d--x------  3 zhujipeng  staff   102B  8 13 17:06 test
 ➜  test-per ls test
 ls: test: Permission denied
 ➜  test-per cd test
 ➜  test cd ../
-➜  test-per touch test/test.txt
-➜  test-per rm test/test.txt
-rm: test/test.txt: Permission denied
+➜  test-per touch test/old
+➜  test-per touch test/new
+touch: test/new: Permission denied
+➜  test-per rm test/old
+rm: test/old: Permission denied
 ```
+
+总结如下
+1. 如果目录只有读或写权限是不够的，还需要执行权限
+2. touch目录下一个存在的文件只需要执行权限，否则需要写权限
+3. ls在只有读权限和没有读权限似的错误并不相同
 
 强制保存文件的规则      
 - 当用户对文件没有写权限的时候，保存时会提示你使用!强制保存
