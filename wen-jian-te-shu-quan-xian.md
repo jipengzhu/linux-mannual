@@ -141,3 +141,17 @@ setfacl [选项] <文件名...>
 </pre>
 
 > setfacl -> set file access control list
+
+
+<br/>
+
+---
+# 参考
+
+
+[linux文件特殊权限讲解][1]
+[setfacl命令][2]
+
+[1]: http://zhang789.blog.51cto.com/11045979/1846214
+[2]: http://man.linuxde.net/setfacl
+
