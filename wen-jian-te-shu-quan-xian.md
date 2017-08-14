@@ -132,7 +132,7 @@ setfacl [选项] <文件名...>
 |-m 格式| 设置文件的acl规则 |
 |-b | 删除所有扩展的acl规则，基本的acl规则(所有者，群组，其他）将被保留 |
 
-格式如下（详细参考[这里](http://man.linuxde.net/setfacl)）
+格式如下（详细参考[这里][2]）
 <pre>
 [d[efault]:] [u[ser]:]uid [:perms] 指定用户的权限，文件所有者的权限 
 [d[efault]:] g[roup]:gid [:perms] 指定群组的权限，文件所有群组的权限
