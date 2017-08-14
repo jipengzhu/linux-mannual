@@ -125,4 +125,4 @@ Alt 代表Alt键
 |Ctrl + r | 搜索包含该字符传的命令，继续按Ctrl+r搜索上一条匹配的命令，按Ctrl + s搜索下一条匹配的命令，按Ctrl + g或Ctrl + q退出。r -> reverse search |
 |Ctrl + s | 正向搜索历史记录。s -> search |
 |Ctrl + u | 剪切整行 |
-|Ctrl + l | 和回车一样 |
+|Ctrl + l | 会插入ls，然后回车 |
