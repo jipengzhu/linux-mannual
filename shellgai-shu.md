@@ -69,8 +69,8 @@ Alt 代表Alt键
 |Ctrl + e | 移动到当前行的末尾。e -> end |
 |Ctrl + b | 向后移动一个字符。b -> backward |
 |Ctrl + f | 向前移动一个字符。f -> forward |
-|Alt + b | 移动到当前单词的开头 |
-|Alt + f | 移动到当前单词的结尾 |
+|Alt + b | 移动到当前单词的开头。b -> backward |
+|Alt + f | 移动到当前单词的结尾。f -> forward |
 
 
 删除操作快捷键
