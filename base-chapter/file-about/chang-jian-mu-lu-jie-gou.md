@@ -68,55 +68,55 @@ selinux安全配置文件目录
 
 
 # etc目录
-- /etc/init.d
+- /etc/init.d  
 程序开机启动脚本所在的目录
 
-- /etc/rc.d /etc/rc*.d
+- /etc/rc.d /etc/rc*.d  
 为了与以前兼容，/etc/rc*.d是指向/etc/rc.d里对应目录的软链接，/etc/rc.d里不同级别的启动脚本都是/etc/init.d的软链接
 
-- /etc/hosts
+- /etc/hosts  
 网络地址和域名的映射配置文件，操作系统会优先使用这个文件做dns解析
 
-- /etc/sysconfig/network
+- /etc/sysconfig/network  
 IP、掩码、网关、主机名配置
 
-- /etc/resolv.conf
+- /etc/resolv.conf  
 DNS服务器配置
 
-- /etc/fstab
+- /etc/fstab  
 文件系统自动挂载配置
 
-- /etc/inittab
+- /etc/inittab  
 init进程对系统的设置文件
 
-- /etc/exports
+- /etc/exports  
 NFS的配置文件
 
-- /etc/profile
+- /etc/profile  
 系统（全局）环境变量配置文件
 
-- /etc/issue
+- /etc/issue  
 发行版信息
 
-- /etc/passwd
+- /etc/passwd  
 用户数据库，其中的域给出了用户名、真实姓名、家目录、加密的口令和用户的其他信息
 
-- /etc/shadow
+- /etc/shadow  
 在安装了影子口令软件的系统上的影子口令文件。影子口令文件将/etc/passwd 文件中的加密口令移动到/etc/shadow 中，而后者只对root可读，这使破译口令更困难
 
-- /etc/sudoers
+- /etc/sudoers  
 sudo用户的配置文件
 
-- /etc/syslog.conf /etc/rsyslog.conf
+- /etc/syslog.conf /etc/rsyslog.conf  
 系统日志的配置文件
 
-- /etc/shells
+- /etc/shells  
 可信任的shell列表
 
-- /etc/xinetd.d
+- /etc/xinetd.d  
 如果服务器是通过xinetd模式运行的，它的脚本要放在这个目录下。有些系统没有这个目录，比如Slackware，有些老的版本也没有。在Redhat Fedora中比较新的版本中存在。
 
-- /etc/opt/
+- /etc/opt/  
 /opt/的配置文件
 
 
