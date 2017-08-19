@@ -247,70 +247,70 @@ Linux开放的源代码，就存在这个目录，爱好者们别放过哦
 一些汇流排的装置，还有 U盘的装置也记录在此喔！
 
 # dev目录
-- /dev/hd[a-t]
+- /dev/hd[a-t]  
 IDE设备
 
-- /dev/sd[a-z]
+- /dev/sd[a-z]  
 SCSI设备
 
-- /dev/fd[0-7]
+- /dev/fd[0-7]  
 标准软驱
 
-- /dev/md[0-31]
+- /dev/md[0-31]  
 软raid设备
 
-- /dev/loop[0-7]
+- /dev/loop[0-7]  
 本地回环设备
 
-- /dev/ram[0-15]
+- /dev/ram[0-15]  
 内存
 
-- /dev/null
+- /dev/null  
 无限数据接收设备,相当于黑洞
 
-- /dev/zero
+- /dev/zero  
 无限零资源
 
-- /dev/tty[0-63]
+- /dev/tty[0-63]  
 虚拟终端
 
-- /dev/ttyS[0-3]
+- /dev/ttyS[0-3]  
 串口
 
-- /dev/lp[0-3]
+- /dev/lp[0-3]  
 并口
 
-- /dev/console
+- /dev/console  
 控制台
 
-- /dev/fb[0-31]
+- /dev/fb[0-31]  
 framebuffer
 
-- /dev/cdrom 
+- /dev/cdrom   
 => /dev/hdc
 
 - /dev/modem
+=> /dev/ttyS[0-9]  
+
+- /dev/pilot   
 => /dev/ttyS[0-9]
 
-- /dev/pilot 
-=> /dev/ttyS[0-9]
-
-- /dev/random
+- /dev/random  
 随机数设备
 
-- /dev/urandom
+- /dev/urandom  
 随机数设备
 
 
 # /bin、/usr/bin、/usr/local/bin的区别
 etc，lib和bin类似，参见[这里][2]
-- /bin 
+- /bin   
 对应于操作系统级别的命令
 
-- /usr/bin
+- /usr/bin  
 对应于系统软件级别的命令
 
-- /usr/bin
+- /usr/bin  
 对应于用户（可选）软件级别的命令
 
 
