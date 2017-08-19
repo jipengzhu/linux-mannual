@@ -310,7 +310,7 @@ etc，lib和bin类似，参见[这里][2]
 - /usr/bin  
 对应于系统软件级别的命令
 
-- /usr/bin  
+- /usr/local/bin  
 对应于用户（可选）软件级别的命令
 
 
