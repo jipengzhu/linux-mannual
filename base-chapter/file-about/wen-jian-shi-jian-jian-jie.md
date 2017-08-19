@@ -1,13 +1,13 @@
 # 文件的三个时间
 - Windows
-- 创建时间（create time）
-- 修改时间（modify time）
-- 访问时间（access time）
+  - 创建时间（create time）
+  - 修改时间（modify time）
+  - 访问时间（access time）
 
 - Linux
-- 访问时间（access time）
-- 修改时间（modify time）
-- 状态时间（change time）
+  - 访问时间（access time）
+  - 修改时间（modify time）
+  - 状态时间（change time）
 
 
 # 文件的时间详解
@@ -20,16 +20,16 @@
 
 
 # 查看文件时间
-- 查看所有时间
+- 查看所有时间  
 `stat <文件名>`
 
-- 查看修改时间
+- 查看修改时间  
 `ls -l <文件名>`
 
-- 查看访问时间
+- 查看访问时间  
 `ls -lu <文件名>`
 
-- 查看状态时间
+- 查看状态时间  
 `ls -lc <文件名>`
 
 

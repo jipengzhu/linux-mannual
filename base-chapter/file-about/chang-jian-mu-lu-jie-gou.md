@@ -1,26 +1,9 @@
 # 查看根目录结构
 ```
 [root@30bf5ac9eef2 /]# ls -1 /
-bin
-boot
-dev
-etc
-home
-lib
-lib64
-lost+found
-media
-mnt
-opt
-proc
-root
-sbin
-selinux
-srv
-sys
-tmp
-usr
-var
+bin  boot dev  etc  home  lib  lib64  
+lost+found  media  mnt  opt  proc  root  sbin  
+selinux  srv  sys  tmp  usr  var
 
 ```
 
