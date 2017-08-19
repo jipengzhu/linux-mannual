@@ -121,37 +121,37 @@ sudo用户的配置文件
 
 
 # usr目录
-- /usr/doc
+- /usr/doc  
 Linux技术文档
 
-- /usr/bin
+- /usr/bin  
 系统程序级别的命令所在的目录
 
-- /usr/sbin
+- /usr/sbin  
 系统程序级别的命令所在的目录
 
-- /usr/etc
+- /usr/etc  
 系统程序配置文件所在的目录
 
-- /usr/include
+- /usr/include  
 开发和编译应用程序所需要的头文件
 
-- /usr/lib
+- /usr/lib  
 系统程序依赖库文件所在的目录
 
-- /usr/lib
+- /usr/lib  
 64位系统程序依赖库文件所在的目录
 
-- /usr/man
+- /usr/man  
 帮助文档所在的目录
 
-- /usr/src
+- /usr/src  
 Linux开放的源代码，就存在这个目录，爱好者们别放过哦
 
-- /usr/share
+- /usr/share  
 体系结构无关（共享）数据
 
-- /usr/local
+- /usr/local  
 用户级别的目录结构，也包含bin、lib、etc等目录
 
 
