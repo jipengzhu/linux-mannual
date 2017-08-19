@@ -320,6 +320,7 @@ framebuffer
 
 
 # /bin、/usr/bin、/usr/local/bin的区别
+etc，lib和bin类似，参见[这里][2]
 - /bin 
 对应于操作系统级别的命令
 
@@ -339,4 +340,5 @@ framebuffer
 [linux目录结构详细介绍][1]
 
 [1]: http://yangrong.blog.51cto.com/6945369/1288072
+[2]: https://unix.stackexchange.com/questions/74646/difference-between-lib-lib32-lib64-libx32-and-libexec
 
