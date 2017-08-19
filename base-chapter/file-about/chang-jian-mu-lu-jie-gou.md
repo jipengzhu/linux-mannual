@@ -213,7 +213,107 @@ Linux开放的源代码，就存在这个目录，爱好者们别放过哦
 - /var/cache/
 应用程序缓存数据。这些数据是在本地生成的一个耗时的I/O或计算结果。应用程序必须能够再生或恢复数据。缓存的文件可以被删除而不导致数据丢失。
 
-# proc目录
 
+# proc目录
+- /proc/meminfo
+内存信息
+
+- /proc/loadavg
+还记得 top 以及 uptime 吧？没错！上头的三个平均数值就是记录在此！
+
+- /proc/uptime
+就是用 uptime 的时候，会出现的资讯啦！
+
+- /proc/cpuinfo
+关于处理器的信息，如类型、厂家、型号和性能等。
+
+- /proc/cmdline
+加载 kernel 时所下达的相关参数！查阅此文件，可了解系统是如何启动的！
+
+- /proc/filesystems  
+目前系统已经加载的文件系统！
+
+- /proc/interrupts
+目前系统上面的 IRQ 分配状态。
+
+- /proc/ioports
+目前系统上面各个装置所配置的 I/O 位址。
+
+- /proc/kcore 
+这个就是内存的大小啦！好大对吧！但是不要读他啦！
+
+- /proc/modules 
+目前我们的 Linux 已经加载的模块列表，也可以想成是驱动程序啦！
+
+- /proc/mounts
+系统已经挂载的设备，就是用 mount 这个命令呼叫出来的数据啦！
+
+- /proc/swaps 
+到底系统挂加载的内存在哪里？呵呵！使用掉的 partition 就记录在此啦！
+
+- /proc/partitions 
+使用 fdisk -l 会出现目前所有的 partition 吧？在这个文件当中也有纪录喔！
+
+- /proc/pci  
+在 PCI 汇流排上面，每个装置的详细情况！可用 lspci 来查阅！
+
+- /proc/version 
+核心的版本，就是用 uname -a 显示的内容啦！
+
+- /proc/bus/*  
+一些汇流排的装置，还有 U盘的装置也记录在此喔！
 
 # dev目录
+- /dev/hd[a-t]
+IDE设备
+
+- /dev/sd[a-z]
+SCSI设备
+
+- /dev/fd[0-7]
+标准软驱
+
+- /dev/md[0-31]
+软raid设备
+
+- /dev/loop[0-7]
+本地回环设备
+
+- /dev/ram[0-15]
+内存
+
+- /dev/null
+无限数据接收设备,相当于黑洞
+
+- /dev/zero
+无限零资源
+
+- /dev/tty[0-63]
+虚拟终端
+
+- /dev/ttyS[0-3]
+串口
+
+- /dev/lp[0-3]
+并口
+
+- /dev/console
+控制台
+
+- /dev/fb[0-31]
+framebuffer
+
+- /dev/cdrom 
+=> /dev/hdc
+
+- /dev/modem
+=> /dev/ttyS[0-9]
+
+- /dev/pilot 
+=> /dev/ttyS[0-9]
+
+- /dev/random
+随机数设备
+
+- /dev/urandom
+随机数设备
