@@ -289,7 +289,7 @@ framebuffer
 - /dev/cdrom   
 => /dev/hdc
 
-- /dev/modem
+- /dev/modem  
 => /dev/ttyS[0-9]  
 
 - /dev/pilot   
