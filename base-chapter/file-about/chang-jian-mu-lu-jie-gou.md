@@ -157,93 +157,93 @@ Linux开放的源代码，就存在这个目录，爱好者们别放过哦
 
 # var目录
 
-- /var/log/message
+- /var/log/message  
 系统日志信息，按周自动轮询
 
-- /var/spool/cron
+- /var/spool/cron  
 定时任务配置文件目录，默认按用户命名
 
-- /var/log/secure
+- /var/log/secure  
 记录登陆系统存取信息的文件，不管认证成功还是认证失败都会记录
 
-- /var/log/wtmp
+- /var/log/wtmp    
 记录登陆者信息的文件，last,who,w 命令信息来源于此
 
-- /var/spool/clientmqueue/
+- /var/spool/clientmqueue    
 当邮件服务未开启时，所有应发给系统管理员的邮件都将保留在此
 
-- /var/spool/mail/
+- /var/spool/mail    
 邮件目录
 
-- /var/tmp
+- /var/tmp   
 比/tmp 允许的大或需要存在较长时间的临时文件(虽然系统管理员可能不允许/var/tmp有很旧的文件) 
 
-- /var/lib  
+- /var/lib     
 系统正常运行时要改变的文件 
 
-- /var/local  
+- /var/local     
 /usr/local中安装的程序的可变数据(即系统管理员安装的程序)存放的目录。注意，如果必要，即使本地安装的程序也会使用其他/var目录，例如/var/lock。
  
-- /var/lock  
+- /var/lock    
 锁定文件目录。许多程序遵循在/var/lock中产生一个锁定文件的约定，以支持他们正在使用某个特定的设备或文件。其他程序注意到这个锁定文件，将不试图使用这个设备或文件。
 
-- /var/log/
+- /var/log  
 各种程序的Log文件，特别是login（/var/log/wtmp log所有到系统的登录和注销）和syslog（/var/log/messages 里存储所有核心和系统程序信息）。/var/log 里的文件经常不确定地增长，应该定期清除。 
 
-- /var/run  
+- /var/run    
 保存到下次引导前有效的关于系统的信息文件。例如/var/run/utmp包含当前登录的用户的信息。
 
-- /var/cache/
+- /var/cache  
 应用程序缓存数据。这些数据是在本地生成的一个耗时的I/O或计算结果。应用程序必须能够再生或恢复数据。缓存的文件可以被删除而不导致数据丢失。
 
 
 # proc目录
-- /proc/meminfo
+- /proc/meminfo  
 内存信息
 
-- /proc/loadavg
+- /proc/loadavg  
 还记得 top 以及 uptime 吧？没错！上头的三个平均数值就是记录在此！
 
-- /proc/uptime
+- /proc/uptime  
 就是用 uptime 的时候，会出现的资讯啦！
 
-- /proc/cpuinfo
+- /proc/cpuinfo  
 关于处理器的信息，如类型、厂家、型号和性能等。
 
-- /proc/cmdline
+- /proc/cmdline  
 加载 kernel 时所下达的相关参数！查阅此文件，可了解系统是如何启动的！
 
-- /proc/filesystems  
+- /proc/filesystems    
 目前系统已经加载的文件系统！
 
-- /proc/interrupts
+- /proc/interrupts  
 目前系统上面的 IRQ 分配状态。
 
-- /proc/ioports
+- /proc/ioports  
 目前系统上面各个装置所配置的 I/O 位址。
 
-- /proc/kcore 
+- /proc/kcore  
 这个就是内存的大小啦！好大对吧！但是不要读他啦！
 
-- /proc/modules 
+- /proc/modules   
 目前我们的 Linux 已经加载的模块列表，也可以想成是驱动程序啦！
 
-- /proc/mounts
+- /proc/mounts  
 系统已经挂载的设备，就是用 mount 这个命令呼叫出来的数据啦！
 
-- /proc/swaps 
+- /proc/swaps   
 到底系统挂加载的内存在哪里？呵呵！使用掉的 partition 就记录在此啦！
 
-- /proc/partitions 
+- /proc/partitions   
 使用 fdisk -l 会出现目前所有的 partition 吧？在这个文件当中也有纪录喔！
 
-- /proc/pci  
+- /proc/pci   
 在 PCI 汇流排上面，每个装置的详细情况！可用 lspci 来查阅！
 
-- /proc/version 
+- /proc/version   
 核心的版本，就是用 uname -a 显示的内容啦！
 
-- /proc/bus/*  
+- /proc/bus/*    
 一些汇流排的装置，还有 U盘的装置也记录在此喔！
 
 # dev目录
