@@ -320,7 +320,7 @@ etc，lib和bin类似，参见[这里][2]
 # 参考
 
 
-[linux目录结构详细介绍][1]
+[linux目录结构详细介绍][1]  
 [Difference between lib, lib32, lib64, libx32, and libexec][2]
 
 [1]: http://yangrong.blog.51cto.com/6945369/1288072
