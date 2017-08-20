@@ -144,6 +144,17 @@ mount [选项] <设备> <挂载点>
 |remount | 重新安装已经安装了的文件系统 |
 |loop | 挂载回旋设备 |
 
+挂载示例（挂载点需要先创建）
+
+- 挂载硬盘    
+`mount -t auto /dev/cdrom /mnt/cdrom`
+
+- 挂载iso文件  
+`mount -o loop linuxsetup.iso /mnt/iso1`
+
+- 挂载u盘（假设u盘的路径是/dev/sda1）  
+`mount /dev/sda1 /mnt/upan`
+
 
 # unmount
 unmount命令是用来卸载设备的，详情参考[这里][4]
