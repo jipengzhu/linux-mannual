@@ -9,32 +9,19 @@ linux下一切皆文件，包括内存，磁盘，网络都可以用文件的形
 # inode
 用于存储文件的各属性，包括
 
-- 所有者信息：
-    - owner
-    - group
-    - other
+|元数据 |说明 |
+|--- |--- |
+|所有者信息 | owner, group, other |
+|权限信息 | read, write, execute |
+|时间信息 | 修改时间（mtime）,访问时间（atime）,状态时间（ctime）|
+|标志信息 | 文件的一些flag |
+|链接数 | 有多少文件名指向这个inode |
+|内容信息 |type, size和对应的block的位置信息 |
 
-
-- 权限信息：
-    - read
-    - write
-    - execute
-
-
-- 时间信息
-    - 修改时间（mtime）
-    - 访问时间（atime）
-    - 状态时间（ctime）
-    
-
-- 标志信息
-    - 一些flags
-
-
-- 内容信息
-    - type
-    - size
-    - 对应的block的位置信息
+>inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自动将硬盘分成两个区域。
+一个是数据区，存放文件数据；另一个是inode区（inode table），存放inode所包含的信息。
+每个inode节点的大小，一般是128字节或256字节，inode节点的总数，在格式化时就给定，一般是每1KB或每2KB就设置一个inode。
+假定在一块1GB的硬盘中，每个inode节点的大小为128字节，每1KB就设置一个inode，那么inode table的大小就会达到128MB，占整块硬盘的12.8%
 
 
 # block
