@@ -169,16 +169,8 @@ unmount [选项] <设备>
 |-l | 不马上卸载设备，空闲时再卸载 |
 
 
-# fstab
-df命令的是用来查看文件系统的磁盘空间占用情况的
-
-格式如下
-```
-df [选项] [文件]
-```
-
-|选项 | 说明 |
-|--- |--- |
+# /etc/fstab
+fstab记录了开机启动时加载的文件系统，详情参见[这里][6]
 
 
 <br/>
@@ -192,9 +184,11 @@ df [选项] [文件]
 [linux下使用fdisk工具快速挂载新硬盘][3]
 [linux里挂载（mount）和取消挂载（umount）命令的使用][4]
 [Linux中的loop设备][5]
+[linux之fstab文件详解][6]
 
 [1]: http://www.cnblogs.com/peida/archive/2012/12/07/2806483.html
 [2]: http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html
 [3]: http://yaksayoo.blog.51cto.com/510938/132809
 [4]: http://blog.csdn.net/xiyangyang8/article/details/49725039
 [5]: http://blog.csdn.net/scaleqiao/article/details/46777811
+[6]: http://blog.csdn.net/richerg85/article/details/17917129
