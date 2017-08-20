@@ -60,9 +60,16 @@ ln [选项] <源文件或目录> <目的文件或目录>
 ## windows和linux链接的异同
 详情参见[这里][4] 
 
-# lsof
 
-# 
+# lsof
+lsof的意思是’列出打开的文件’（list openfiles），用于找出文件被哪些进程打开或是占用。我们都知道Linux/UNIX的理念就是一切皆文件(包括pipes管道、sockets、directories目录、devices设备等等)。 
+使用lsof这个命令我们可以轻易的识别哪些文件正在被占用，详情参见[这里][5]
+
+
+# 文件名和inode的关系
+文件名可以看作inode的别名，进程已经打开文件后，删除文件名对应的文件不会影响进程的读写，因为进程依然持有文件的inode，有些时候这会引发一些问题。windows中没有inode的概念，当删除已打开的的文件的时候，会提示文件正在被使用的信息。
+
+## inode引发的问题
 
 
 <br/>
@@ -74,8 +81,10 @@ ln [选项] <源文件或目录> <目的文件或目录>
 [理解inode][2]
 [Linux软链接和硬链接详解][3]
 [Windows的四种链接方式][4]
+[lsof在Linux中的10个例子][5]
 
 [1]: http://zhang789.blog.51cto.com/11045979/1846339
 [2]: http://www.ruanyifeng.com/blog/2011/12/inode.html
 [3]: http://zhang789.blog.51cto.com/11045979/1846353
 [4]: http://www.binarythink.net/2013/06/windows-link/
+[5]: https://kumu-linux.github.io/blog/2013/04/08/lsof/
