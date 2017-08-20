@@ -179,12 +179,12 @@ fstab记录了开机启动时加载的文件系统，详情参见[这里][6]
 # 参考
 
 
-[每天一个linux命令：df 命令][1]
-[每天一个linux命令：du 命令][2]
-[linux下使用fdisk工具快速挂载新硬盘][3]
-[linux里挂载（mount）和取消挂载（umount）命令的使用][4]
-[Linux中的loop设备][5]
-[linux之fstab文件详解][6]
+[每天一个linux命令：df 命令][1]  
+[每天一个linux命令：du 命令][2]  
+[linux下使用fdisk工具快速挂载新硬盘][3]  
+[linux里挂载（mount）和取消挂载（umount）命令的使用][4]  
+[Linux中的loop设备][5]  
+[linux之fstab文件详解][6]  
 
 [1]: http://www.cnblogs.com/peida/archive/2012/12/07/2806483.html
 [2]: http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html
