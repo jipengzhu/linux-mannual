@@ -8,25 +8,20 @@ df [选项] [文件]
 
 |选项 | 说明 |
 |--- |--- |
-
-|-a | 全部文件系统列表 |
-|-h | 以K，M，G为单位，提高信息的可读性 |
-|-H | 与-h参数相同，但是K，M，G是以1000为换算单位 |
-|-i | 显示inode信息 |
-|-k | 以KB为单位输出|
-|-l | 只显示本地文件系统 |
-|-m | 以MB为单位输出|
-|--no-sync | 忽略sync命令 |
+|-a, --all | 全部文件系统的列表 |
+|-B, --block-size=SIZE | 指定区块大小 |
+|-h, --human-readable | 以K，M，G为单位，更加易读 |
+|-H, --si | 与-h参数相同，但是K，M，G是以1000为换算单位 |
+|-i, --inodes | 显示inode信息，而不是大小 |
+|-k | 以KB为单位输出，等同于--block-size=1K|
+|-m | 以MB为单位输出，等同于--block-size=1M|
+|--no-sync | 在取得磁盘信息前，不执行sync命令 |
 |--sync | 在取得磁盘信息前，先执行sync命令 |
-|-P | 输出格式为POSIX |
-|-T | 文件系统类型 |
-|--block-size=区块大小 | 指定区块大小 |
-|-t 文件系统类型 | 只显示选定文件系统的磁盘信息 |
-|-x 文件系统类型 | 不显示选定文件系统的磁盘信息 |
+|-t 文件系统类型 | 显示选定文件系统的磁盘信息 |
+|-T, --print-type | 显示文件系统类型 |
+|-x, --exclude-type=TYPE | 排除指定类型的文件系统 |
 |--help | 显示帮助信息 | 
 |--version | 显示版本信息 |
-
-> a -> all | h -> human-readable | i -> inode | k -> kilo | m -> mega | l -> local
 
 命令示例
 - 显示磁盘使用情况    
@@ -55,21 +50,27 @@ du [选项] [文件]
 
 |选项 | 说明 |
 |--- |--- |
-|-a, -all | 显示目录中文件的大小 |   
+|-a, -all | 显示目录中文件的大小，而不仅仅是目录本身 | 
+|-B, --block-size=SIZE | 指定区块大小 | 
 |-b, -bytes | 显示目录或文件大小时，以byte为单位 |   
 |-c, --total | 除了显示目录或文件的大小外，同时也显示所有目录和文件的总和 | 
-|-k, --kilobytes | 以KB为单位输出 |
+|-D, --dereference-args  | 显示命令行中指定软链接源文件大小 |
+|-d, --max-depth=N | 指定目录的最大深度 |
+|-h, --human-readable | 以K，M，G为单位，更加易读 |
+|-i, --inodes | 显示inode信息，而不是大小 | 
+|-k | 以KB为单位输出，等同于--block-size=1K|
+|-L, --dereference | 显示软链接源文件大小 |
 |-l, --count-links | 重复计算硬件链接的文件 |
-|-m, --megabytes | 以MB为单位输出 |   
+|-m | 以MB为单位输出，等同于--block-size=1M|
+|-P, --no-dereference | 显示软链接本身的大小，是默认的选项|
+|-S, --separate-dirs | 显示目录的大小时，不含其子目录的大小 |
+|--si | 与-h参数相同，但是K，M，G是以1000为换算单位 |
 |-s, --summarize | 仅显示总计，列出最后加总的值 |
-|-h, --human-readable | 以K，M，G为单位，提高信息的可读性 |
-|-H, --si | 与-h参数相同，但是K，M，G是以1000为换算单位 | 
-|-x, --one-file-xystem | 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过 |
-|-L, --dereference | 显示软链接链接的源文件大小 |
-|-S, --separate-dirs | 显示目录的大小时，并不含其子目录的大小 |
 |-X 文件, --exclude-from=文件 | 排除文件中指定目录或文件 |  
-|--exclude=PATTERN | 排除指定的目录或文件 |  
-|-D, --dereference-args  | 显示命令行中指定文件软链接源文件大小 |   
+|--exclude=PATTERN | 排除指定的目录或文件 |
+|-x, --one-file-xystem | 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过 |
+|--help | 显示帮助信息 | 
+|--version | 显示版本信息 |
 
 
 # mount
