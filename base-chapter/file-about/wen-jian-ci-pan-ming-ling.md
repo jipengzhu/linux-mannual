@@ -25,20 +25,20 @@ df [选项] [文件]
 |--help | 显示帮助信息 | 
 |--version | 显示版本信息 |
 
-> a -> all | h -> human-readable | i -> inode | k -> kilobyte | m -> megabyte | l -> local
+> a -> all | h -> human-readable | i -> inode | k -> kilo | m -> mega | l -> local
 
-```
-[root@30bf5ac9eef2 /]# df
-Filesystem     1K-blocks    Used Available Use% Mounted on
-none            61896484 3261964  55467288   6% /
-tmpfs            1023524       0   1023524   0% /dev
-tmpfs            1023524       0   1023524   0% /sys/fs/cgroup
-/dev/vda2       61896484 3261964  55467288   6% /etc/resolv.conf
-/dev/vda2       61896484 3261964  55467288   6% /etc/hostname
-/dev/vda2       61896484 3261964  55467288   6% /etc/hosts
-shm                65536       0     65536   0% /dev/shm
-tmpfs            1023524       0   1023524   0% /proc/kcore
-tmpfs            1023524       0   1023524   0% /proc/timer_list
-tmpfs            1023524       0   1023524   0% /proc/sched_debug
-tmpfs            1023524       0   1023524   0% /sys/firmware
-```
+命令示例
+- 显示磁盘使用情况    
+`df`
+
+- 列出文件系统的类型  
+`df -T`
+
+- 更易读的方式显示目前磁盘空间和使用情况
+`df -h`
+
+- 以inode模式来显示磁盘使用情况    
+`df -i`
+
+- 显示指定类型磁盘    
+`df -t ext3`
