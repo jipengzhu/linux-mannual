@@ -26,3 +26,19 @@ df [选项] [文件]
 |--version | 显示版本信息 |
 
 > a -> all | h -> human-readable | i -> inode | k -> kilobyte | m -> megabyte | l -> local
+
+```
+[root@30bf5ac9eef2 /]# df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+none            61896484 3261964  55467288   6% /
+tmpfs            1023524       0   1023524   0% /dev
+tmpfs            1023524       0   1023524   0% /sys/fs/cgroup
+/dev/vda2       61896484 3261964  55467288   6% /etc/resolv.conf
+/dev/vda2       61896484 3261964  55467288   6% /etc/hostname
+/dev/vda2       61896484 3261964  55467288   6% /etc/hosts
+shm                65536       0     65536   0% /dev/shm
+tmpfs            1023524       0   1023524   0% /proc/kcore
+tmpfs            1023524       0   1023524   0% /proc/timer_list
+tmpfs            1023524       0   1023524   0% /proc/sched_debug
+tmpfs            1023524       0   1023524   0% /sys/firmware
+```
