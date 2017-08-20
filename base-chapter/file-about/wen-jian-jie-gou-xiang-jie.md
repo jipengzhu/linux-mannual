@@ -57,8 +57,12 @@ ln [选项] <源文件或目录> <目的文件或目录>
 |-f, --force | 如果文件已存在，强制覆盖 |
 |-i, --interactive | 如果文件已存在，则提示 |
 
+## windows和linux链接的异同
+详情参见[这里][4] 
 
 # lsof
+
+# 
 
 
 <br/>
@@ -68,6 +72,10 @@ ln [选项] <源文件或目录> <目的文件或目录>
 
 [Linux文件系统的最基本数据结构：inode和block][1]
 [理解inode][2]
+[Linux软链接和硬链接详解][3]
+[Windows的四种链接方式][4]
 
 [1]: http://zhang789.blog.51cto.com/11045979/1846339
 [2]: http://www.ruanyifeng.com/blog/2011/12/inode.html
+[3]: http://zhang789.blog.51cto.com/11045979/1846353
+[4]: http://www.binarythink.net/2013/06/windows-link/
