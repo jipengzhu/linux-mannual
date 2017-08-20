@@ -142,7 +142,7 @@ mount [选项] <设备> <挂载点>
 |codepage=XXX | 代码页 |
 |iocharset=XXX | 字符集 |
 |remount | 重新安装已经安装了的文件系统 |
-|loop | 挂载回旋设备 |
+|loop | 挂载[环回设备][5] |
 
 挂载示例（挂载点需要先创建）
 
@@ -191,8 +191,10 @@ df [选项] [文件]
 [每天一个linux命令：du 命令][2]
 [linux下使用fdisk工具快速挂载新硬盘][3]
 [linux里挂载（mount）和取消挂载（umount）命令的使用][4]
+[Linux中的loop设备][5]
 
 [1]: http://www.cnblogs.com/peida/archive/2012/12/07/2806483.html
 [2]: http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html
 [3]: http://yaksayoo.blog.51cto.com/510938/132809
 [4]: http://blog.csdn.net/xiyangyang8/article/details/49725039
+[5]: http://blog.csdn.net/scaleqiao/article/details/46777811
