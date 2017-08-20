@@ -25,4 +25,4 @@ df [选项] [文件]
 |--help | 显示帮助信息 | 
 |--version | 显示版本信息 |
 
-> a -> all h -> human readable
+> a -> all | h -> human-readable | i -> inode | k -> kilobyte | m -> megabyte | l -> local
