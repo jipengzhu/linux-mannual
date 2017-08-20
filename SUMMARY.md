@@ -12,4 +12,5 @@
     * [文件时间简介](base-chapter/file-about/wen-jian-shi-jian-jian-jie.md)
     * [文件目录体系](base-chapter/file-about/wen-jian-mu-lu-ti-xi.md)
     * [文件磁盘命令](base-chapter/file-about/wen-jian-ci-pan-ming-ling.md)
+* [文件结构详解](wen-jian-jie-gou-xiang-jie.md)
 
