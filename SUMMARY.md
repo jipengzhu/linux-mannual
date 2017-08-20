@@ -11,4 +11,5 @@
     * [文件特殊权限](base-chapter/file-about/wen-jian-te-shu-quan-xian.md)
     * [文件时间简介](base-chapter/file-about/wen-jian-shi-jian-jian-jie.md)
     * [常见目录结构](base-chapter/file-about/chang-jian-mu-lu-jie-gou.md)
+    * [文件磁盘命令](base-chapter/file-about/wen-jian-ci-pan-ming-ling.md)
 
