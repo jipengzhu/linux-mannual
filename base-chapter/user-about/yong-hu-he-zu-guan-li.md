@@ -201,14 +201,27 @@ newgrp [选项] <群组名>
 |-g, --group | 只显示组id |
 |-G, --groups | 显示所有组id |
 |-n, --name | 显示名称而不是id，配合-ugG使用 |
-|-r, --real | 显示真实id而不是有效id |
+|-r, --real | 显示真实id而不是有效id，配合-ugG使用 |
 
 
 ## 默认权限
-UMASK
-
+- umask命令可以查看和设置文件的默认权限
+- umask设置的是权限“补码”，而chmod设置的是文件权限码
+- 详情参考[这里][2]
 
 ## 密码文件
-用户的帐户名称与UID保存在/etc/passwd文件中，而帐户密码则保存在/etc/shadow文件中，格式参考[这里][1]
+- 用户的帐户名称与UID保存在/etc/passwd文件中
+- 用户的帐户密码则保存在/etc/shadow文件中
+- 文件的格式详情参考[这里][1]
 
 
+<br/>
+
+---
+# 参考
+
+[linux用户和组管理详解][1]
+[LINUX UMASK详解][2]
+
+[1]: http://zhang789.blog.51cto.com/11045979/1845767
+[2]: http://blog.csdn.net/linux7985/article/details/5993708
