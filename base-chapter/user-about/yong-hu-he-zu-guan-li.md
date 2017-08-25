@@ -43,16 +43,16 @@ useradd [选项] <用户名>
 
 |选项 | 说明 |
 |--- |--- |
-|-b, --base-dir | 指定用户家目录的基准目录（默认为/home）|
-|-d, --home | 指定用户的家目录（默认为/home/username）|
+|-b, --base-dir BASE_DIR | 指定用户家目录的基准目录（默认为/home）|
+|-d, --home HOME_DIR | 指定用户的家目录（默认为/home/username）|
 |-D, --defaults | 显示或修改当前的默认值 |
-|-e, --expiredate | 帐号有效截至日期，格式：YYYY-MM-DD，空字符串表示不过期|
-|-g, --gid | 指定一个初始用户组（必须已存在）|
-|-G, --groups | 指定一个或多个扩展用户组 |
+|-e, --expiredate EXPIRE_DATE | 帐号有效截至日期，格式：YYYY-MM-DD，空字符串表示不过期|
+|-g, --gid GROUP | 指定一个初始用户组（必须已存在）|
+|-G, --groups GROUP... | 指定一个或多个扩展用户组 |
 |-M | 不创建用户主目录 |
 |-N, --no-user-group | 不创建与用户同名的用户组 |
-|-s, --shell | 指定默认的Shell |
-|-u, --uid | 指定用户的UID |
+|-s, --shell SHELL | 指定默认的Shell |
+|-u, --uid UID| 指定用户的UID |
 |-U, --user-group| 创建一个和用户同名的组，并将用户添加到组中 | 
 
 ### passwd
@@ -95,15 +95,16 @@ usermod [选项] <用户名>
 
 |选项 | 说明 |
 |--- |--- |
-|-c, --comment | 填写帐号的备注信息
-|-d, --home | -m与-d连用，指定用户新的家目录并转移数据，否则新建家目录 |
-|-e, --expiredate | 帐户到期时间，格式“YYYY-MM-DD” |
-|-g, --gid | 变更所属用户组 |
-|-G, --groups | 变更扩展用户组 |
+|-c, --comment COMMENT | 填写帐号的备注信息
+|-d, --home HOME_DIR | -m与-d连用，指定用户新的家目录并转移数据，否则新建家目录 |
+|-e, --expiredate EXPIRE_DATE | 帐户到期时间，格式“YYYY-MM-DD” |
+|-g, --gid GROUP | 变更所属用户组 |
+|-G, --groups GROUP... | 变更扩展用户组 |
+|-l, --login NEW_LOGIN | 修改用户名为新名字 |
 |-L, --lock | 锁定用户禁止其登陆系统 |
 |-U, --unlock | 解锁用户，允许其登陆系统 |
-|-s, --shell | 修改默认终端 |
-|-u, --uid | 修改用户的UID |
+|-s, --shell SHELL | 修改默认终端 |
+|-u, --uid UID | 修改用户的UID |
 
 ### who
 查看用户登录的相关信息
@@ -142,7 +143,6 @@ groupadd [选项] <群组名>
 |-g, --gid GID | 为用户组指定组标识号 |
 |-o, --non-unique | 与-g选项同时使用，GID可以使用系统已有用户组的GID |
 
-
 ### groupdel
 groupdel用来删除用户组
 
@@ -150,9 +150,6 @@ groupdel用来删除用户组
 ```
 groupdel [选项] <群组名>
 ```
-
-|选项 | 说明 |
-|--- |--- |
 
 ### groupmod
 groupmod用来需该用户组的属性
@@ -173,7 +170,7 @@ newgrp用来将用户切换到另一个组中
 
 格式如下
 ```
-newgrp [选项] [群组名]
+newgrp [选项] <群组名>
 ```
 
 |选项 | 说明 |
