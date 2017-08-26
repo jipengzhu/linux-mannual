@@ -51,6 +51,21 @@ cd [选项] [目录]
 |[a-zA-Z] |所有的字母 |
 |[0-9a-zA-Z] |所有的数字和字母 |
 
+通配符中字符的集合
+
+|通配符 | 说明 |
+|--- |--- |
+|[:digit:] | 所有数字, 相当于0-9 |
+|[:lower:] | 所有的小写字母 |
+|[:upper:] | 所有的大写字母 |
+|[:alpha:] | 所有的字母 |
+|[:alnum:] | 相当于[0-9a-zA-Z] |
+|[:space:] | 空白字符 |
+|[:punct:] | 所有标点符号 |
+
+- glob和正则的区别，参考[这里][1]和[这里][3]
+- 如果[A-Z]匹配了小写字母，原因参考[这里][2]和[这里][3]
+- glob的原理，参考[这里][5]
 
 # ls
 输出指定目录下的文件和目录，如果不指定默认为当前目录
@@ -250,3 +265,20 @@ stat [选项] <文件...>
 ---
 
 
+<br/>
+
+---
+
+# 参考
+
+[linux中的通配符和正则表达式][1]  
+[Why does [A-Z] match lowercase letters in bash][2]  
+[正则表达式][3]  
+[Linux中通配符、正则表达式和扩展正则表达式][4]  
+[Linux Shell 通配符、元字符、转义符][5]  
+
+[1]: http://evanlinux.blog.51cto.com/7247558/1308363
+[2]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
+[3]: http://wiki.jikexueyuan.com/project/linux-command/chap20.html
+[4]: http://xzb2015.blog.51cto.com/8796643/1598715
+[5]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
