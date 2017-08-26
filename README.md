@@ -10,7 +10,7 @@
 
 ---
 github和个人博客，请猛戳图标
-[![](/images/github图标.jpeg)][1]
+[![](/images/github图标.png)][1]
 [![](/images/blog图标.png)][2]
 
 ---
