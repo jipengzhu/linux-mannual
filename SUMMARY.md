@@ -13,7 +13,7 @@
     * [文件目录体系](base-chapter/file-about/wen-jian-mu-lu-ti-xi.md)
     * [文件磁盘命令](base-chapter/file-about/wen-jian-ci-pan-ming-ling.md)
     * [文件结构详解](base-chapter/file-about/wen-jian-jie-gou-xiang-jie.md)
-  * [用户相关](base-chapter/user-about/yong-hu-xiang-guan.md)
+  * [用户相关](base-chapter/user-about/base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
     * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
-    * [用户id相关](base-chapter/user-about/yong-hu-id-xiang-guan.md)
+    * [用户和进程id](base-chapter/user-about/yong-hu-id-xiang-guan.md)
 

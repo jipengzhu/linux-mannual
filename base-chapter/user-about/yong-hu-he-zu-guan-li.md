@@ -197,9 +197,9 @@ newgrp [选项] <群组名>
 
 |选项 | 说明 |
 |--- |--- |
-|-u, --user | 只显示用户id |
-|-g, --group | 只显示组id |
-|-G, --groups | 显示所有组id |
+|-u, --user | 只显示有效用户id |
+|-g, --group | 只显示有效组id |
+|-G, --groups | 显示所有的有效组id |
 |-n, --name | 显示名称而不是id，配合-ugG使用 |
 |-r, --real | 显示真实id而不是有效id，配合-ugG使用 |
 
@@ -238,7 +238,7 @@ sudo [选项] [用户名]
 
 > l -> list | b -> background
 
-sudo相关配置文件和visudo可以参考[这里][2]
+sudo相关配置文件和visudo命令可以参考[这里][2]
 
 
 ## 默认权限（umask）
