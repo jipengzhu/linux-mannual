@@ -88,11 +88,11 @@ lsof的意思是’列出打开的文件’（list openfiles），用于找出�
 ---
 # 参考
 
-[Linux文件系统的最基本数据结构：inode和block][1]
-[理解inode][2]
-[Linux软链接和硬链接详解][3]
-[Windows的四种链接方式][4]
-[lsof在Linux中的10个例子][5]
+[Linux文件系统的最基本数据结构：inode和block][1]  
+[理解inode][2]  
+[Linux软链接和硬链接详解][3]  
+[Windows的四种链接方式][4]  
+[lsof在Linux中的10个例子][5]  
 
 [1]: http://zhang789.blog.51cto.com/11045979/1846339
 [2]: http://www.ruanyifeng.com/blog/2011/12/inode.html
