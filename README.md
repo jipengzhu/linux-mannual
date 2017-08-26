@@ -10,7 +10,7 @@
 
 ---
 [![](/images/github图标.jpeg)][1]
-[![](/images/blog图标.jpeg)][1]
+[![](/images/blog图标.png)][1]
 
 ---
 如果各位看官觉得有所帮助，记得扫二维码打赏一下
