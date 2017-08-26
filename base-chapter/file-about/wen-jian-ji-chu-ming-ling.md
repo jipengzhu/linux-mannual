@@ -63,8 +63,8 @@ cd [选项] [目录]
 |[:space:] | 空白字符 |
 |[:punct:] | 所有标点符号 |
 
-- glob和正则的区别，参考[这里][1]和[这里][3]
-- 如果[A-Z]匹配了小写字母，原因参考[这里][2]和[这里][3]
+- glob和正则的区别，参考[这里][2]
+- 如果[A-Z]匹配了小写字母，原因参考[这里][3]
 - glob的原理，参考[这里][5]
 
 # ls
@@ -271,14 +271,14 @@ stat [选项] <文件...>
 
 # 参考
 
-[linux中的通配符和正则表达式][1]  
-[Why does [A-Z] match lowercase letters in bash][2]  
-[正则表达式][3]  
-[Linux中通配符、正则表达式和扩展正则表达式][4]  
+[linux中的通配符和正则表达式][1] 
+[Linux中通配符、正则表达式和扩展正则表达式][2]   
+[Why does [A-Z] match lowercase letters in bash][3]  
+[正则表达式][4]  
 [Linux Shell 通配符、元字符、转义符][5]  
 
 [1]: http://evanlinux.blog.51cto.com/7247558/1308363
-[2]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
-[3]: http://wiki.jikexueyuan.com/project/linux-command/chap20.html
-[4]: http://xzb2015.blog.51cto.com/8796643/1598715
+[2]: http://xzb2015.blog.51cto.com/8796643/1598715
+[3]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
+[4]: http://wiki.jikexueyuan.com/project/linux-command/chap20.html
 [5]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
