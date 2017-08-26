@@ -86,6 +86,7 @@ lsof的意思是’列出打开的文件’（list openfiles），用于找出�
 <br/>
 
 ---
+
 # 参考
 
 [Linux文件系统的最基本数据结构：inode和block][1]  

@@ -317,8 +317,8 @@ etc，lib和bin类似，参见[这里][2]
 <br/>
 
 ---
-# 参考
 
+# 参考
 
 [linux目录结构详细介绍][1]  
 [Difference between lib, lib32, lib64, libx32, and libexec][2]
