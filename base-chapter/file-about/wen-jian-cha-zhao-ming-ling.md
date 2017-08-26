@@ -94,7 +94,7 @@ ___
 [每天一个linux命令 find 命令概览][3]  
 [每天一个linux命令 find命令之exec][4]
 [每天一个linux命令 find命令之xargs][5]
-[每天一个linux命令 find 命令的参数详解][6]
+[每天一个linux命令 find命令的参数详解][6]
 [linux find -regex 使用正则表达式][7]
 [BRE与ERE的差异][8]
 
