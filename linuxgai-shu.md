@@ -88,7 +88,7 @@ Security-Enhanced Linux，美国国家安全局（NSA）对于强制访问控制
 
 # 参考
 
-[Linux发行版：CentOS、Ubuntu、RedHat、Android、Tizen、MeeGo][1]
+[Linux发行版：CentOS、Ubuntu、RedHat、Android、Tizen、MeeGo][1]  
 [Linux各发行版介绍][2]
 
 [1]: http://blog.csdn.net/ithomer/article/details/9729933
