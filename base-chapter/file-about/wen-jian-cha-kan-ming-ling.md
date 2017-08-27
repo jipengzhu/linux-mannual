@@ -229,6 +229,7 @@ diff [选项] <文件> <文件>
 [每天一个linux命令 tail 命令][6]  
 [每天一个linux命令 diff 命令][7]  
 [读懂diff][8]  
+[What is the difference between "tail -f" and "tail -F"][9]
 
 [1]: http://www.cnblogs.com/peida/archive/2012/10/30/2746968.html
 [2]: http://www.cnblogs.com/peida/archive/2012/11/01/2749048.html
@@ -238,3 +239,4 @@ diff [选项] <文件> <文件>
 [6]: http://www.cnblogs.com/peida/archive/2012/11/07/2758084.html
 [7]: http://www.cnblogs.com/peida/archive/2012/12/12/2814048.html
 [8]: http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html
+[9]: https://unix.stackexchange.com/questions/291932/what-is-the-difference-between-tail-f-and-tail-f
