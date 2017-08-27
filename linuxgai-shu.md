@@ -80,3 +80,16 @@ Portable Operating System Interface，可移植操作系统接口，是对应用
 
 * SELinux
 Security-Enhanced Linux，美国国家安全局（NSA）对于强制访问控制的实现，是 Linux历史上最杰出的新安全子系统
+
+
+<br/>
+
+---
+
+# 参考
+
+[Linux发行版：CentOS、Ubuntu、RedHat、Android、Tizen、MeeGo][1]
+[Linux各发行版介绍][2]
+
+[1]: http://blog.csdn.net/ithomer/article/details/9729933
+[2]: http://weibo.com/ttarticle/p/show?id=2309404113611055322504
