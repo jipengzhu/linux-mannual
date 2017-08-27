@@ -28,7 +28,7 @@
   * [网络相关](senior-chapter/network-about/README.md)
   * [软件相关](senior-chapter/software-about/README.md)
   * [系统相关](senior-chapter/system-about/README.md)
-  * [shell编程](senior-chapter/shell-about/README.md)
+  * [shell相关](senior-chapter/shell-about/README.md)
   
 * [综合篇](zong-he-pian.md)
 
