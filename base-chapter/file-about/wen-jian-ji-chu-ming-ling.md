@@ -258,6 +258,54 @@ stat [选项] <文件...>
 ```
 
 
+# file
+探测给定文件的类型
+
+格式如下
+```
+file [选项] <文件>
+```
+
+选项如下
+
+|选项 | 说明 |
+|--- |--- |
+|-b, --brief | 列出辨识结果时，不显示文件名称 |
+|-c | 显示详细的执行过程，便于排错或分析程序的执行 |
+|-f, --files-from namefile | 从文件中获取文件名，如果namefile为短横杠则从标准输入中获取 | 
+|-i, --mime | 显示MIME类型 |
+|-h, --no-dereference | 显示软链接本身的文件类型
+|-L, --dereference | 显示软链接源文件的文件类型 |
+|-m 魔法数字文件 | 指定魔法数字文件 |
+|-v | 显示版本信息 |
+|-z | 尝试去解读压缩文件的内容 |
+
+
+# dirname
+去除文件名中的非目录部分，仅显示目录部分
+
+格式如下
+```
+dirname [选项] <名称字符串...>
+```
+
+
+# basename
+去除文件名中的非文件名部分，仅显示文件名部分
+
+格式如下
+```
+basename [选项] <名称字符串...>
+```
+
+选项如下
+
+|选项 | 说明 |
+|--- |--- |
+|-a, --multiple | 所有的参数都视为名称，否则第二个参数为后缀 |
+|-s, --suffix=SUFFIX | 取出指定后缀名 |
+
+
 <br/>
 
 ---
@@ -275,10 +323,16 @@ stat [选项] <文件...>
 [Linux中通配符、正则表达式和扩展正则表达式][2]     
 [Why does [A-Z] match lowercase letters in bash][3]    
 [正则表达式][4]  
-[Linux Shell 通配符、元字符、转义符][5]   
+[Linux Shell 通配符、元字符、转义符][5]  
+[file命令][6]    
+[dirname命令][7] 
+[basename命令][8] 
 
 [1]: http://evanlinux.blog.51cto.com/7247558/1308363
 [2]: http://xzb2015.blog.51cto.com/8796643/1598715
 [3]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
 [4]: http://wiki.jikexueyuan.com/project/linux-command/chap20.html
 [5]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
+[6]: http://man.linuxde.net/file
+[7]: http://man.linuxde.net/dirname
+[8]: http://man.linuxde.net/basename
