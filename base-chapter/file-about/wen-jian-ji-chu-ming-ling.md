@@ -271,11 +271,11 @@ stat [选项] <文件...>
 
 # 参考
 
-[linux中的通配符和正则表达式][1] 
-[Linux中通配符、正则表达式和扩展正则表达式][2]   
-[Why does [A-Z] match lowercase letters in bash][3]  
+[linux中的通配符和正则表达式][1]   
+[Linux中通配符、正则表达式和扩展正则表达式][2]     
+[Why does [A-Z] match lowercase letters in bash][3]    
 [正则表达式][4]  
-[Linux Shell 通配符、元字符、转义符][5]  
+[Linux Shell 通配符、元字符、转义符][5]   
 
 [1]: http://evanlinux.blog.51cto.com/7247558/1308363
 [2]: http://xzb2015.blog.51cto.com/8796643/1598715
