@@ -20,7 +20,7 @@
   * [用户相关](base-chapter/user-about/README.md)
     * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
     * [用户和进程id](base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
-    * [环境变量](base-chapter/user-about/huan-jing-bian-liang.md)
+    * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
   * [文本处理](base-chapter/text-about/README.md)
 
 * [高级篇](gao-ji-pian.md)
