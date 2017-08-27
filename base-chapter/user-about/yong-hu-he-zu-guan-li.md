@@ -263,10 +263,12 @@ sudo相关配置文件和visudo命令可以参考[这里][2]
 [实战演练su命令与sudo服务][2]  
 [LINUX UMASK详解][3]  
 [Linux 下以其他用户身份运行程序—— su、sudo、runuser][4]  
-[linux 常用命令： runuser][5]
+[linux 切换用户身份、su、sudo、/etc/sudoers][5]
+[linux 常用命令： runuser][6]
 
 [1]: http://zhang789.blog.51cto.com/11045979/1845767
 [2]: http://zhang789.blog.51cto.com/11045979/1846231
 [3]: http://blog.csdn.net/linux7985/article/details/5993708
 [4]: http://blog.chopmoon.com/favorites/219.html
-[5]: http://www.cnblogs.com/doscho/p/6498148.html
+[5]: http://desert3.iteye.com/blog/1663995
+[6]: http://www.cnblogs.com/doscho/p/6498148.html
