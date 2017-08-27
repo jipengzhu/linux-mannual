@@ -19,5 +19,6 @@
   * [用户相关](base-chapter/user-about/base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
     * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
     * [用户和进程id](base-chapter/user-about/yong-hu-id-xiang-guan.md)
-
+* [高级篇](gao-ji-pian.md)
+* [综合篇](zong-he-pian.md)
 
