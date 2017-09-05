@@ -2,9 +2,9 @@
 
 ## 前言篇
 * [阅读须知](README.md)
-* [Linux概述](linuxgai-shu.md)
-* [Shell概述](shellgai-shu.md)
-* [帮助命令](bang-zhu-ming-ling.md)
+* [Linux概述](tip-chapter/linuxgai-shu.md)
+* [Shell概述](tip-chapter/shellgai-shu.md)
+* [帮助命令](tip-chapter/bang-zhu-ming-ling.md)
 
 ## 基础篇
 * [文件相关](base-chapter/file-about/README.md)

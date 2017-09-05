@@ -97,8 +97,8 @@
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
         "donate": {
-            "wechat": "images/微信收款.jpeg",
-            "alipay": "images/支付宝收款.jpeg",
+            "wechat": "./images/微信收款.jpeg",
+            "alipay": "./images/支付宝收款.jpeg",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝打赏",
