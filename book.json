@@ -97,8 +97,8 @@
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
         "donate": {
-            "wechat": "/images/微信收款.jpeg",
-            "alipay": "/images/支付宝收款.jpeg",
+            "wechat": "https://github.com/jipengzhu/linux-mannual/blob/master/images/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE.jpeg",
+            "alipay": "https://github.com/jipengzhu/linux-mannual/blob/master/images/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE.jpeg",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝打赏",
