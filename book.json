@@ -22,8 +22,8 @@
         "-livereload",
         "search-plus@^0.0.11",
         "simple-page-toc@^0.1.1",
-        "-github@^2.0.0",
-        "-github-buttons@2.1.0",
+        "github@^2.0.0",
+        "github-buttons@2.1.0",
         "-edit-link@^2.0.2",
         "-disqus@^0.1.0",
         "prism@^2.1.0",
@@ -51,19 +51,11 @@
         "theme-default": {
             "showLevel": true
         },
-        "disqus": {
-            "shortName": "linux-mannual"
-        },
-        "prism": {
-            "css": [
-                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
-            ]
-        },
         "github": {
             "url": "https://github.com/jipengzhu"
         },
         "github-buttons": {
-            "repo": "",
+            "repo": "linux-mannual",
             "types": [
                 "star"
             ],
@@ -91,7 +83,7 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright © zhujipeng 2017",
-            "modify_label": "该文件修订时间：",
+            "modify_label": "   该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "3-ba": {
@@ -112,6 +104,14 @@
         "edit-link": {
             "base": "",
             "label": "Edit This Page"
+        },
+        "disqus": {
+            "shortName": "linux-mannual"
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
         },
         "sitemap-general": {
             "prefix": ""
