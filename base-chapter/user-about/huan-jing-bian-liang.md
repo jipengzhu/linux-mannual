@@ -124,7 +124,14 @@ declare [选项] [-p] [变量名=变量值]...
 |-t | 给每个name设置trace属性 |
 
 
+
 # 环境变量生效
+## source
+修改环境变量文件后需要执行`source`命令（一个点和source同义）使环境变量生效，详情参考[这里][12]
+
+## fork and exec
+详情参考[这里][13]
+
 
 # 环境变量的加载
 
@@ -135,17 +142,19 @@ declare [选项] [-p] [变量名=变量值]...
 
 # 参考
 
-[Linux环境变量总结][1]  
-[我使用过的Linux命令之env - 显示当前用户的环境变量][2]  
-[set命令][3]  
-[shell的set命令][4]
-[unset命令][5]
-[readonly命令][6]
-[declare命令][7]
-[shell内建命令之declare、typeset、local][8]
-[Shell中的IFS解惑][9]
-[Shell中的 IFS][10]
-[Linux 静态库与动态库搜索路径设置][11]
+[Linux环境变量总结][1]    
+[我使用过的Linux命令之env - 显示当前用户的环境变量][2]    
+[set命令][3]    
+[shell的set命令][4]  
+[unset命令][5]  
+[readonly命令][6]  
+[declare命令][7]  
+[shell内建命令之declare、typeset、local][8]  
+[Shell中的IFS解惑][9]  
+[Shell中的 IFS][10]  
+[Linux 静态库与动态库搜索路径设置][11]  
+[关于Shell的source、点（.）和export][12]  
+[在 Shell 脚本中调用另一脚本的三种方式][13]
 
 [1]: http://www.jianshu.com/p/ac2bc0ad3d74
 [2]: http://codingstandards.iteye.com/blog/994906
@@ -158,3 +167,5 @@ declare [选项] [-p] [变量名=变量值]...
 [9]: http://blog.csdn.net/whuslei/article/details/7187639
 [10]: http://skypegnu1.blog.51cto.com/8991766/1543319
 [11]: http://blog.csdn.net/jaylong35/article/details/6132087
+[12]: http://walkerqt.blog.51cto.com/1310630/1690202
+[13]: http://liuchengxu.org/blog-cn/posts/fork-exec-source/
