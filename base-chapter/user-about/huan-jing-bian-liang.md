@@ -133,7 +133,9 @@ declare [选项] [-p] [变量名=变量值]...
 详情参考[这里][13]
 
 
+
 # 环境变量的加载
+详情参考[bash的环境配置文件加载原理][14]
 
 
 <br/>
@@ -154,7 +156,10 @@ declare [选项] [-p] [变量名=变量值]...
 [Shell中的 IFS][10]  
 [Linux 静态库与动态库搜索路径设置][11]  
 [关于Shell的source、点（.）和export][12]  
-[在 Shell 脚本中调用另一脚本的三种方式][13]
+[在 Shell 脚本中调用另一脚本的三种方式][13]  
+[bash的环境配置文件加载原理][14]  
+[交互式shell和非交互式shell、登录shell和非登录shell的区别][15]  
+[login shell与non-login shell的区别][16]  
 
 [1]: http://www.jianshu.com/p/ac2bc0ad3d74
 [2]: http://codingstandards.iteye.com/blog/994906
@@ -169,3 +174,6 @@ declare [选项] [-p] [变量名=变量值]...
 [11]: http://blog.csdn.net/jaylong35/article/details/6132087
 [12]: http://walkerqt.blog.51cto.com/1310630/1690202
 [13]: http://liuchengxu.org/blog-cn/posts/fork-exec-source/
+[14]: http://www.jianshu.com/p/3c19279661a6
+[15]: http://smilejay.com/2012/10/interactive-shell-login-shell/
+[16]: http://blog.sciencenet.cn/blog-3238131-1037461.html
