@@ -1,12 +1,14 @@
 # Summary
 
 ## 前言篇
+
 * [阅读须知](README.md)
 * [Linux概述](tip-chapter/linuxgai-shu.md)
 * [Shell概述](tip-chapter/shellgai-shu.md)
 * [帮助命令](tip-chapter/bang-zhu-ming-ling.md)
 
 ## 基础篇
+
 * [文件相关](base-chapter/file-about/README.md)
   * [文件目录体系](base-chapter/file-about/wen-jian-mu-lu-ti-xi.md)
   * [文件基础命令](base-chapter/file-about/wen-jian-ji-chu-ming-ling.md)
@@ -23,14 +25,15 @@
   * [用户和进程id](base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
 * [文本处理](base-chapter/text-about/README.md)
+  * [文本编辑](base-chapter/text-about/wen-ben-bian-ji.md)
 
 ## 高级篇
+
 * [进程相关](senior-chapter/process-about/README.md)
 * [网络相关](senior-chapter/network-about/README.md)
 * [软件相关](senior-chapter/software-about/README.md)
 * [系统相关](senior-chapter/system-about/README.md)
 * [shell相关](senior-chapter/shell-about/README.md)
-  
-## 综合篇
 
+## 综合篇
 
