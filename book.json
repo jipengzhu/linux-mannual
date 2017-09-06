@@ -11,7 +11,8 @@
     },
     "links": {
         "sidebar": {
-            "Home": "https://jipengzhu.github.io/"
+            "Blog": "https://jipengzhu.github.io/",
+            "Github": "https://github.com/jipengzhu"
         }
     },
     "plugins": [
