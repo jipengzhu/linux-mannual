@@ -122,8 +122,8 @@
         },
         
         "donate": {
-            "wechat": "https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/weixin.jpeg",
-            "alipay": "https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/alipay.jpeg",
+            "wechat": "https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/weixin.jpeg?raw=true",
+            "alipay": "https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/alipay.jpeg?raw=true",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝打赏",
