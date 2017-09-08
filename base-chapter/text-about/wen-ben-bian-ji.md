@@ -341,9 +341,7 @@ Vim中的复制、删除的内容都会被存放到默认（未命名）寄存�
 [Vim使用笔记][1]  
 [Stack Overflow：帮助一百万开发者退出 Vim][2]  
 [vim命令模式与输入模式切换][3]  
-[Vim的正则表达式][4]  
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
 [2]: https://zhuanlan.zhihu.com/p/27077076?group_id=851013503740411904
 [3]: http://psnx168.blog.51cto.com/1802357/1431941
-[4]: http://www.jianshu.com/p/3abd6fbc3322
