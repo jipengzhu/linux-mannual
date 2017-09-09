@@ -24,7 +24,7 @@
   * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
   * [用户和进程id](base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
-* [文本编辑](base-chapter/text-about/README.md)
+* [文本编辑](base-chapter/text-edit/README.md)
   * [vim文本编辑](base-chapter/text-edit/vimwen-ben-bian-ji.md)
   * [vim快速编辑](base-chapter/text-edit/vimkuai-su-bian-ji.md)
   * [vim查找替换](base-chapter/text-edit/vimcha-zhao-ti-huan.md)
