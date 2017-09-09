@@ -113,3 +113,14 @@ vim -p <文件...>
 |[n] C-W + \| | 当前窗口尽可能宽，也可以用n设定列数|
 |C-W + = | 所有窗口同样高度 |
 |:resize n | 当前窗口n行高 |
+
+
+<br/>
+
+---
+
+# 参考
+
+[Vim使用笔记][1]  
+
+[1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html

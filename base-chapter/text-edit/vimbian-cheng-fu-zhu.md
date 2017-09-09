@@ -133,3 +133,15 @@ Gtags综合了ctags和cscope的功能
 |:cp | 定位到***上一个***错误 |
 |:cr | 定位到***第一个***错误 |
 
+
+<br/>
+
+---
+
+# 参考
+
+[Vim使用笔记][1]  
+[将Vim改造为强大的IDE—Vim集成][2]
+
+[1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
+[2]: http://blog.csdn.net/bokee/article/details/6633193
