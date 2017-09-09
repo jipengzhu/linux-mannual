@@ -94,8 +94,8 @@ lsof的意思是’列出打开的文件’（list openfiles），用于找出�
 [Linux软链接和硬链接详解][3]  
 [Windows的四种链接方式][4]  
 [lsof在Linux中的10个例子][5]  
-[linux删除文件后没有释放空间][6]
-[Linux服务器磁盘占满问题解决（/dev/sda3 满了）][7]  
+[linux删除文件后没有释放空间][6]  
+[Linux服务器磁盘占满问题解决（/dev/sda3 满了）][7]   
 [为什么Windows在删除正在使用的文件时会提示“文件已在 XX 中打开”并拒绝删除，而安卓不会][8]  
 [Linux的inode的理解][9]  
 
