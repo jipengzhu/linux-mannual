@@ -35,6 +35,15 @@
 |:pwd | 显示vim的工作目录 |
 |:cd path | 改变vim的工作目录 |
 |:set autochdir | 让vim根据编辑的文件自动切换工作目录 |
+|:set nu | 显示行号 |
+|:set nonu | 隐藏行号 |
+|:set autoident | 开启自动缩进 |
+|:set noautoident | 关闭自动缩进 |
+|:set cindent | 开启c风格的缩进 |
+|:set nocindent | 关闭c风格的缩进 |
+|:set paste | 开启粘贴模式 |
+|:set nopaste | 开启粘贴模式 |
+
 
 # vim帮助
 命令帮助的格式为：
@@ -44,8 +53,9 @@
 
 |快捷键 | 功能 |
 |--- |--- |
-|F1 | 打开帮助 |
-|:h(elp) | 打开帮助 |
+|F1 | 查看帮助 |
+|:h(elp) | 查看帮助 |
+|:help command | 查看指定命令的帮助 |
 |:help user-manual | 打开用户手册 |
 |:helptags somepath | 为somepath中的文档生成索引 |
 |:helpgrep | 搜索整个帮助文档，匹配的列表显示在quickfix窗口 |
