@@ -26,6 +26,7 @@
   * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
 * [文本处理](base-chapter/text-about/README.md)
   * [vim文本编辑](base-chapter/text-about/vimwen-ben-bian-ji.md)
+  * [vim快速编辑](base-chapter/text-about/vimkuai-su-bian-ji.md)
   * [vim查找替换](base-chapter/text-about/vimcha-zhao-ti-huan.md)
 
 ## 高级篇
