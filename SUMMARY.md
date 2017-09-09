@@ -30,6 +30,7 @@
   * [vim查找替换](base-chapter/text-edit/vimcha-zhao-ti-huan.md)
   * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
   * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
+  * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
 
 ## 高级篇
 
