@@ -24,12 +24,12 @@
   * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
   * [用户和进程id](base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
-* [文本处理](base-chapter/text-about/README.md)
-  * [vim文本编辑](base-chapter/text-about/vimwen-ben-bian-ji.md)
-  * [vim快速编辑](base-chapter/text-about/vimkuai-su-bian-ji.md)
-  * [vim查找替换](base-chapter/text-about/vimcha-zhao-ti-huan.md)
-  * [vim多个文件](base-chapter/text-about/vimduo-ge-wen-jian.md)
-  * [vim编程辅助](base-chapter/text-about/vimbian-cheng-fu-zhu.md)
+* [文本编辑](base-chapter/text-about/README.md)
+  * [vim文本编辑](base-chapter/text-edit/vimwen-ben-bian-ji.md)
+  * [vim快速编辑](base-chapter/text-edit/vimkuai-su-bian-ji.md)
+  * [vim查找替换](base-chapter/text-edit/vimcha-zhao-ti-huan.md)
+  * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
+  * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
 
 ## 高级篇
 
