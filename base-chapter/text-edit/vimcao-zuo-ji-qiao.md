@@ -63,18 +63,36 @@
 
 
 # vim技巧
-## [Vim 中读写特殊字符][4]
-## [VIM中执行Shell命令（炫酷）][5]
-## [强悍的 vim —— 处理大小写转换][6]
-## [vim tab设置为4个空格][7]
-## [VIM 文件编码识别与乱码处理][8]
-## [vim fileencoding和encoding][9]
+- [Vim 中读写特殊字符][4]
+- [VIM中执行Shell命令（炫酷）][5]
+- [强悍的 vim —— 处理大小写转换][6]
+- [vim tab设置为4个空格][7]
+- [VIM 文件编码识别与乱码处理][8]
+- [Vim的分屏功能][10]
+- [在 Vim 中优雅地查找和替换][12]
+- [Vim查找替换及正则表达式的使用][13]
+- [vim清空文件所有内容][14]
+- [轻快的VIM（三）][19]
+- [无插件Vim编程技巧][20]
+- [在Linux下使用vim配合xxd查看并编辑二进制文件][22]
+- [vim编辑器---批量注释与反注释][24]
+- [Vimdiff 使用][25]
 
 
 # vim问题
-## [vim粘贴注释–解决方法][2]
-## [vim 退格键（backspace）不能用][3]
+- [vim粘贴注释–解决方法][2]
+- [vim 退格键（backspace）不能用][3]
+- [vim fileencoding和encoding][9]
+- [vi/vim使用入门: vimrc在哪儿?][11]
+- [YouCompleteMe中Ctrl-P/Ctrl-N失效][21]
 
+
+# vim搭建IDE
+- [Mac下打造vim+Python开发环境][15]  
+- [VIM的自动补全][16]  
+- [如何用Vim搭建IDE？][17]  
+- [一步一步带你安装史上最难安装的 vim 插件 —— YouCompleteMe][18] 
+- [像 IDE 一样使用 vim][23]
 
 
 <br/>
@@ -89,8 +107,25 @@
 [Vim 中读写特殊字符][4]  
 [VIM中执行Shell命令（炫酷）][5]  
 [强悍的 vim —— 处理大小写转换][6]  
-[Rationale of fileencoding and encoding in vim or elsewhere][7]
-[vim tab设置为4个空格][8]
+[vim tab设置为4个空格][7]  
+[VIM 文件编码识别与乱码处理][8]
+[Rationale of fileencoding and encoding in vim or elsewhere][9]  
+[Vim的分屏功能][10]  
+[vi/vim使用入门: vimrc在哪儿?][11]  
+[在 Vim 中优雅地查找和替换][12]  
+[Vim查找替换及正则表达式的使用][13] 
+[vim清空文件所有内容][14]  
+[Mac下打造vim+Python开发环境][15]    
+[VIM的自动补全][16]    
+[如何用Vim搭建IDE？][17]   
+[一步一步带你安装史上最难安装的 vim 插件 —— YouCompleteMe][18]   
+[轻快的VIM（三）][19]  
+[无插件Vim编程技巧][20]  
+[Ctrl-P/Ctrl-N broken; whitelist filetypes for YCM][21]  
+[在Linux下使用vim配合xxd查看并编辑二进制文件][22]  
+[像 IDE 一样使用 vim][23]  
+[vim编辑器---批量注释与反注释][24]  
+[Vimdiff 使用][25]
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
 [2]: http://www.chenglin.name/linux/blog-linux/595.html
@@ -101,4 +136,19 @@
 [7]: http://blog.csdn.net/jiang1013nan/article/details/6298727
 [8]: http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
 [9]: https://stackoverflow.com/questions/22044869/rationale-of-fileencoding-and-encoding-in-vim-or-elsewhere
-
+[10]: https://coolshell.cn/articles/1679.html
+[11]: http://easwy.com/blog/archives/where-is-vimrc/
+[12]: http://harttle.com/2016/08/08/vim-search-in-file.html
+[13]: https://tanqisen.github.io/blog/2013/01/13/vim-search-replace-regex/
+[14]: http://blog.sina.com.cn/s/blog_9f1118490102vdai.html
+[15]: http://zcheng.ren/2016/12/28/VimAndZshInMacTerminal/
+[16]: http://www.itye.org/archives/3227
+[17]: http://harttle.com/2015/11/04/vim-ide.html
+[18]: http://www.jianshu.com/p/d908ce81017a
+[19]: http://www.cnblogs.com/nerxious/archive/2012/12/21/2828520.html
+[20]: https://coolshell.cn/articles/11312.html
+[21]: https://github.com/Valloric/YouCompleteMe/issues/178
+[22]: http://www.cnblogs.com/killkill/archive/2010/06/23/1763785.html
+[23]: https://github.com/yangyangwithgnu/use_vim_as_ide
+[24]: http://blog.csdn.net/xiajun07061225/article/details/8488210
+[25]: https://www.ibm.com/developerworks/cn/linux/l-vimdiff/index.html
