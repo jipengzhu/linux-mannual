@@ -352,11 +352,14 @@ Vim中的复制、删除的内容都会被存放到默认（未命名）寄存�
 - vim会为要打开的文件选择合适的编码，注意编码之间不要留空格
 - cp936对应于gbk编码，ucs-bom对应于windows下的文件格式
 
-## 文件格式
-大致有三种文件格式：unix, dos, mac. 三种格式的区别主要在于回车键的编码：
-- dos \r\n（CRLF）（ASCII 13,10）
-- unix \n（LF）（ASCII 10）
-- mac \r（CR）（ASCII 13）
+## 文件换行格式
+有三种文件换行格式：dos, unix, mac
+
+|系统 | 换行 |
+|--- |--- |
+|dos | \r\n（CRLF）（ASCII 13,10）|
+|unix | \n（LF）（ASCII 10）|
+|mac | \r（CR）（ASCII 13）|
 
 |快捷键 | 功能 |
 |--- |--- |
