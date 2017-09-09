@@ -31,7 +31,7 @@
   * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
   * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
-* [文本查找](base-chapter/file-about/wen-ben-cha-zhao.md)
+* [正则基础](base-chapter/file-about/wen-ben-cha-zhao.md)
 
 ## 高级篇
 
