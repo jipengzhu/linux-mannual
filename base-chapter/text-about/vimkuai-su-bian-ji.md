@@ -106,3 +106,14 @@
 |C-n | 向后切换成员 |
 |C-e | 退出下拉菜单，并退回到原来录入的文字 |
 |C-y | 退出下拉菜单，并接受当前选项 |
+
+
+<br/>
+
+---
+
+# 参考
+
+[Vim使用笔记][1]  
+
+[1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
