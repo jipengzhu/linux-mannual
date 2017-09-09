@@ -29,6 +29,7 @@
   * [vim快速编辑](base-chapter/text-about/vimkuai-su-bian-ji.md)
   * [vim查找替换](base-chapter/text-about/vimcha-zhao-ti-huan.md)
   * [vim多个文件](base-chapter/text-about/vimduo-ge-wen-jian.md)
+  * [vim编程辅助](base-chapter/text-about/vimbian-cheng-fu-zhu.md)
 
 ## 高级篇
 
