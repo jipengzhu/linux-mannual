@@ -9,6 +9,7 @@ vim -O <文件...> －》 在垂直分割的多个窗口中编辑多个文件
 
 |快捷键 | 功能 |
 |--- |--- |
+|:f filename | 重命名当前窗口 |
 |:n[ext] | 编辑***下一个***文件 |
 |:2n | 编辑***后面***第2个文件，依次类推 |
 |:N | 编辑***上一个***文件 | 
@@ -112,7 +113,12 @@ vim -p <文件...>
 |[n] C-W + _ | 当前窗口尽可能高，也可以用n设定行数|
 |[n] C-W + \| | 当前窗口尽可能宽，也可以用n设定列数|
 |C-W + = | 所有窗口同样高度 |
-|:resize n | 当前窗口n行高 |
+|:resize n | 当前窗口设置为n行高 |
+|:resize +n | 当前窗口增加n行 |
+|:resize -n | 当前窗口减少n行 |
+|:vertical resize n | 当前窗口设置为n列宽 |
+|:vertical resize +n | 当前窗口增加n列 |
+|:vertical resize -n | 当前窗口减少n列 |
 
 
 <br/>
@@ -122,5 +128,7 @@ vim -p <文件...>
 # 参考
 
 [Vim使用笔记][1]  
+[vim中多标签和多窗口的使用][2]  
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
+[2]: https://my.oschina.net/kutengshe/blog/464602
