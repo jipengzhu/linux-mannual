@@ -208,6 +208,7 @@ vim [选项] [文件...]
 |:set browsedir=last | 用上次访问过的目录（默认）|
 |:set browsedir=buffer | 用当前文件所在目录 |
 |:set browsedir=current | 用当前工作目录 |
+|:Ex(plore) | 浏览当前目录下的所有文件 |
 |:Sex | 水平分割一个窗口，浏览文件系统 |
 |:Vex | 垂直分割一个窗口，浏览文件系统 |
 > :browse e
