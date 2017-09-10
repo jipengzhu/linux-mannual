@@ -55,7 +55,7 @@ linux中不同的程序支持的正则也不同
 > sed只支持BRE的大部分，主要是因为sed要尽可能快的处理数据流
 
 
-## BRE
+## BRE（basic regex expression）
 BRE定义的语法符号
 
 |符号 | 说明 |
@@ -75,7 +75,7 @@ BRE定义的语法符号
 > 子表达式向前引用，由于此功能已超出正则语义，需要在字符串中回溯，因此需要使用 NFA 算法进行匹配
 
 
-# ERE
+# ERE（extended regex expression）
 ERE 修改了 BRE 中的部分语法
 
 1. ERE 取消了子表达式 "()" 和 次数匹配 "{m,n}" 语法符号的转义符
@@ -149,7 +149,7 @@ f / fr / wfr / bwfr 等工具默认使用 ERE 模式，同时支持以下 perl �
 |\' | 单引号 |
 |\" | 双引号 |
 			
-## ARE
+## ARE（advanced regex expression）
 除了 POSIX BRE 和 ERE 之外，libutilitis 还支持与TCL 8.2兼容的高级正则表达式语法（ARE），通过为 stRegEx 参数增加前缀 "***:" 就可以开启 ARE 模式，这个前缀覆盖 bExtended 选项
 
 ## ARE对ERE的扩展
