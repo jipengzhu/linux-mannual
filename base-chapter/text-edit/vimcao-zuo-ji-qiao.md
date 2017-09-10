@@ -57,7 +57,7 @@
 |:h(elp) | 查看帮助 |
 |:help command | 查看指定命令的帮助 |
 |:help user-manual | 打开用户手册 |
-|:helptags somepath | 为somepath中的文档生成索引 |
+|:helptags FILE_PATH | 为指定文档生成索引 |
 |:helpgrep | 搜索整个帮助文档，匹配的列表显示在quickfix窗口 |
 |:ver | 显示版本信息 |
 
