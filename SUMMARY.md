@@ -33,6 +33,7 @@
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
 * [文本查找](base-chapter/text-search/README.md)
   * [正则基础](base-chapter/text-search/zheng-ze-ji-chu.md)
+  * [grep查找](base-chapter/text-search/grepcha-zhao.md)
 
 ## 高级篇
 
