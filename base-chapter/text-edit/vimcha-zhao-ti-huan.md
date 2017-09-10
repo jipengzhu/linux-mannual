@@ -1,10 +1,10 @@
 # 查找
 |快捷键 | 功能 |
 |--- |--- |
-|/something | 在***后面***的文本中查找something |
-|?something | 在***前面***的文本中查找something |
-|/pattern/+number | 将光标停在pattern匹配行的***后面***第number行上 |
-|/pattern/-number | 将光标停在pattern匹配行的***前面***第number行上 |
+|/PATTERN | 在***后面***的文本中查找something |
+|?PATTERN | 在***前面***的文本中查找something |
+|/PATTERN/+N | 将光标停在pattern匹配行的***后面***第N行上 |
+|/PATTERN/-N | 将光标停在pattern匹配行的***前面***第N行上 |
 |n | 查找下一个，和查找方向有关 |
 |N | 查找上一个，和查找方向有关 |
 |* | 向***下***搜索光标所在词 |
@@ -34,19 +34,38 @@
 # 替换
 |快捷键 | 功能 |
 |--- |--- |
-|:s/old/new | - 用new替换当前行第一个old |
-|:s/old/new/g | - 用new替换当前行所有的old |
-|:n1,n2s/old/new/g |- 用new替换文件n1行到n2行所有的old |
-|:%s/old/new/g |- 用new替换文件中所有的old |
-|:%s/^/xxx/g |- 在每一行的行首插入xxx，^表示行首 |
-|:%s/$/xxx/g |- 在每一行的行尾插入xxx，$表示行尾 |
-> - g表示替换一行上的所有匹配
-- c表示每个替换都将需要用户确认， 如：%s/old/new/gc
-- i表示匹配时忽略(ignore)大小写，如：%s/old/new/gi
+|:s/PATTERN/STRING | 替换***第一个***匹配为STRING |
+|:s/PATTERN/STRING/g | 替换****当前行所有***的匹配为STRING |
+|:n1,n2s/PATTERN/STRING/g |替换第n1到n2行所有的匹配为STRING  |
+|:%s/PATTERN/STRING/g | 替换***文件中所有***的匹配为STRING |
+|:%s/^/STRING/g | 在每一行的行首插入STRING，^表示行首 |
+|:%s/$/STRING/g | 在每一行的行尾插入STRING，$表示行尾 |
 
-> 还有一种比替换更灵活的方式，它是匹配到某个模式后执行某种命令，
-- 语法为 :[range]g/pattern/command
-- 例如 `:%g/^xyz/normal dd`表示对xyz开头的行执行normal模式下的dd命令
+替换语法后面可跟多个标记
+
+|快捷键 | 功能 |
+|--- |--- |
+|c | 表示每个替换都将需要用户确认 |
+|i | 表示匹配时忽略(ignore)大小写 |
+|g | 表示替换一行上的所有匹配 |
+
+还有一种比替换更灵活的方式，它是匹配到某个模式后执行某种Ex命令，语法为 
+`:[range]g[lobal][!]/pattern/ex_command`
+> 例如 `:%g/^xyz/d`表示对xyz开头的行执行delete命令
+
+
+下面是Ex命令表，更多内容参考[这里][4]
+
+|命令 | 说明 |
+|--- |--- |
+|:[range]d[elete] [x]| 删除指定范围内的行【到寄存器x中】|
+|:[range]y[ank] [x] | 复制指定范围的行【到寄存器x中】|
+|:[line]put [x]	| 在指定行后粘贴寄存器x中的内容 |
+|:[range]copy ADDRESS |	 把指定范围内的行拷贝到address所指定的行下 |
+|:[range]move ADDRESS |	 把指定范围内的行移动到address所指定的行下 |
+|:[range]join | 连接指定范围内的行 |
+|:[range]normal COMMANDS | 对指定范围内的每一行执行普通模式命令commands |
+
 
 # 范围
 vim的很多命令前面都可以指定范围(range)，如果不指定范围则表示当前行
@@ -137,7 +156,11 @@ vim的很多命令前面都可以指定范围(range)，如果不指定范围则�
 [Vim使用笔记][1]  
 [Vim的正则表达式][2]  
 [VIM中使用正则匹配中文][3]  
+[global命令][4]  
+[Vim高级进阶之ex命令集][5]  
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
 [2]: http://www.jianshu.com/p/3abd6fbc3322
 [3]: https://my.oschina.net/hotleave/blog/341500
+[4]: http://blog.leanote.com/post/mybaby101@126.com/Ch15-global%E5%91%BD%E4%BB%A4-2
+[5]: http://blog.csdn.net/hitlion2008/article/details/8799327
