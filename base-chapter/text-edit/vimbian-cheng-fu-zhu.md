@@ -42,7 +42,7 @@ vim操作
 
 |快捷键 | 功能 |
 |--- |--- |
-|:set tags=path/tags | 设置ctags文件的路径 |
+|:set tags=TAGS_PATH | 设置ctags文件的路径 |
 |:tag xyz | 跳到xyz的定义处，或者在xyz处按（C-]），返回用（C-t）|
 |:stag xyz | 用分割的窗口显示xyz的定义，或者在xyz处按（C-W + ]）|
 |:ptag xyz | 在预览窗口中打开xyz的定义，或者在xyz处按（C-W + }）|
@@ -58,7 +58,7 @@ vim操作
 |:[n]tprev | 前面第n个匹配 |
 |:tfirst | 第一个匹配 |
 |:tlast | 最后一个匹配 |
-|:tselect tagname | 打开选择列表 |
+|:tselect TAG_NAME | 打开选择列表 |
 
 tab键补齐，继续按tab键，会显示其他的
 
@@ -71,13 +71,13 @@ tab键补齐，继续按tab键，会显示其他的
 # cscope
 提供交互式查询语言符号功能，如查询哪些地方使用某个变量或调用某个函数
 
-> cscope -Rbq -f path/to/cscope.out  
+> cscope -Rbq -f &lt; path/to/cscope.out &gt;
 
 vim操作
 
 |快捷键 | 功能 |
 |--- |--- |
-|:cs add /path/to/cscope.out /your/work/dir| 添加cscope.out文件到工作目录|
+|:cs add CSCOPE_PATH WORK_DIR| 添加cscope.out文件到工作目录|
 |:cs find c func | 查找func在哪些地方被调用 |
 |:cw | 打开quickfix窗口查看结果 |
 
@@ -87,13 +87,13 @@ Gtags综合了ctags和cscope的功能
 
 |快捷键 | 功能 |
 |--- |--- |
-|:Gtags funcname | 定位到 funcname 的定义处 |
-|:Gtags -r funcname | 查询 funcname 被引用的地方 |
-|:Gtags -s symbol | 定位到 symbol 出现的地方 |
-|:Gtags -g string | 定位到 string 出现的地方 |
-|:Gtags -gi string | 定位到 string 出现的地方，忽略大小写 |
-|:Gtags -f filename | 显示 filename 中的函数列表，`:Gtags -f %` 显示当前文件|
-|:Gtags -P pattern | 显示包含特定模式的文件，`:Gtags -P .h$` 显示所有头文件 |
+|:Gtags FUNC_NAME | 定位到 funcname 的定义处 |
+|:Gtags -r FUNC_NAME | 查询 funcname 被引用的地方 |
+|:Gtags -s SYMBOL | 定位到 symbol 出现的地方 |
+|:Gtags -g STRING | 定位到 string 出现的地方 |
+|:Gtags -gi STRING | 定位到 string 出现的地方，忽略大小写 |
+|:Gtags -f FILENAME | 显示 filename 中的函数列表，`:Gtags -f %` 显示当前文件|
+|:Gtags -P FILENAME | 显示包含特定模式的文件，`:Gtags -P .h$` 显示所有头文件 |
 |:Gtags -P /vm/ | 显示vm目录下的文件 |
 
 
