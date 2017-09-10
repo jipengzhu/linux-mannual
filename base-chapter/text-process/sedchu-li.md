@@ -12,6 +12,7 @@ sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 |--- |--- |
 | -e SCRIPT, --expression=SCRIPT | 以指定的***script命令***来处理 |
 | -f FILE, --file=FILE | 以指定的***script文件***来处理 |
+|-i | 将处理后的结果替换掉原来的文件 |
 |-n, --quiet, ——silent | 仅显示script处理的结果 |
 |-r, --regexp-extended | 使用扩展的正则表达式(ERE) |
 |-h, --help | 显示帮助 |
@@ -23,8 +24,8 @@ sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 
 ```
 [RANGE]<sed命令>/PATTERN/PATTERN/<sed标记>
-[PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
-[PATTERN, PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
+[/PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
+[/PATTERN, PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
 ```
 
 ## sed命令
@@ -94,5 +95,8 @@ sed 's/\/bin/\/usr\/local\/bin/g'
 `sed -i '2i\this is a test line' test.conf`
 
 ## 替换（行内）：c\命令 
-将 test开头的行整行替换为 `this is a test line` 
+将test开头的行整行替换为 `this is a test line` 
 `sed '/^test/c\this is a test line' test.conf`
+
+将第二行整行替换为 `this is a test line` 
+`sed '2c\this is a test line' test.conf`
