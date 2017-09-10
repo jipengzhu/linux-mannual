@@ -33,8 +33,6 @@ cd [选项] [目录]
 > L -> Logical | P -> Physical
 
 
-
-
 # ls
 输出指定目录下的文件和目录，如果不指定默认为当前目录
 
@@ -287,20 +285,10 @@ basename [选项] <名称字符串...>
 
 # 参考
 
-[linux中的通配符和正则表达式][1]   
-[Linux中通配符、正则表达式和扩展正则表达式][2]     
-[Why does [A-Z] match lowercase letters in bash][3]    
-[正则表达式][4]  
-[Linux Shell 通配符、元字符、转义符][5]  
-[file命令][6]    
-[dirname命令][7] 
-[basename命令][8] 
+[file命令][1]    
+[dirname命令][2] 
+[basename命令][3] 
 
-[1]: http://evanlinux.blog.51cto.com/7247558/1308363
-[2]: http://xzb2015.blog.51cto.com/8796643/1598715
-[3]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
-[4]: http://wiki.jikexueyuan.com/project/linux-command/chap20.html
-[5]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
-[6]: http://man.linuxde.net/file
-[7]: http://man.linuxde.net/dirname
-[8]: http://man.linuxde.net/basename
+[1]: http://man.linuxde.net/file
+[2]: http://man.linuxde.net/dirname
+[3]: http://man.linuxde.net/basename
