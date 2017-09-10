@@ -32,8 +32,7 @@
   * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
   * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
-* [文本查找](base-chapter/text-search/README.md)
-  * [正则基础](base-chapter/text-search/zheng-ze-ji-chu.md)
+* [文本处理](base-chapter/text-search/README.md)
   * [grep查找](base-chapter/text-search/grepcha-zhao.md)
 
 ## 高级篇
