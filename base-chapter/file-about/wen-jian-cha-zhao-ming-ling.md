@@ -45,8 +45,8 @@ locate [选项] <文件>
 |-b, --basename | 匹配文件名部分，而不是全路径 |
 |-c, --count | 输出匹配个数，而不是文件名 |
 |-i, --ignore-case | 匹配时忽略大小写 |
-|-l, --limit, -n LIMIT | 找到足够的匹配后退出 |
-|-r, --regexp REGEXP | 使用***基本正则表达式***匹配 |
+|-l, --limit, -n &lt; LIMIT &gt; | 找到足够的匹配后退出 |
+|-r, --regexp &lt; REGEXP &gt; | 使用***基本正则表达式***匹配 |
 |--regex | 使用***扩展正则表达式***匹配 |
 |-w, --wholename| 匹配全路径，而不是文件名部分|
 
@@ -70,7 +70,7 @@ find [选项] <目录...> <表达式> [动作]
 |-user | 按照文件属主来查找文件|
 |-group | 按照文件所属的组来查找文件|
 |-mtime [-/+]n | 按照文件的更改时间来查找文件， -n表示距现在n天以内，+n表示距现在n天以前 |
-|-newer file1 ! file2| 查找更改时间比文件file1新但比文件file2旧的文件 |
+|-newer &lt; file1 &gt; ! &lt; file2 &gt; | 查找更改时间比文件file1新但比文件file2旧的文件 |
 |-type | 查找某一类型的文件 |
 |-size | 查找文件大小的文件 |
 |-amin n | 查找系统中最后N分钟访问的文件 |
