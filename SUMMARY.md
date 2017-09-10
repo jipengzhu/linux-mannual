@@ -28,13 +28,13 @@
   * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
   * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
-  * vimdiff使用
+  * [vimdiff使用](base-chapter/text-edit/vimdiffshi-yong.md)
 * [文本处理](base-chapter/text-process/README.md)
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
-  * sed处理
+  * [sed处理](base-chapter/text-process/sedchu-li.md)
   * [awk处理](base-chapter/text-process/awkchu-li.md)
-  * 二进制处理
-  * 其他的处理
+  * [二进制处理](base-chapter/text-process/er-jin-zhi-chu-li.md)
+  * [其他的处理](base-chapter/text-process/qi-ta-de-chu-li.md)
 
 ## 中级篇
 
