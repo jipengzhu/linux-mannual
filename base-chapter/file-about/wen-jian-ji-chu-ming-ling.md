@@ -286,7 +286,7 @@ basename [选项] <名称字符串...>
 # 参考
 
 [file命令][1]    
-[dirname命令][2] 
+[dirname命令][2]   
 [basename命令][3] 
 
 [1]: http://man.linuxde.net/file
