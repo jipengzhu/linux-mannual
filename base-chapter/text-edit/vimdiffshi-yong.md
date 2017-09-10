@@ -79,6 +79,10 @@ vim -d  FILE_LEFT  FILE_RIGHT
 
 # 参考
 
-[技巧：Vimdiff 使用][1]
+[技巧：Vimdiff 使用][1]  
+[linux-vimdiff,diff,patch,cmp:文件比较][2]  
+[读懂diff][3]  
 
 [1]: https://www.ibm.com/developerworks/cn/linux/l-vimdiff/index.html
+[2]: http://blog.csdn.net/gexiaobaoHelloWorld/article/details/7783686
+[3]: http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html
