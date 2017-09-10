@@ -6,7 +6,7 @@
 * [Linux概述](tip-chapter/linuxgai-shu.md)
 * [Shell概述](tip-chapter/shellgai-shu.md)
 * [帮助命令](tip-chapter/bang-zhu-ming-ling.md)
-* [模糊匹配](mo-hu-pi-pei.md)
+* [模糊匹配](tip-chapter/mo-hu-pi-pei.md)
 
 ## 基础篇
 
