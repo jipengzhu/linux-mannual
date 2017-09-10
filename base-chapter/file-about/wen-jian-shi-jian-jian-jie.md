@@ -35,8 +35,8 @@
 
 # 修改文件时间示例
 ```
-[root@30bf5ac9eef2 file-time]# touch test.txt
-[root@30bf5ac9eef2 file-time]# stat test.txt
+[root@zhujipeng file-time]# touch test.txt
+[root@zhujipeng file-time]# stat test.txt
   File: `test.txt'
   Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
 Device: 2dh/45d	Inode: 571         Links: 1
@@ -44,8 +44,8 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 Access: 2017-08-19 17:36:23.513744773 +0000
 Modify: 2017-08-19 17:36:23.513744773 +0000
 Change: 2017-08-19 17:36:23.513744773 +0000
-[root@30bf5ac9eef2 file-time]# echo haha >> test.txt
-[root@30bf5ac9eef2 file-time]# stat test.txt
+[root@zhujipeng file-time]# echo haha >> test.txt
+[root@zhujipeng file-time]# stat test.txt
   File: `test.txt'
   Size: 5         	Blocks: 8          IO Block: 4096   regular file
 Device: 2dh/45d	Inode: 571         Links: 1
@@ -53,9 +53,9 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 Access: 2017-08-19 17:36:23.513744773 +0000
 Modify: 2017-08-19 17:37:31.957587082 +0000
 Change: 2017-08-19 17:37:31.957587082 +0000
-[root@30bf5ac9eef2 file-time]# cat test.txt
+[root@zhujipeng file-time]# cat test.txt
 haha
-[root@30bf5ac9eef2 file-time]# stat test.txt
+[root@zhujipeng file-time]# stat test.txt
   File: `test.txt'
   Size: 5         	Blocks: 8          IO Block: 4096   regular file
 Device: 2dh/45d	Inode: 571         Links: 1
@@ -63,8 +63,8 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 Access: 2017-08-19 17:37:58.459710303 +0000
 Modify: 2017-08-19 17:37:31.957587082 +0000
 Change: 2017-08-19 17:37:31.957587082 +0000
-[root@30bf5ac9eef2 file-time]# chmod a+x test.txt
-[root@30bf5ac9eef2 file-time]# stat test.txt
+[root@zhujipeng file-time]# chmod a+x test.txt
+[root@zhujipeng file-time]# stat test.txt
   File: `test.txt'
   Size: 5         	Blocks: 8          IO Block: 4096   regular file
 Device: 2dh/45d	Inode: 571         Links: 1
