@@ -28,6 +28,7 @@
   * [vim多个文件](base-chapter/text-edit/vimduo-ge-wen-jian.md)
   * [vim编程辅助](base-chapter/text-edit/vimbian-cheng-fu-zhu.md)
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
+  * vimdiff使用
 * [文本处理](base-chapter/text-process/README.md)
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
   * sed处理
