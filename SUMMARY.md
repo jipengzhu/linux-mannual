@@ -30,8 +30,13 @@
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
 * [文本处理](base-chapter/text-process/README.md)
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
-  
+  * sed处理
+  * [awk处理](base-chapter/text-process/awkchu-li.md)
+  * 二进制处理
+  * 其他的处理
+
 ## 中级篇
+
 * [用户相关](medial-chapter/user-about/README.md)
   * [用户和组管理](medial-chapter/user-about/yong-hu-he-zu-guan-li.md)
   * [用户和进程id](medial-chapter/user-about/yong-hu-he-jin-cheng-id.md)
@@ -40,6 +45,7 @@
 * [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
+
 * [进程相关](senior-chapter/process-about/README.md)
 * [网络相关](senior-chapter/network-about/README.md)
 * [系统相关](senior-chapter/system-about/README.md)
