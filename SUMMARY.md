@@ -21,10 +21,6 @@
   * [文件压缩解压](base-chapter/file-about/wen-jian-ya-suo-jie-ya.md)
   * [文件磁盘命令](base-chapter/file-about/wen-jian-ci-pan-ming-ling.md)
   * [文件结构详解](base-chapter/file-about/wen-jian-jie-gou-xiang-jie.md)
-* [用户相关](base-chapter/user-about/README.md)
-  * [用户和组管理](base-chapter/user-about/yong-hu-he-zu-guan-li.md)
-  * [用户和进程id](base-chapter/user-about/yong-hu-he-jin-cheng-id.md)
-  * [环境变量详解](base-chapter/user-about/huan-jing-bian-liang.md)
 * [文本编辑](base-chapter/text-edit/README.md)
   * [vim文本编辑](base-chapter/text-edit/vimwen-ben-bian-ji.md)
   * [vim快速编辑](base-chapter/text-edit/vimkuai-su-bian-ji.md)
@@ -34,14 +30,19 @@
   * [vim操作技巧](base-chapter/text-edit/vimcao-zuo-ji-qiao.md)
 * [文本处理](base-chapter/text-process/README.md)
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
+  
+## 中级篇
+* [用户相关](medial-chapter/user-about/README.md)
+  * [用户和组管理](medial-chapter/user-about/yong-hu-he-zu-guan-li.md)
+  * [用户和进程id](medial-chapter/user-about/yong-hu-he-jin-cheng-id.md)
+  * [环境变量详解](medial-chapter/user-about/huan-jing-bian-liang.md)
+* [shell相关](medial-chapter/shell-about/README.md)
+* [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
-
 * [进程相关](senior-chapter/process-about/README.md)
 * [网络相关](senior-chapter/network-about/README.md)
-* [软件相关](senior-chapter/software-about/README.md)
 * [系统相关](senior-chapter/system-about/README.md)
-* [shell相关](senior-chapter/shell-about/README.md)
 
 ## 综合篇
 
