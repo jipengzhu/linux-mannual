@@ -33,6 +33,7 @@
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
   * [sed处理](base-chapter/text-process/sedchu-li.md)
   * [awk处理](base-chapter/text-process/awkchu-li.md)
+  * printf输出
   * [二进制处理](base-chapter/text-process/er-jin-zhi-chu-li.md)
   * [其他的处理](base-chapter/text-process/qi-ta-de-chu-li.md)
 
