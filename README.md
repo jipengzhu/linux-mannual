@@ -12,6 +12,21 @@
 * 表格中全部大写的单词，需要替换为对应的实际的参数值
 * 参数中的三个点代表参数可以有多个，单独的 n 表示数字
 
+|键盘描述（不分大小写） | 说明 |
+|--- |--- |
+|Ctrl | control 键 |
+|Shift | shift 键|
+|Alt | alt 键 |
+|Tab | tab 键 |
+|Esc | esc 键 |
+|Backspace | 退格键 |
+|Enter | 回车键 |
+|[Page]Up | 向上（翻页）键 |
+|[Page]Down | 向下（翻页）键 |
+|Left | 方向左键 |
+|Right | 方向右键 |
+
+
 ---
 github和个人博客，请猛戳图标
 [![](/images/github图标.png)][1]
