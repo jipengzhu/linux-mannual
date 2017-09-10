@@ -19,10 +19,12 @@ sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 
 
 # sed脚本 
-格式如下
+格式如下，其中范围可以通过正则表达式来匹配确定
 
 ```
-<sed命令>/PATTERN/PATTERN/<sed标记>
+[RANGE]<sed命令>/PATTERN/PATTERN/<sed标记>
+[PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
+[PATTERN, PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
 ```
 
 ## sed命令
@@ -65,3 +67,32 @@ sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 |\1 | 子串匹配标记 |
 |& | 已匹配字符串标记 |
 
+## sed定界符
+sed命令中字符 / 是定界分割符，也可以使用任意的定界符
+```
+sed 's:test:TEXT:g'
+sed 's|test|TEXT|g' 
+```
+定界符出现在样式内部时，需要进行转义
+```
+sed 's/\/bin/\/usr\/local\/bin/g'
+```
+
+# sed详解
+## 追加（行下）a\命令 
+将 `this is a test line` 追加到以test开头的行后面  
+`sed '/^test/a\this is a test line' test.conf` 
+
+在 test.conf 文件第2行之后插入 `this is a test line` 
+`sed -i '2a\this is a test line' test.conf `
+
+## 插入（行上）：i\命令 
+将 this is a test line 追加到以test开头的行前面
+`sed '/^test/i\this is a test line' test.conf`
+ 
+在test.conf文件第2行之前插入this is a test line： 
+`sed -i '2i\this is a test line' test.conf`
+
+## 替换（行内）：c\命令 
+将 test开头的行整行替换为 `this is a test line` 
+`sed '/^test/c\this is a test line' test.conf`
