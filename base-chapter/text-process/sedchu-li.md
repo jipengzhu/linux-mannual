@@ -24,9 +24,9 @@ sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 格式如下，其中范围可以通过正则表达式来匹配确定
 
 ```
-[RANGE]<sed命令>/PATTERN/PATTERN/<sed标记>
-[/PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
-[/PATTERN, PATTERN/]<sed命令>/PATTERN/PATTERN/<sed标记>
+[RANGE]<sed命令>/PATTERN/PATTERN/[sed标记]
+[/PATTERN/]<sed命令>/PATTERN/PATTERN/[sed标记]
+[/PATTERN, PATTERN/]<sed命令>/PATTERN/PATTERN/[sed标记]
 ```
 
 ## sed命令
