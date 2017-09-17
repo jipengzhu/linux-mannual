@@ -81,7 +81,7 @@ od [选项] [文件]...
 # 参考
 
 [hexdump命令][1]  
-[Linux命令学习总结：hexdump][2] 
+[Linux命令学习总结：hexdump][2]  
 [od命令][3]  
 [在Linux下使用vim配合xxd查看并编辑二进制文件][4]  
 [linux 命令 xxd linux下查看二进制文件][5]  
