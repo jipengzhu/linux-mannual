@@ -156,6 +156,178 @@ awk脚本是由模式和操作组成的
 |in | 数组中是否存在某值 |
 
 
+### 条件判断
+为了方便判断和阅读，最好将多个语句用{}括起来
+
+```
+if(表达式) 
+    语句1 
+else 
+    语句2
+```
+
+```
+if(表达式) 
+    {语句1} 
+else if(表达式) 
+    {语句2} 
+else 
+    {语句3}
+```
+> 每条命令语句后面可以用 `;` 分号结尾
+
+### 循环语句
+#### while语句
+```
+while(表达式) 
+    {语句}
+```
+
+```
+do 
+{语句} while(条件)
+```
+
+#### for循环
+```
+for(变量 in 数组) 
+    {语句}
+```
+
+```
+for(初始变量;结束条件;表达式) 
+    {语句}
+```
+
+#### 退出循环
+- break  
+  退出当层循环 
+
+- continue  
+  跳过本次循环 
+  
+- next  
+  进入下一次循环 
+- exit  
+  跳到END块，如果没有END块则终止脚本的执行
+
+### 数组
+awk的数组和c语言类似，但有以下不同
+- 数组不必提前声明，也不必声明大小
+- 数组元素用0或空字符串来初始化，由上下文而定
+- 数组下标是从1开始，与C数组不一样
+
+|函数 | 描述 |
+|--- |--- |
+|length | 获取数组的长度 |
+|asort | 对数组进行排序，返回数组长度 |
+
+更多内容参考[这里][1]的数组部分
+
+<br/>
+
+### 数学计算
+公式中的参数值都是弧度，角度、弧度、三角函数的知识参考[这里][4]
+> ln － 以自然对数e为底） 
+> lg － 以10为底
+> log<sub>a</sub>b － 以a为底，b为真数
+
+|函数 | 描述 |
+|--- |--- |
+|sin( x ) | 返回 x 的正弦，x 是弧度 |
+|cos( x ) | 返回 x 的余弦， x 是弧度 |
+|atan2( y, x ) | 返回 y/x 的反正切 |
+|exp( x ) | 返回 x 幂函数 |
+|log( x ) | 返回 x 的自然对数 |
+|sqrt( x ) | 返回 x 平方根 |
+|int( x ) | 返回 x 的取整值  |
+|rand( n ) |返回任意数字 n，其中 0 < = n < 1 |
+|srand( [expr] ) | 将 rand 函数的种子值设置为 Expr 参数的值，并返回先前的种子值 |
+> srand 如果省略 Expr 参数则使用某天的时间。
+
+### 字符串
+#### 函数
+***注意：字符串函数中的起始编号都是1，查找失败返回都是0。缺省的字符串参数是正在处理的行***
+
+|函数 | 描述 | 
+|--- |--- |
+|sub( Ere, Repl, [ In ] ) | 用 Repl 参数指定的字符串替换 In 中匹配的部分并返回替换的数量|
+|gsub( Ere, Repl, [ In ] ) | 除了替换所有匹配外，和 sub 函数一样 | 
+|index( String1, String2 ) | 在 String1 查找首次String2出现的位置 | 
+|length [(String)]  | 返回 String 参数指定的字符串的长度（以***字符***为单位）|
+|blength [(String)] | 返回 String 参数指定的字符串的大小（以***字节***为单位） |
+|substr( String, M, [ N ] ) | 从 M 处开始，截取N个长度的子串，N省略则到末尾 |
+|match( String, Ere ) | 在 String1 查找首次 Ere 匹配的位置。RSTART 特殊变量设置为返回值，未匹配则为0。RLENGTH 特殊变量设置为匹配的字符串的长度。未匹配则为－1 | 
+|split( String, A, [Ere] ) | 将 String 参数指定的参数分割为数组A，并返回数组的长度。此分隔可以通过 Ere 参数指定的扩展正则表达式进行，或用当前字段分隔符（FS 特殊变量）来进行（如果没有给出 Ere 参数）|
+|tolower( String ) | 转换为小写，映射由当前语言环境的 LC_CTYPE 定义 |
+|toupper( String ) | 转换为大写，映射由当前语言环境的 LC_CTYPE 定义 | 
+|sprintf(Format, Expr, Expr, . . . ) | 根据 Format 参数来格式化 Expr 参数指定的表达式并返回最后生成的字符串 |
+
+#### 格式化
+sprintf会根据指定格式格式化字符串，格式以 % 开头
+
+|格式 | 描述 |
+|--- |--- |
+|%d | 十进制有符号整数 |
+|%u | 十进制无符号整数 |
+|%f | 浮点数 |
+|%s | 字符串 |
+|%c | 单个字符 |
+|%p | 指针的值 |
+|%e | 指数形式的浮点数 |
+|%x | 十六进制表示的整数，字母部分小写 |
+|%X | 十六进制表示的整数，字母部分大写 |
+|%o | 无符号以八进制表示的整数 |
+|%g | 自动选择合适的表示法 |
+
+### 时间
+#### 函数
+|格式 | 描述 |
+|--- |--- |
+|mktime( YYYY MM dd HH MM ss[ DST]) | 生成时间格式串 |
+|strftime([format [, timestamp]]) | 格式化时间输出 |
+|systime() | 返回从1970年1月1日开始到当前时间(不计闰年)的整秒数 |
+
+#### 格式化
+|格式 | 描述 |
+|--- |--- |
+|%a | 星期的缩写(Sun) |
+|%A | 星期的完整写法(Sunday) |
+|%b | 月名的缩写(Oct) |
+|%B | 月名的完整写法(October) | 
+|%c | 本地日期和时间 |
+|%d | 十进制日期 |
+|%D | 日期 (08/10/25) |
+|%e | 日期，如果只有一位会补上一个空格 |
+|%H | 用十进制表示24小时格式的小时 |
+|%I | 用十进制表示12小时格式的小时 |
+|%j | 从1月1日起一年中的第几天 |
+|%m | 十进制表示的月份 |
+|%M | 十进制表示的分钟 |
+|%p | 12小时表示法(AM/PM) |
+|%S | 十进制表示的秒 |
+|%U | 十进制表示的一年中的第几个星期(***星期天***作为一个星期的开始) |
+|%w | 十进制表示的星期几(星期天是0) |
+|%W | 十进制表示的一年中的第几个星期(***星期一***作为一个星期的开始) |
+|%x | 重新设置本地日期(08/10/25) |
+|%X | 重新设置本地时间(12：00：00) |
+|%y | 两位数字表示的年(19) |
+|%Y | 四位数字表示的年(99) |
+|%Z | 时区(PDT) |
+|%% | 百分号(%) |
+
+### 其他函数
+|格式 | 描述 |
+|--- |--- 
+|close( Expression ) | 用同一个带字符串值的 Expression 参数来关闭由 print 或 printf 语句打开的或调用 getline 函数打开的文件或管道。如果文件或管道成功关闭，则返回 0；其它情况下返回非零值。如果打算写一个文件，并稍后在同一个程序中读取文件，则 close 语句是必需的 | 
+|system( command )  | 执行 Command 参数指定的命令，并返回退出状态。等同于 system 子例程 |
+|Expression &#124; getline [ Variable ] | 从来自 Expression 参数指定的命令的输出中通过管道传送的流中读取一个输入记录，并将该记录的值指定给 Variable 参数指定的变量。如果当前未打开将 Expression 参数的值作为其命令名称的流，则创建流。创建的流等同于调用 popen 子例程，此时 Command 参数取 Expression 参数的值且 Mode 参数设置为一个是 r 的值。只要流保留打开且 Expression 参数求得同一个字符串，则对 getline 函数的每次后续调用读取另一个记录。如果未指定 Variable 参数，则 $0 记录变量和 NF 特殊变量设置为从流读取的记录 |
+|getline [ Variable ] < Expression | 从 Expression 参数指定的文件读取输入的下一个记录，并将 Variable 参数指定的变量设置为该记录的值。只要流保留打开且 Expression 参数对同一个字符串求值，则对 getline 函数的每次后续调用读取另一个记录。如果未指定 Variable 参数，则 $0 记录变量和 NF 特殊变量设置为从流读取的记录 | 
+|getline [ Variable ] | 将 Variable 参数指定的变量设置为从当前输入文件读取的下一个输入记录。如果未指定 Variable 参数，则 $0 记录变量设置为该记录的值，还将设置 NF、NR 和 FNR 特殊变量 |
+
+#### 使用示例
+awk脚本非常复杂，需要结合示例学习，示例部分参考[awk命令][1]中的示例
+
 <br/>
 
 ---
@@ -165,7 +337,15 @@ awk脚本是由模式和操作组成的
 [awk命令][1]  
 [Linux 的(cut,sed,awk,grep,sort)工具][2]  
 [awk、nawk、mawk、gawk的简答介绍][3]  
+[数学基础：角度，弧度，三角函数][4]  
+[LC_ALL=C的含义][5]  
+[linux系统locale的设定][6]  
+[Explain the effects of export LANG, LC_CTYPE, LC_ALL][7]
 
 [1]: http://man.linuxde.net/awk
 [2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
 [3]: http://blog.csdn.net/u013152895/article/details/46288389
+[4]: http://blog.csdn.net/a396901990/article/details/43998935
+[5]: http://www.cnblogs.com/benmm/p/4010834.html
+[6]: http://www.cnblogs.com/markjiao/archive/2008/05/20/1203316.html
+[7]: https://stackoverflow.com/questions/30479607/explain-the-effects-of-export-lang-lc-ctype-lc-all
