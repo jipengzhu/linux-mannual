@@ -31,9 +31,9 @@
   * [vimdiff使用](base-chapter/text-edit/vimdiffshi-yong.md)
 * [文本处理](base-chapter/text-process/README.md)
   * [grep查找](base-chapter/text-process/grepcha-zhao.md)
+  * [printf输出](base-chapter/text-process/printfshu-chu.md)
   * [sed处理](base-chapter/text-process/sedchu-li.md)
   * [awk处理](base-chapter/text-process/awkchu-li.md)
-  * [printf输出](base-chapter/text-process/printfshu-chu.md)
   * [二进制处理](base-chapter/text-process/er-jin-zhi-chu-li.md)
   * [其他的处理](base-chapter/text-process/qi-ta-de-chu-li.md)
 
