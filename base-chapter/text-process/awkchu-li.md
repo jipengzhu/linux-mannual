@@ -97,8 +97,8 @@ awk脚本是由模式和操作组成的
 # 参考
 
 [awk命令][1]  
-[Linux 的(cut,sed,awk,grep,sort)工具][2]
-[awk、nawk、mawk、gawk的简答介绍][3]
+[Linux 的(cut,sed,awk,grep,sort)工具][2]  
+[awk、nawk、mawk、gawk的简答介绍][3]  
 
 [1]: http://man.linuxde.net/awk
 [2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7

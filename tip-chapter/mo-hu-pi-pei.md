@@ -108,11 +108,12 @@ f / fr / wfr / bwfr 等工具默认使用 ERE 模式，同时支持以下 perl �
 |[:alnum:] |    | 字母和数字 |
 |[:word:] | \w | 字母数字和下划线 |
 |[:blank:] |    | 空格和制表符 |
-|[:space:] | \s | 所有空白符（比[:blank:]包含的范围更广）|
+|[:space:] | \s | 所有空白符（空格，制表符，换行，回车，垂直制表符，换页）|
 |[:cntrl:] |    | 不可打印的控制字符（退格、删除、警铃...）|
 |[:graph:] |    | 可打印的非空白字符 |
 |[:print:] | \p | 可打印字符 |
 |[:punct:] |    | 标点符号 |
+> blank 和 space 的区别参考[这里][8]
 
 此外，还有以下特殊字符类
 
@@ -275,7 +276,9 @@ Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [
 [Linux正则表达式][4]  
 [Why does [A-Z] match lowercase letters in bash][5]    
 [BRE与ERE的差异][6]  
-[shell 基本特性之~ shell展开详解][7]
+[shell 基本特性之~ shell展开详解][7]  
+[What's the difference between [:space:] and [:blank:]?
+][8]
 
 [1]: http://evanlinux.blog.51cto.com/7247558/1308363
 [2]: http://xzb2015.blog.51cto.com/8796643/1598715
@@ -284,3 +287,4 @@ Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [
 [5]: https://unix.stackexchange.com/questions/227070/why-does-a-z-match-lowercase-letters-in-bash
 [6]: http://blog.chinaunix.net/uid-23045379-id-2562051.html
 [7]: http://www.jianshu.com/p/403f3554e2c1
+[8]: https://stackoverflow.com/questions/15767863/whats-the-difference-between-space-and-blank
