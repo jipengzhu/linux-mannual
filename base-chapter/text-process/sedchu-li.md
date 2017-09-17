@@ -213,8 +213,10 @@ this is 7
 
 # 参考
 
-[sed命令][1]  
-[Sed to replace lower case string between two strings to upper case][2]
+[sed命令][1]   
+[Linux 的(cut,sed,awk,grep,sort)工具][2]  
+[Sed to replace lower case string between two strings to upper case][3]
 
 [1]: http://man.linuxde.net/sed
-[2]: https://stackoverflow.com/questions/22718518/sed-to-replace-lower-case-string-between-two-strings-to-upper-case
+[2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
+[3]: https://stackoverflow.com/questions/22718518/sed-to-replace-lower-case-string-between-two-strings-to-upper-case

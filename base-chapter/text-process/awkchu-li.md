@@ -61,7 +61,7 @@ awk脚本是由模式和操作组成的
 
 ## 内置变量（预定义变量）
 ***注意：*** [A][N][P][G]前缀表示第一个能够支持该变量的工具
-> [A]=awk、[N]=nawk、[P]=POSIXawk、[G]=gawk，区别参见[这里][2]
+> [A]=awk、[N]=nawk、[P]=POSIXawk、[G]=gawk，区别参见[这里][3]
 
 |变量 | 说明 |
 |--- |--- |
@@ -97,7 +97,9 @@ awk脚本是由模式和操作组成的
 # 参考
 
 [awk命令][1]  
-[awk、nawk、mawk、gawk的简答介绍][2]
+[Linux 的(cut,sed,awk,grep,sort)工具][2]
+[awk、nawk、mawk、gawk的简答介绍][3]
 
 [1]: http://man.linuxde.net/awk
-[2]: http://blog.csdn.net/u013152895/article/details/46288389
+[2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
+[3]: http://blog.csdn.net/u013152895/article/details/46288389

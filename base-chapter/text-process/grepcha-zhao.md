@@ -35,8 +35,10 @@ BRE和ERE的知识请参考***前言篇中的模糊匹配章节***
 
 # 参考
 
-[Linux 的(cut,sed,awk,grep,sort)工具][1]
-[每天一个linux命令 grep 命令][2]
+[grep命令][1]  
+[Linux 的(cut,sed,awk,grep,sort)工具][2]  
+[每天一个linux命令 grep 命令][3]  
 
-[1]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
-[2]: http://www.cnblogs.com/peida/archive/2012/12/17/2821195.html
+[1]: http://man.linuxde.net/grep
+[2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
+[3]: http://www.cnblogs.com/peida/archive/2012/12/17/2821195.html
