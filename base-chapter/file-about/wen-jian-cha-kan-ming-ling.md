@@ -21,6 +21,18 @@ cat [选项] [文件...]
 |-u | (被忽略) |
 |-v, --show-nonprinting | 使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外 |
 
+
+
+# tac
+tac命令用于将文件已行为单位的反序输出，即第一行最后显示，最后一行先显示
+
+格式如下
+```
+tac [选项] [文件...]
+```
+
+
+
 # nl
 计算文件中行号并和内容一起输出，行号的显示比`cat -n`更丰富
 
@@ -40,6 +52,7 @@ nl [选项] [文件...]
 |-n rz | 行号在自己栏位的最右方显示，且加 0 |
 |-w | 行号栏位的占用的位数 |
 |-p | 在逻辑定界符处不重新开始计算 |
+
 
 
 # more
@@ -79,6 +92,7 @@ more [选项] <文件...>
 |V | 调用编辑器，默认为vi |
 |!COMMAND | 调用Shell，并执行命令 |
 |q | 退出more |
+
 
 
 # less
@@ -127,6 +141,7 @@ less [选项] <命令>
 |q | 退出less命令 |
 
 
+
 # head 
 查看文件的开头部分
 
@@ -143,6 +158,7 @@ head [选项] <文件...>
 |-n, --lines=[-]K | 每个文件显示K行，如果K前有短横杠，则从末尾开始 |
 |-q, --quiet, --silent | 隐藏文件名 |
 |-v, --verbose | 显示文件名 |
+
 
 
 # tail
@@ -165,6 +181,7 @@ tail [选项] <文件...>
 |-F | 和-f --retry 一样的效果|
 |--retry | 当文件切割后，重新打开文件 |
 |-s, --sleep-interval=N | 文件的监听频率 |
+
 
 
 # diff
@@ -229,7 +246,7 @@ diff [选项] <文件> <文件>
 [每天一个linux命令 tail 命令][6]  
 [每天一个linux命令 diff 命令][7]  
 [读懂diff][8]  
-[What is the difference between "tail -f" and "tail -F"][9]
+[What is the difference between "tail -f" and "tail -F"][9]  
 
 [1]: http://www.cnblogs.com/peida/archive/2012/10/30/2746968.html
 [2]: http://www.cnblogs.com/peida/archive/2012/11/01/2749048.html
