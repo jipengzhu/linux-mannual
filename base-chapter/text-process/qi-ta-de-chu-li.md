@@ -95,9 +95,17 @@ tr [OPTION]... SET1 [SET2]
 |-t, --truncate-set1 | 删除第一字符集较第二字符集多出的字符 |
 
 
-tr通常用于大小写转化
+大小写转化
 > `tr 'A-Z' 'a-z'` 大写转小写  
 > `tr 'a-z' 'A-Z'` 小写转大写
+
+文件格式转换
+>Mac -> UNIX：`tr "\r" "\n"<macfile > unixfile`
+>UNIX -> Mac：`tr "\n" "\r"<unixfile > macfile`
+>DOS -> UNIX：`tr -d "\r"<dosfile > unixfile`
+>UNIX -> DOS：`awk '{ print $0"\r" }'<unixfile > dosfile`
+>DOS -> MAC：`tr -d "\n"<dosfile > macfile`
+>MAC -> DOS： Mac -> UNIX, UNIX -> DOS
 
 
 
