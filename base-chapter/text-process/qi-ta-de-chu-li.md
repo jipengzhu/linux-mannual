@@ -107,6 +107,11 @@ tr [OPTION]... SET1 [SET2]
 >DOS -> MAC：`tr -d "\n"<dosfile > macfile`
 >MAC -> DOS： Mac -> UNIX, UNIX -> DOS
 
+空行多余的合并
+> `tr -s "\n"`
+
+显示PATH的路径
+> `echo $PATH | tr ":" "\n"`
 
 
 # split
