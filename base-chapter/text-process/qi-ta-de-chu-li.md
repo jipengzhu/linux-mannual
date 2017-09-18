@@ -113,6 +113,9 @@ tr [OPTION]... SET1 [SET2]
 显示PATH的路径
 > `echo $PATH | tr ":" "\n"`
 
+用问号显示不可打印字符
+> `tr -c '[:cntrl:]' '[?]'`
+
 
 # split
 将一个大文件分割成很多个小文件
