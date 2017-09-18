@@ -1,8 +1,8 @@
 # wc
-wc可以对文件进行统计
+对文件进行统计
 
 ```
-wc [选项] [文件]...
+wc [OPTION]... [FILE]...
 ```
 
 |选项 | 说明 |
@@ -16,10 +16,10 @@ wc [选项] [文件]...
 
 
 # sort 
-sort可以对文本（来自文件或管道）进行排序
+对文本（来自文件或管道）进行排序
 
 ```
-sort [选项] [文件]...
+sort [OPTION]... [FILE]...
 ```
 
 |选项 | 说明 |
@@ -41,10 +41,10 @@ sort [选项] [文件]...
 
 
 # uniq
-uniq命令用于报告或忽略文件中的***相邻重复行***，一般与sort命令结合使用
+报告或忽略文件中的***相邻重复行***，一般与sort命令结合使用
 
 ```
-uniq [选项] [文件]...
+uniq [OPTION]... [FILE]...
 ```
 
 |选项 | 说明 |
@@ -60,20 +60,117 @@ uniq [选项] [文件]...
 
 
 # cut
+显示行中的指定部分，删除文件中指定字段
+
+```
+cut [OPTION]... [FILE]...
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-b, --bytes=LIST | 仅显示行中指定范围的字节 |
+|-c, --characters=LIST | 仅显示行中指定范围的字符 |
+|-d, --delimiter=DELIM | 指定字段的分隔符，默认为“TAB” |
+|-f, --fields=LIST| 显示指定字段（数字）的内容 |
+|-n | 与“-b”选项连用，不分割多字节字符 |
+|--complement | 补足被选择的字节、字符或字段 |
+|--output-delimiter=STRING | 指定输出内容的字段分割符 |
+| --help  | 显示指令的帮助信息 |
+|--version | 显示指令的版本信息 |
 
 
 
 # tr
+对来自标准输入的字符进行替换、压缩和删除
+
+```
+tr [OPTION]... SET1 [SET2]
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-c, -C, --complement | 对字符集求补集 |
+|-d, --delete | 删除所有属于字符集1的字符 |
+|-s, --squeeze-repeats | 把连续重复的字符替换为一个字符 |
+|-t, --truncate-set1 | 删除第一字符集较第二字符集多出的字符 |
+
+
+tr通常用于大小写转化
+> `tr 'A-Z' 'a-z'` 大写转小写  
+> `tr 'a-z' 'A-Z'` 小写转大写
 
 
 
 # split
+将一个大文件分割成很多个小文件
+
+```
+split [OPTION]... [INPUT [PREFIX]]
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-b, --bytes=SIZE | 每一部分的大小，单位为 byte |
+|-C, --line-bytes=SIZE | 单行的最大字节数 |
+|-d, --numeric-suffixes[=FROM] | 使用数字作为后缀 |
+|-l, --lines=NUMBER | 输出行数 |
 
 
 
 # truncate
+将文件缩减或扩展至指定大小
+
+```
+truncate [OPTION]... FILE...
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-c, --no-create | 不创建文件 |
+|-o, --io-blocks | 将SIZE 视为IO 块数而不使用字节数 |
+|-r, --reference=RFILE | 使用此文件的大小 |
+|-s, --size=SIZE | 使用指定大小 |
+|--help	| 显示此帮助信息并退出 |
+|--version | 显示版本信息并退出 |
 
 
 
 
 # tee
+将数据重定向到文件，并重定向数据的副本作为后续命令的标准输入
+
+
+```
+tee [OPTION]... [FILE]...
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-a, --append |向文件中重定向时使用追加模式 |
+|-i, --ignore-interrupts | 忽略中断（interrupt）信号 |
+
+
+
+<br/>
+
+---
+
+# 参考
+
+[wc命令][1]  
+[sort命令][2]  
+[uniq命令][3]   
+[cut][4]  
+[tr命令][5]  
+[split命令][6]  
+[truncate命令][7]  
+[tee命令][8]  
+
+[1]: http://man.linuxde.net/wc
+[2]: http://man.linuxde.net/sort
+[3]: http://man.linuxde.net/uniq
+[4]: http://man.linuxde.net/cut
+[5]: http://man.linuxde.net/tr
+[6]: http://man.linuxde.net/split
+[7]: http://linux.51yip.com/search/truncate
+[8]: http://man.linuxde.net/tee
