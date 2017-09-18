@@ -40,6 +40,7 @@
 |:%s/PATTERN/STRING/g | 替换***文件中所有***的匹配为STRING |
 |:%s/^/STRING/g | 在每一行的行首插入STRING，^表示行首 |
 |:%s/$/STRING/g | 在每一行的行尾插入STRING，$表示行尾 |
+> % 代表所有行
 
 替换语法后面可跟多个标记
 
@@ -165,9 +166,11 @@ vim的很多命令前面都可以指定范围(range)，如果不指定范围则�
 [VIM中使用正则匹配中文][3]  
 [global命令][4]  
 [Vim高级进阶之ex命令集][5]  
+[vim查找替换及正则表达式的使用][6]
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
 [2]: http://www.jianshu.com/p/3abd6fbc3322
 [3]: https://my.oschina.net/hotleave/blog/341500
 [4]: http://blog.leanote.com/post/mybaby101@126.com/Ch15-global%E5%91%BD%E4%BB%A4-2
 [5]: http://blog.csdn.net/hitlion2008/article/details/8799327
+[6]: https://tanqisen.github.io/blog/2013/01/13/vim-search-replace-regex/
