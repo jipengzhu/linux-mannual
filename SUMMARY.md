@@ -44,6 +44,9 @@
   * [用户和进程id](medial-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](medial-chapter/user-about/huan-jing-bian-liang.md)
 * [shell相关](medial-chapter/shell-about/README.md)
+  * shell脚本基础
+  * shell控制结构
+  * shell运算
 * [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
