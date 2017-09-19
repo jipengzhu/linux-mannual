@@ -46,7 +46,7 @@
 * [shell相关](medial-chapter/shell-about/README.md)
   * [shell脚本基础](medial-chapter/shell-about/shelljiao-ben-ji-chu.md)
   * [shell控制结构](medial-chapter/shell-about/shellkong-zhi-jie-gou.md)
-  * shell运算
+  * [shell运算](medial-chapter/shell-about/shellyun-suan.md)
 * [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
