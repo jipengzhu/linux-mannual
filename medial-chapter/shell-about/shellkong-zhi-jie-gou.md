@@ -231,6 +231,33 @@ while遍历和for遍历是有区别的，while按行分割，for按字段分割
 3
 ```
 
+
+# case分支结构
+case匹配可以使用通配符`*`（任意多个字符）、`?`（一个字符）和`[]`（字符集）
+
+```
+case VAR in
+    VAR1) <命令>;;
+    VAR2) <命令>;;
+    VAR3) <命令>;;
+    ...
+    *) <命令>
+esac
+```
+
+输出带颜色的文字
+```
+str="is good "
+read -p "你喜欢什么颜色：" color
+case $color in
+    red) echo -e "\e[1;31m$color $str \e[0m";;
+    green) echo -e "\e[1;32m$color $str \e[0m";;
+    yellow) echo -e "\e[1;33m$color $str \e[0m";;
+    blue) echo -e "\e[1;34m$color $str \e[0m";;
+    *) echo -e "\e[1;30m这是什么颜色?\e[0m";;
+esac
+```
+
 <br/>
 
 ---
