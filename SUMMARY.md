@@ -45,11 +45,11 @@
   * [环境变量详解](medial-chapter/user-about/huan-jing-bian-liang.md)
 * [shell相关](medial-chapter/shell-about/README.md)
   * [shell脚本基础](medial-chapter/shell-about/shelljiao-ben-ji-chu.md)
+  * [shell运行过程](medial-chapter/shell-about/shellyun-xing-guo-cheng.md)
   * [shell条件测试](medial-chapter/shell-about/shelltiao-jian-ce-shi.md)
   * [shell控制结构](medial-chapter/shell-about/shellkong-zhi-jie-gou.md)
   * [shell运算详解](medial-chapter/shell-about/medial-chapter/shell-about/shellyun-suan-xiang-jie.md)
   * [shell注意事项](medial-chapter/shell-about/shellzhu-yi-shi-xiang.md)
-  * [shell运行过程](medial-chapter/shell-about/shellyun-xing-guo-cheng.md)
 * [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
