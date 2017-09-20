@@ -48,7 +48,7 @@
   * [shell运行过程](medial-chapter/shell-about/shellyun-xing-guo-cheng.md)
   * [shell测试计算](medial-chapter/shell-about/shellce-shi-ji-suan.md)
   * [shell控制结构](medial-chapter/shell-about/shellkong-zhi-jie-gou.md)
-  * [shell运算详解](medial-chapter/shell-about/medial-chapter/shell-about/shellyun-suan-xiang-jie.md)
+  * [shell调试技巧](medial-chapter/shell-about/shelltiao-shi-ji-qiao.md)
   * [shell注意事项](medial-chapter/shell-about/shellzhu-yi-shi-xiang.md)
 * [软件相关](medial-chapter/software-about/README.md)
 
