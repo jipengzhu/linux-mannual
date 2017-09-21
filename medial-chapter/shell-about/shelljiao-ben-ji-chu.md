@@ -136,6 +136,54 @@ function FUNCTION_NAME(){
 2. 函数可以可以通过 `$n` 获取参数来使用
 3. 函数的返回值，只能是数字
 
+## 函数返回值
+Shell函数返回值，一般有3种方式
+- `return`
+- `echo`
+- `global argv`
+
+### return语句
+return语句只能返回 `0-255`，且使用 `$?` 来访问
+
+```
+[root@zhujipeng test]# cat test.sh
+func(){
+  return 7
+}
+
+func
+echo $?
+[root@zhujipeng test]# sh test.sh
+7
+```
+
+### echo语句
+```
+[root@zhujipeng test]# cat test.sh
+ret_val=
+func(){
+  echo 7
+}
+
+echo `func`
+[root@zhujipeng test]# sh test.sh
+7
+```
+
+### 全局变量
+```
+[root@zhujipeng test]# cat test.sh
+ret_val=
+func(){
+  ret_val=7
+}
+
+func
+echo $ret_val
+[root@zhujipeng test]# sh test.sh
+7
+```
+
 
 ## read
 接收标准输入（键盘）或者其他文件描述符的输入，并将数据放入一个变量中
