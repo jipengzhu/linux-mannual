@@ -112,4 +112,5 @@ bash: PARAMETER: haha
 [root@zhujipeng test]# unset PARAMETER && echo ${PARAMETER:+${VAR}} && echo ${PARAMETER}
 
 
+[root@zhujipeng test]# unset VAR
 ```
