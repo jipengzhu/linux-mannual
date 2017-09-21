@@ -160,7 +160,6 @@ echo $?
 ### echo语句
 ```
 [root@zhujipeng test]# cat test.sh
-ret_val=
 func(){
   echo 7
 }
@@ -183,7 +182,21 @@ echo $ret_val
 [root@zhujipeng test]# sh test.sh
 7
 ```
+```
+[root@zhujipeng test]# cat test.sh
+ret_val=
+func(){
+  ret_val=7
+  echo "inner ${ret_val}"
+}
 
+echo haha | func
+echo "outer ${ret_val}"
+[root@zhujipeng test]# sh test.sh
+inner 7
+outer
+```
+> 在管道中修改全局变量并没有用，因为子进程的修改无法反映到父进程
 
 ## read
 接收标准输入（键盘）或者其他文件描述符的输入，并将数据放入一个变量中
@@ -284,6 +297,10 @@ COMMAND [FILE_DESCRIPTOR]> FILE
 
 # 参考
 
-[Shell编程详解][1]
+[Shell编程详解][1]  
+[Linux Shell函数返回值][2]  
+[Linux中重定向及管道][3]  
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
+[2]: http://blog.csdn.net/ithomer/article/details/7954577
+[3]: http://blog.csdn.net/songyang516/article/details/6758256
