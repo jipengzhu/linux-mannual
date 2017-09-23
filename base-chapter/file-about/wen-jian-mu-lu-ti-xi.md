@@ -351,7 +351,8 @@ etc，lib和bin类似，参见[这里][2]
 |' | 单引号 |
 |" | 双引号 |  
 |` | 反引号 |
-|() | 在子shell中执行命令 |    
+|() | 在子shell中执行命令 |
+|{} | 代码块
 |<> | 重定向符号 |
 > 上面的大多数字符在输入时需要转义，而且很容易在脚本中引发问题
 
@@ -364,9 +365,13 @@ etc，lib和bin类似，参见[这里][2]
 
 [linux目录结构详细介绍][1]  
 [Difference between lib, lib32, lib64, libx32, and libexec][2]
-[shell脚本中28个特殊字符的作用简明总结][3]
+[linux目录和文件名的命名规则][3]  
+[关于Windows文件名和路径名的那些事][4]    
+[shell脚本中28个特殊字符的作用简明总结][5]
 
 [1]: http://yangrong.blog.51cto.com/6945369/1288072
 [2]: https://unix.stackexchange.com/questions/74646/difference-between-lib-lib32-lib64-libx32-and-libexec
-[3]: http://www.jb51.net/article/49176.htm
+[3]: http://blog.csdn.net/yhl_jxy/article/details/51527065
+[4]: http://fresky.github.io/2015/10/13/story-about-windows-file-name/index.html
+[5]: http://www.jb51.net/article/49176.htm
 
