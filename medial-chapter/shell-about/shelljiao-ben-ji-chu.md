@@ -290,6 +290,30 @@ COMMAND [FILE_DESCRIPTOR]> FILE
 |2 | 错误输出 |
 > 可以使用 `&` 符号同时代表标准输出和错误输出
 
+字符串重定向
+```
+COMMAND <<< STRING
+```
+
+
+## here document
+详情参照[这里]
+
+```
+[root@zhujipeng test]# cat << EOF
+> hi
+> here
+> EOF
+hi
+here
+[root@zhujipeng test]# cat << EOF > /tmp/test.txt
+> hi
+> here
+> EOF
+[root@zhujipeng test]# cat /tmp/test.txt
+hi
+here
+```
 
 <br/>
 
@@ -299,8 +323,12 @@ COMMAND [FILE_DESCRIPTOR]> FILE
 
 [Shell编程详解][1]  
 [Linux Shell函数返回值][2]  
-[Linux中重定向及管道][3]  
+[Linux中重定向及管道][3]    
+[What does <<< mean][4]  
+[linux shell的here document用法(cat << EOF)][5]
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
 [3]: http://blog.csdn.net/songyang516/article/details/6758256
+[4]: https://unix.stackexchange.com/questions/80362/what-does-mean
+[5]: http://blog.csdn.net/wangjunjun2008/article/details/24351045
