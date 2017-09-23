@@ -1,5 +1,5 @@
 # 自动交互脚本
-详情参见[expect - 自动交互脚本][1]
+详情参考 [expect - 自动交互脚本][1]
 
  
 登陆脚本，参数为主机和密码
@@ -21,7 +21,7 @@ interact
 
 
 # 执行命令前设置变量
-原理参考[这里][2]
+原理参考 [Why is setting a variable before a command legal in bash][2]
 
 
 
@@ -126,7 +126,7 @@ check_network_by_netcat(){
 
 
 
-# 版本比较
+# 软件版本比较
 ```
 compare_version(){
     if [ -z "${1}" -o -z "${2}" ]; then
