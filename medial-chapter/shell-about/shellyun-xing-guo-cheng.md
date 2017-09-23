@@ -67,53 +67,22 @@ a1e a4e a7e
 - PARAMETER 是否是未定义（unset）
 - PARAMETER 是否是空字符串（null）
 
-在下面的表格中，VAR 可进行 
+在下面的表格中，DEFAULT，OTHER，ERR_MSG 可进行 
 - “波浪线展开”
 - “变量替换”
 - “命令替换” 
 - “算术替换”
 
-如果 VAR 是字符串，就不会做展开
-
-> 如果删除冒号 ':'，只会测试 PARAMETER 是否是 unset(是否存在)
-
-
 |变量 | 说明 |
 |--- |--- |
-|${PARAMETER:-VAR} | 如果 PARAMETER 是 unset 或者 null，最终将返回***变量 VAR***的展开结果 |
-|${PARAMETER:=VAR} | 如果 PARAMETER 是 unset 或者 null，最终将***变量 VAR***的展开结果赋值给PARAMETER |
-|${PARAMETER:?VAR} | 如果 PARAMETER 是 unset 或者 null，最终将***变量 VAR***的展开结果（如果未给出 WORD，会有一条消息）写入标准错误输出以及 shell，如果 shell 是非交互式的，就退出 shel |
-|${PARAMETER:+VAR} | 如果 PARAMETER 是 unset 或者 null，最终结果是 nothing |
-
-```
-[root@zhujipeng test]# echo ${PARAMETER:-VAR} && echo ${PARAMETER}
-VAR
-
-[root@zhujipeng test]# echo ${PARAMETER:-${VAR}} && echo ${PARAMETER}
-
-
-[root@zhujipeng test]# echo ${PARAMETER:=${VAR}} && echo ${PARAMETER}
-
-
-[root@zhujipeng test]# echo ${PARAMETER:?${VAR}} && echo ${PARAMETER}
-bash: PARAMETER:
-[root@zhujipeng test]# echo ${PARAMETER:+${VAR}} && echo ${PARAMETER}
-
-
-[root@zhujipeng test]# VAR=haha
-[root@zhujipeng test]# unset PARAMETER && echo ${PARAMETER:-${VAR}} && echo ${PARAMETER}
-haha
-
-[root@zhujipeng test]# unset PARAMETER && echo ${PARAMETER:=${VAR}} && echo ${PARAMETER}
-haha
-haha
-[root@zhujipeng test]# unset PARAMETER && echo ${PARAMETER:?${VAR}} && echo ${PARAMETER}
-bash: PARAMETER: haha
-[root@zhujipeng test]# unset PARAMETER && echo ${PARAMETER:+${VAR}} && echo ${PARAMETER}
-
-
-[root@zhujipeng test]# unset VAR && unset PARAMETER
-```
+|${PARAMETER-DEFAULT} | 如果 PARAMETER 是 unset，返回DEFAULT的结果 |
+|${PARAMETER:-DEFAULT} | 如果 PARAMETER 是 unset 或 null，返回DEFAULT的结果 |
+|${PARAMETER:=DEFAULT} | 如果 PARAMETER 是 unset，将DEFAULT的结果赋给PARAMETER并返回 |
+|${PARAMETER:=DEFAULT} | 如果 PARAMETER 是 unset 或 null，将DEFAULT的结果赋给PARAMETER并返回 |
+|${PARAMETER:+OTHER} | 如果 PARAMETER 不是 unset，返回OTHER的结果 |
+|${PARAMETER:+OTHER} | 如果 PARAMETER 不是 unset和null，返回OTHER的结果 |
+|${PARAMETER:?ERR_MSG} | 如果 PARAMETER 是 unset，打印ERR_MSG |
+|${PARAMETER:?ERR_MSG} | 如果 PARAMETER 是 unset 或 null，打印ERR_MSG |
 
 
 ## 变量展开
@@ -297,7 +266,8 @@ haha /var/log/anaconda.yum.log /var/log/yum.log
 
 [shell 基本特性之~ shell展开详解][1]  
 [Shell中的 IFS][2]  
-
+[linux shell 字符串操作（长度，查找，替换）详解][3]  
 
 [1]: http://www.jianshu.com/p/403f3554e2c1
 [2]: http://skypegnu1.blog.51cto.com/8991766/1543319
+[3]: http://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html
