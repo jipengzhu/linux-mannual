@@ -1,4 +1,4 @@
-# expect自动交互脚本
+# 自动交互脚本
 详情参见[expect - 自动交互脚本][1]
 
  
@@ -25,7 +25,7 @@ interact
 
 
 
-# 获取linux发行版
+# 获取发行版
 ```
 get_os() {
     # Determine OS platform
@@ -67,6 +67,114 @@ get_os() {
 ```
 
 
+
+# 检查网络畅通
+# ping
+```
+check_network_by_ping(){
+    local REMOTE_SERVER_HOST=$1
+
+    echo "Checking if ${REMOTE_SERVER_HOST} is reachable."
+
+    if [ $(ping -c 1 ${REMOTE_SERVER_HOST} | grep "1 packets transmitted, 1 received" | wc -l) == 1 ]; then
+        echo "remote host ${REMOTE_SERVER_HOST} is reachable."
+    else
+        echo "remote host ${REMOTE_SERVER_HOST} is not reachable via ping. maybe forbidden by firewall"
+    fi
+}
+```
+
+
+## telnet
+```
+check_network_by_telnet(){
+    local REMOTE_HOST=$1
+    local REMOTE_PORT=$2
+
+    local telnet_output_log="/tmp/telnet_output.log"
+    telnet ${REMOTE_HOST} ${REMOTE_PORT} > ${telnet_output_log} 2>&1 << EOF
+        quit
+EOF
+
+    local TELNET_RESULT=
+    if [[ $(grep "Connected" ${telnet_output_log} | wc -l) == 1 ]]; then
+            TELNET_RESULT=0
+        else
+            TELNET_RESULT=1
+    fi
+
+    rm -rf ${telnet_output_log}
+
+    return ${TELNET_RESULT}
+}
+```
+
+
+
+## netcat
+```
+check_network_by_netcat(){
+    local REMOTE_HOST=$1
+    local REMOTE_PORT=$2
+
+    local NETCAT_RESULT=
+    echo test | nc -w 6 ${REMOTE_HOST} ${REMOTE_PORT} &> /dev/null && NETCAT_RESULT=0 || NETCAT_RESULT=1
+
+    return ${NETCAT_RESULT}
+}
+```
+
+
+
+# 版本比较
+```
+compare_version(){
+    if [ -z "${1}" -o -z "${2}" ]; then
+        echo "version can't be empty"
+        exit 1
+    fi
+
+    typeset IFS='.'
+    typeset -a v1=( $1 )
+    typeset -a v2=( $2 )
+    typeset n d
+
+
+    local count=0
+    if [ ${#v1[@]} -gt ${#v2[@]} ]; then
+        count=${#v1[@]}
+    else
+        count=${#v2[@]}
+    fi
+
+    for (( n = 0; n < ${count}; n += 1 ))
+    do
+        d=$((v1[n]-v2[n]))
+        if [[ ${d} != 0 ]] ; then
+            [ ${d} -lt 0 ] && echo -1 || echo 1
+
+            return
+        fi
+    done
+
+    echo 0
+}
+```
+
+
+
+# 检查通配文件
+```
+check_file_exists() {
+    ! ls $1 &> /dev/null && echo "File \"${1}\" does not exist" || echo "file \"${1}\" exists"
+}
+
+check_file_wildcard() {
+    [[ "$1" =~ [*?\[] ]]  && echo "FileName can't contains wildcard"
+}
+```
+
+
 <br/>
 
 ---
@@ -75,8 +183,12 @@ get_os() {
 
 [expect - 自动交互脚本][1]  
 [Why is setting a variable before a command legal in bash][2]  
-[Shell Script to find the Operating System of the machine][3]
+[Shell Script to find the Operating System of the machine][3]  
+[How can I get distribution name and version number in a simple shell script][4]  
+[Check if a file exists with wildcard in shell script][5]  
 
 [1]: http://xstarcd.github.io/wiki/shell/expect.html
 [2]: https://unix.stackexchange.com/questions/126938/why-is-setting-a-variable-before-a-command-legal-in-bash
 [3]: https://stackoverflow.com/questions/35236947/shell-script-to-find-the-operating-system-of-the-machine
+[4]: https://unix.stackexchange.com/questions/6345/how-can-i-get-distribution-name-and-version-number-in-a-simple-shell-script
+[5]: https://stackoverflow.com/questions/6363441/check-if-a-file-exists-with-wildcard-in-shell-script
