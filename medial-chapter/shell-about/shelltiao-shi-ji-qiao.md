@@ -174,6 +174,20 @@ haha
 |LINENO | 当前行号，类似于C语言中的内置宏`__LINE__` |
 |FUNCNAME | 函数名称，类似于C语言中的内置宏`__func__` |
 |PS4 | 调试时输出的前缀，缺省的$PS4的值是"+"号 |
+> 不是所有的shell都支持这些变量
+
+```
+[root@zhujipeng test]# cat test.sh
+PS4="[+$LINENO:${FUNCNAME[0]}]"
+echo haha
+[root@zhujipeng test]# sh -x test.sh
++ PS4='[+1:]'
+[+1:]echo haha
+haha
+```
+
+
+
 
 
 
