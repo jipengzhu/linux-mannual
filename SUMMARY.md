@@ -50,6 +50,7 @@
   * [shell控制结构](medial-chapter/shell-about/shellkong-zhi-jie-gou.md)
   * [shell调试技巧](medial-chapter/shell-about/shelltiao-shi-ji-qiao.md)
   * [shell注意事项](medial-chapter/shell-about/shellzhu-yi-shi-xiang.md)
+  * [shell实用脚本](medial-chapter/shell-about/shellshi-yong-jiao-ben.md)
 * [软件相关](medial-chapter/software-about/README.md)
 
 ## 高级篇
