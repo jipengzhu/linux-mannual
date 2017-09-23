@@ -175,6 +175,73 @@ check_file_wildcard() {
 ```
 
 
+
+# 输出颜色文字
+```
+print_msg()
+{
+    if [ x${1} == x"[ERROR]" ]; then
+        echo -e "\033[1;31m[$(date +"%Y-%m-%d %H:%M:%S")] $@\033[m"
+    elif [ x${1} == x"[WARN]" ]; then
+        echo -e "\033[1;33m[$(date +"%Y-%m-%d %H:%M:%S")] $@\033[m"
+    else
+        echo -e "\033[1;36m[$(date +"%Y-%m-%d %H:%M:%S")] $@\033[m"
+    fi
+}
+
+error()
+{
+    print_msg '[ERROR]' "$@"
+
+    exit 1
+}
+
+warn()
+{
+    print_msg '[WARN]' "$@"
+}
+
+info()
+{
+    print_msg '[INFO]' $@
+}
+
+div_line()
+{
+    echo
+    echo -e "\033[1;35m------- (^_^) I am the dividing line (^_^) -------\033[m"
+    echo
+}
+
+prompt(){
+    warn $1
+
+    ${IS_QUIET} && return
+
+    while true
+    do
+        read -p "Would you like to continue anyway? (yes/no)" yn
+
+        case $yn in
+            [yY]* )
+            break
+            ;;
+            [nN]* )
+            error "abort by user because $1"
+            exit 1
+            ;;
+            * )
+            info "Please answer y[es] or n[o]"
+        esac
+    done
+}
+```
+
+
+
+# 
+
+
 <br/>
 
 ---
@@ -186,9 +253,13 @@ check_file_wildcard() {
 [Shell Script to find the Operating System of the machine][3]  
 [How can I get distribution name and version number in a simple shell script][4]  
 [Check if a file exists with wildcard in shell script][5]  
+[控制echo显示字体的颜色和效果][6]    
+[在Linux中让echo命令显示带颜色的字][7]  
 
 [1]: http://xstarcd.github.io/wiki/shell/expect.html
 [2]: https://unix.stackexchange.com/questions/126938/why-is-setting-a-variable-before-a-command-legal-in-bash
 [3]: https://stackoverflow.com/questions/35236947/shell-script-to-find-the-operating-system-of-the-machine
 [4]: https://unix.stackexchange.com/questions/6345/how-can-i-get-distribution-name-and-version-number-in-a-simple-shell-script
 [5]: https://stackoverflow.com/questions/6363441/check-if-a-file-exists-with-wildcard-in-shell-script
+[6]: http://blog.csdn.net/Toormi/article/details/47615093
+[7]: http://onlyzq.blog.51cto.com/1228/546459
