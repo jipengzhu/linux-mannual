@@ -75,6 +75,8 @@ get_os() {
 
 [expect - 自动交互脚本][1]  
 [Why is setting a variable before a command legal in bash][2]  
+[Shell Script to find the Operating System of the machine][3]
 
 [1]: http://xstarcd.github.io/wiki/shell/expect.html
 [2]: https://unix.stackexchange.com/questions/126938/why-is-setting-a-variable-before-a-command-legal-in-bash
+[3]: https://stackoverflow.com/questions/35236947/shell-script-to-find-the-operating-system-of-the-machine
