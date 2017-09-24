@@ -83,11 +83,13 @@ od [选项] [文件]...
 [hexdump命令][1]  
 [Linux命令学习总结：hexdump][2]  
 [od命令][3]  
-[在Linux下使用vim配合xxd查看并编辑二进制文件][4]  
-[linux 命令 xxd linux下查看二进制文件][5]  
+[Linux之od命令详解][4]  
+[在Linux下使用vim配合xxd查看并编辑二进制文件][5]  
+[linux 命令 xxd linux下查看二进制文件][6]  
 
 [1]: http://man.linuxde.net/hexdump
 [2]: http://www.cnblogs.com/kerrycode/p/5077687.html
 [3]: http://man.linuxde.net/od
-[4]: 在Linux下使用vim配合xxd查看并编辑二进制文件
-[5]: http://fancyxinyu.blog.163.com/blog/static/18232136620111183019942/
+[4]: http://www.cnblogs.com/hdk1993/p/4395574.html
+[5]: 在Linux下使用vim配合xxd查看并编辑二进制文件
+[6]: http://fancyxinyu.blog.163.com/blog/static/18232136620111183019942/
