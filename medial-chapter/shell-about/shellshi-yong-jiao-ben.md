@@ -246,7 +246,28 @@ prompt(){
 
 
 
-# 
+# 查看文件指定行
+```
+[root@zhujipeng test]# cat -n test.sh
+     1	#! /usr/bin/expect
+     2
+     3	set host [ lindex $argv 0 ]
+     4	set pass [ lindex $argv 1 ]
+     5	set timeout 10
+     6
+     7	spawn ssh -o ServerAliveInterval=60 root@$host
+     8	expect {
+     9	    "*yes/no" { send "yes\r"; exp_continue}
+    10	    "*password" {send "${pass}\r"}
+    11	}
+    12	interact
+[root@zhujipeng test]# sed -n '7,11p' test.sh
+spawn ssh -o ServerAliveInterval=60 root@$host
+expect {
+    "*yes/no" { send "yes\r"; exp_continue}
+    "*password" {send "${pass}\r"}
+}
+```
 
 
 <br/>
