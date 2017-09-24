@@ -95,6 +95,12 @@ no
 
 [shell 语句出错自动退出][1]  
 [linux shell 中判断字符串为空的正确方法][2]  
+[Bash空格的那点事][3]  
+[Bash引号的那点事][4]  
+[shell中的括号（小括号，中括号，大括号）及单引号、 双引号，反引号][5]
 
 [1]: http://blog.csdn.net/drbinzhao/article/details/8281645
 [2]: http://blog.csdn.net/q_l_s/article/details/51435939
+[3]: http://www.igigo.net/post/archives/152#main
+[4]: http://www.igigo.net/post/archives/128
+[5]: http://www.cnblogs.com/kex1n/p/6678286.html
