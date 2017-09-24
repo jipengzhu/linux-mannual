@@ -272,6 +272,24 @@ basename [选项] <名称字符串...>
 |-s, --suffix=SUFFIX | 取出指定后缀名 |
 
 
+
+# readlink
+如果文件是软链接，查看文件对应的源文件
+
+格式如下
+```
+readlink [选项] <文件>
+```
+
+选项如下
+
+|选项 | 说明 |
+|--- |--- |
+|-f, --canonicalize | 递归查找源文件，最后一个源文件必须存在 |
+|-e, --canonicalize-existing | 递归查找源文件，所有的源文件都必须存在  |
+|-m, --canonicalize-missing | 递归查找源文件，源文件不一定要真实存在 |
+
+
 <br/>
 
 ---
