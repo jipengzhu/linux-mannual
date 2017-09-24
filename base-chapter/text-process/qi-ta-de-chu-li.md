@@ -181,7 +181,8 @@ tee [OPTION]... [FILE]...
 [split命令][6]  
 [truncate命令][7]  
 [tee命令][8]   
-[linux sort,uniq,cut,wc命令详解][9]  
+[linux sort,uniq,cut,wc命令详解][9]    
+[DOS和UNIX文本文件之间相互转换的方法][10]  
 
 [1]: http://man.linuxde.net/wc
 [2]: http://man.linuxde.net/sort
@@ -192,3 +193,4 @@ tee [OPTION]... [FILE]...
 [7]: http://linux.51yip.com/search/truncate
 [8]: http://man.linuxde.net/tee
 [9]: http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858385.html
+[10]: http://blog.csdn.net/fan_hai_ping/article/details/8352087
