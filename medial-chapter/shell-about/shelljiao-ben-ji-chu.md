@@ -340,7 +340,10 @@ here
 [linux shell中的单引号与双引号的区别][7]   
 [linux shell的here document用法(cat << EOF)][8]    
 [1>/dev/null 2>&1的含义][9]  
-[我使用过的Linux命令之true][10]          
+[我使用过的Linux命令之true][10]  
+[我使用过的Linux命令之:（冒号）][11]  
+[我使用过的Linux命令系列总目录][12]   
+[关于Shell的source、点（.）和export][13]          
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
@@ -352,3 +355,6 @@ here
 [8]: http://blog.csdn.net/wangjunjun2008/article/details/24351045
 [9]: http://dongwei.iteye.com/blog/322702
 [10]: http://codingstandards.iteye.com/blog/833338
+[11]: http://codingstandards.iteye.com/blog/1160298
+[12]: http://codingstandards.iteye.com/blog/1112967
+[13]: http://walkerqt.blog.51cto.com/1310630/1690202
