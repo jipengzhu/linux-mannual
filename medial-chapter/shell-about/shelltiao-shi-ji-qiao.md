@@ -199,6 +199,8 @@ haha
 
 [Shell脚本调试技术][1]  
 [SIGTERM、SIGKILL、SIGINT和SIGQUIT的区别][2]  
+[我使用过的Linux命令之trap][3]  
 
 [1]: https://www.ibm.com/developerworks/cn/linux/l-cn-shell-debug/index.html
 [2]: http://blog.csdn.net/dai_xiangjun/article/details/41871647
+[3]: http://codingstandards.iteye.com/blog/836588
