@@ -180,7 +180,8 @@ tee [OPTION]... [FILE]...
 [tr命令][5]  
 [split命令][6]  
 [truncate命令][7]  
-[tee命令][8]  
+[tee命令][8]   
+[linux sort,uniq,cut,wc命令详解][9]  
 
 [1]: http://man.linuxde.net/wc
 [2]: http://man.linuxde.net/sort
@@ -190,3 +191,4 @@ tee [OPTION]... [FILE]...
 [6]: http://man.linuxde.net/split
 [7]: http://linux.51yip.com/search/truncate
 [8]: http://man.linuxde.net/tee
+[9]: http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858385.html

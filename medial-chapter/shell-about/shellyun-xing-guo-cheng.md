@@ -258,6 +258,29 @@ haha /var/log/anaconda.yum.log /var/log/yum.log
 ```
 
 
+
+# 命令执行顺序
+## 顺序（;）
+命令1与命令2没有逻辑关系。无论命令1是否执行成功，命令2都会执行
+```
+COMMAND1; COMMAND2
+```
+
+
+## 条件与（&&）
+只有当命令1执行成功，才执行命令2；否则不执行命令2
+```
+COMMAND1 && COMMAND2
+```
+
+
+## 条件与（||）
+只有当命令1执行失败,才执行命令2;否则不执行命令2
+```
+COMMAND1 || COMMAND2
+```
+
+
 <br/>
 
 ---
@@ -267,7 +290,11 @@ haha /var/log/anaconda.yum.log /var/log/yum.log
 [shell 基本特性之~ shell展开详解][1]  
 [Shell中的 IFS][2]  
 [linux shell 字符串操作（长度，查找，替换）详解][3]  
+[Linux Shell 通配符、元字符、转义符使用实例介绍][4]
+[Linux命令的执行顺序][5]  
 
 [1]: http://www.jianshu.com/p/403f3554e2c1
 [2]: http://skypegnu1.blog.51cto.com/8991766/1543319
 [3]: http://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html
+[4]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
+[5]: http://coolnull.com/3590.html
