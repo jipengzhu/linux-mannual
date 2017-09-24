@@ -52,11 +52,11 @@
   * [shell注意事项](medial-chapter/shell-about/shellzhu-yi-shi-xiang.md)
   * [shell实用脚本](medial-chapter/shell-about/shellshi-yong-jiao-ben.md)
 * [软件相关](medial-chapter/software-about/README.md)
-  * 软件相关知识
-  * yum基础知识
-  * yum工作原理
-  * yum实用技巧
-  * 常用重要软件
+  * [软件相关知识](medial-chapter/software-about/ruan-jian-xiang-guan-zhi-shi.md)
+  * [yum基础知识](medial-chapter/software-about/yumji-chu-zhi-shi.md)
+  * [yum工作原理](medial-chapter/software-about/yumgong-zuo-yuan-li.md)
+  * [yum实用技巧](medial-chapter/software-about/yumshi-yong-ji-qiao.md)
+  * [常用重要软件](medial-chapter/software-about/chang-yong-zhong-yao-ruan-jian.md)
 
 ## 高级篇
 
