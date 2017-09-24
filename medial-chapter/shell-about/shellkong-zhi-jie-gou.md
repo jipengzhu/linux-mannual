@@ -17,6 +17,8 @@ if <条件1>; then <命令>; elif <条件2>; then <命令>; else <命令>; fi
 ```
 > 注意if和[]之间要有空格，[]和内容之间也有空格
 
+if的本质是根据命令的返回结果来决定的，参考
+>
 
 
 # for循环结构
@@ -240,6 +242,7 @@ case $color in
 esac
 ```
 
+
 <br/>
 
 ---
@@ -250,9 +253,13 @@ esac
 [玩转Bash脚本：循环结构之for循环][3]  
 [玩转Bash脚本：循环结构之while循环][4]  
 [玩转Bash脚本：选择结构之case][5]  
+[When square brackets are required in bash if statement?][6]  
+[What do square brackets mean without the "if" on the left][7]  
 
 [1]: https://www.kancloud.cn/digest/wanbash/119000
 [2]: https://www.kancloud.cn/digest/wanbash/119002
 [3]: https://www.kancloud.cn/digest/wanbash/119006
 [4]: https://www.kancloud.cn/digest/wanbash/119007
 [5]: https://www.kancloud.cn/digest/wanbash/119004
+[6]: https://stackoverflow.com/questions/8934012/when-square-brackets-are-required-in-bash-if-statement
+[7]: https://unix.stackexchange.com/questions/99185/what-do-square-brackets-mean-without-the-if-on-the-left
