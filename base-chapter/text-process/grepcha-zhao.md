@@ -49,6 +49,7 @@ BRE和ERE的知识请参考***前言篇中的模糊匹配章节***
 [grep命令][1]  
 [Linux 的(cut,sed,awk,grep,sort)工具][2]  
 [What is the difference between `grep`, `egrep`, and `fgrep`][3]  
+[]
 
 [1]: http://man.linuxde.net/grep
 [2]: http://youbingchenyoubing.leanote.com/post/Linux-%E7%9A%84-cut-sed-awk-grep-sort-%E5%B7%A5%E5%85%B7
