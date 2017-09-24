@@ -245,8 +245,8 @@ prompt(){
 ```
 
 
-
-# 查看文件指定行
+# 日常的技巧
+## 查看文件指定行
 ```
 [root@zhujipeng test]# cat -n test.sh
      1	#! /usr/bin/expect
@@ -270,8 +270,24 @@ expect {
 ```
 
 
+## 删除行首行尾的空格
+### 行首空格
+```
+sed 's/^[ \t]*//g'
+```
 
-# 列出文件的绝对路径
+### 行末空格
+```
+sed 's/[ \t]*$//g'
+```
+
+### 所有空行
+```
+sed 's/^[[:space:]]*$//g'
+```
+
+
+## 列出文件的绝对路径
 ```
 [root@zhujipeng test]# ls *
 test.sh
