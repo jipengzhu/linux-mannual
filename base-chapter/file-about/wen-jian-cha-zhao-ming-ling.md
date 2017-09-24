@@ -97,7 +97,8 @@ ___
 [每天一个linux命令 find命令的参数详解][6]  
 [linux find -regex 使用正则表达式][7]  
 [BRE与ERE的差异][8]  
-[Find命令查找指定时间范围内的文件][9]  
+[Find命令查找指定时间范围内的文件][9]   
+[Linux如何查找大文件或目录总结][10]   
 
 [1]: http://www.cnblogs.com/peida/archive/2012/11/09/2761928.html
 [2]: http://www.cnblogs.com/peida/archive/2012/11/12/2765750.html
@@ -108,3 +109,4 @@ ___
 [7]: http://www.cnblogs.com/jiangzhaowei/p/5451173.html
 [8]: http://blog.chinaunix.net/uid-23045379-id-2562051.html
 [9]: http://www.jb51.net/LINUXjishu/182748.html
+[10]: http://www.cnblogs.com/kerrycode/p/4391859.html
