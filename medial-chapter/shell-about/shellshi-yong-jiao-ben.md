@@ -270,6 +270,18 @@ expect {
 ```
 
 
+
+# 列出文件的绝对路径
+```
+[root@zhujipeng test]# ls *
+test.sh
+[root@zhujipeng test]# ls `pwd`/*
+/root/test/test.sh
+[root@zhujipeng test]# ls | sed "s:^:`pwd`/:"
+/root/test/test.sh
+```
+
+
 <br/>
 
 ---
@@ -284,6 +296,7 @@ expect {
 [控制echo显示字体的颜色和效果][6]    
 [在Linux中让echo命令显示带颜色的字][7]  
 [Linux shell 之 提取文件名和目录名的一些方法][8]  
+[在ls中列出文件的绝对路径][9]  
 
 [1]: http://xstarcd.github.io/wiki/shell/expect.html
 [2]: https://unix.stackexchange.com/questions/126938/why-is-setting-a-variable-before-a-command-legal-in-bash
@@ -293,3 +306,4 @@ expect {
 [6]: http://blog.csdn.net/Toormi/article/details/47615093
 [7]: http://onlyzq.blog.51cto.com/1228/546459
 [8]: http://blog.csdn.net/ljianhui/article/details/43128465
+[9]: http://blog.csdn.net/bao1213/article/details/3983198
