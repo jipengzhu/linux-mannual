@@ -25,6 +25,13 @@ interact
 
 
 
+# 获取脚本所在的目录
+```
+cur_dir=$(cd `dirname ${BASH_SOURCE-$0}`; pwd)
+```
+
+
+
 # 获取发行版
 ```
 get_os() {
