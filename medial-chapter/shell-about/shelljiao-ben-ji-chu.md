@@ -333,7 +333,9 @@ here
 [What does <<< mean][4]  
 [linux shell的here document用法(cat << EOF)][5]  
 [shell中的括号][6]    
-[linux shell中的单引号与双引号的区别][7]           
+[linux shell中的单引号与双引号的区别][7]   
+[linux shell的here document用法(cat << EOF)][8]    
+[1>/dev/null 2>&1的含义][9]         
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
@@ -342,3 +344,5 @@ here
 [5]: http://blog.csdn.net/wangjunjun2008/article/details/24351045
 [6]: http://www.cnblogs.com/kex1n/p/6678286.html
 [7]: http://lspgyy.blog.51cto.com/5264172/1282107
+[8]: http://blog.csdn.net/wangjunjun2008/article/details/24351045
+[9]: http://dongwei.iteye.com/blog/322702
