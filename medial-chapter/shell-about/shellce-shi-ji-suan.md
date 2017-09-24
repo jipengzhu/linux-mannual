@@ -262,10 +262,12 @@ yes
 [Linux 之 shell 比较运算符][2]   
 [Linux-shell-算术运算{expr、bc、dc、(( ))和[ ]}][3]  
 [Why do shell script comparisons often use x$VAR = xyes?][4]    
-[linux shell 中判断字符串为空的正确方法][5]
+[linux shell 中判断字符串为空的正确方法][5]  
+[空格、回车符(\r)、换行符(\n)、水平制表符(\t)、垂直制表符(\v)、换页符(\f)）的理解][6]   
 
 [1]: https://www.kancloud.cn/digest/wanbash/119000
 [2]: http://blog.csdn.net/ithomer/article/details/6836382
 [3]: http://www.cnblogs.com/snowsolf/p/3325235.html
 [4]: https://stackoverflow.com/questions/174119/why-do-shell-script-comparisons-often-use-xvar-xyes
 [5]: http://blog.csdn.net/q_l_s/article/details/51435939
+[6]: http://blog.163.com/m18238803307_1/blog/static/23476210620145384553388/

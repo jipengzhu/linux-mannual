@@ -362,10 +362,12 @@ etc，lib和bin类似，参见[这里][2]
 [Difference between lib, lib32, lib64, libx32, and libexec][2]
 [linux目录和文件名的命名规则][3]  
 [关于Windows文件名和路径名的那些事][4]    
-[shell脚本中28个特殊字符的作用简明总结][5]
+[shell脚本中28个特殊字符的作用简明总结][5]  
+[Unix目录结构的来历][6]  
 
 [1]: http://yangrong.blog.51cto.com/6945369/1288072
 [2]: https://unix.stackexchange.com/questions/74646/difference-between-lib-lib32-lib64-libx32-and-libexec
 [3]: http://blog.csdn.net/yhl_jxy/article/details/51527065
 [4]: http://fresky.github.io/2015/10/13/story-about-windows-file-name/index.html
 [5]: http://www.jb51.net/article/49176.htm
+[6]: http://www.ruanyifeng.com/blog/2012/02/a_history_of_unix_directory_structure.html

@@ -332,7 +332,7 @@ here
 [Linux中重定向及管道][3]    
 [What does <<< mean][4]  
 [linux shell的here document用法(cat << EOF)][5]  
-[shell中的括号（小括号，中括号，大括号）及单引号、 双引号，反引号][6]
+[shell中的括号（小括号，中括号，大括号）及单引号、 双引号，反引号][6]      
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
