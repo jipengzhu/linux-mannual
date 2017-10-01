@@ -17,33 +17,15 @@
 > 单词由字母数字和下划线组成，至少两个字符以上
 
 
-# 快捷键描述
-|快捷键描述（不区分大小写） | 说明 |
-|--- |--- |
-|Ctrl | control 键 |
-|Shift | shift 键|
-|Alt | alt 键 |
-|Tab | tab 键 |
-|Esc | esc 键 |
-|Backspace | 退格键 |
-|Enter | 回车键 |
-|[Page]Up | 向上（翻页）键 |
-|[Page]Down | 向下（翻页）键 |
-|Left | 方向左键 |
-|Right | 方向右键 |
-> 快捷键后面的加号(+)或减号(-)表示组合快捷键的意思，不需要输入  
-类似`Ctrl + W`的形式，有时候也会表达为`C-W`的简写形式  
-快捷键在Mac和Linux系统上会有部分差异，需要注意
-
 ---
 github和个人博客，请猛戳图标
-[![](/images/github图标.png)][1]
-[![](/images/blog图标.png)][2]
+[![](https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/github%E5%9B%BE%E6%A0%87.png?raw=true)][1]
+[![](https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/blog%E5%9B%BE%E6%A0%87.png?raw=true)][2]
 
 ---
 如果各位看官觉得有所帮助，记得扫二维码打赏一下
-![微信支付](/images/微信收款.jpeg)
-![支付宝支付](/images/支付宝收款.jpeg)
+![微信支付](https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/weixin.jpeg?raw=true)
+![支付宝支付](https://github.com/jipengzhu/jipengzhu.github.io/blob/master/images/alipay.jpeg?raw=true)
 
 
 [1]: https://github.com/jipengzhu
