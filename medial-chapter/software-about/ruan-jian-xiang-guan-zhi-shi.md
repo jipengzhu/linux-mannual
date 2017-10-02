@@ -380,6 +380,7 @@ yum help <子命令>
 [Linux软件包管理工具yum详解][5]  
 [yum命令Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY][6]    
 [如何使用yum来下载RPM包而不进行安装][7]   
+[Ubuntu的包管理方式简介（apt-get、dpkg、aptitude）][8]
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
 [2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
@@ -388,3 +389,4 @@ yum help <子命令>
 [5]: http://zhang789.blog.51cto.com/11045979/1846643
 [6]: http://haiwei2009.iteye.com/blog/2083177
 [7]: https://linux.cn/article-5100-1.html
+[8]: https://www.zhukun.net/archives/7577
