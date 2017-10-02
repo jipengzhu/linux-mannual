@@ -42,6 +42,9 @@ Debian系列
 > `make uninstall`（不一定有）可以根据Makefile文件来删除软件
 
 
+关于`configure`的更多知识参考[configure、make、make install 命令][9] 和 [configure和make install背后的故事][10]  
+
+
 
 # rpm
 ```
@@ -380,7 +383,9 @@ yum help <子命令>
 [Linux软件包管理工具yum详解][5]  
 [yum命令Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY][6]    
 [如何使用yum来下载RPM包而不进行安装][7]   
-[Ubuntu的包管理方式简介（apt-get、dpkg、aptitude）][8]
+[Ubuntu的包管理方式简介（apt-get、dpkg、aptitude）][8]  
+[configure、make、make install 命令][9]  
+[configure和make install背后的故事][10]  
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
 [2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
@@ -390,3 +395,5 @@ yum help <子命令>
 [6]: http://haiwei2009.iteye.com/blog/2083177
 [7]: https://linux.cn/article-5100-1.html
 [8]: https://www.zhukun.net/archives/7577
+[9]: http://www.cnblogs.com/tinywan/p/7230039.html
+[10]: http://azyet.github.io/2015/06/20/configureAndMakeInstall/index.html
