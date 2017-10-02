@@ -373,6 +373,18 @@ yum help <子命令>
 
 # 参考
 
-[rpm、tar及yum使用详解][1]  
+[rpm、tar及yum使用详解][1]    
+[RPM 和 YUM 包管理][2]    
+[Linux 平台上的软件包管理][3]         
+[Linux软件管理工具rpm详解][4]    
+[Linux软件包管理工具yum详解][5]  
+[yum命令Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY][6]    
+[如何使用yum来下载RPM包而不进行安装][7]   
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
+[2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
+[3]: https://www.ibm.com/developerworks/cn/linux/l-cn-rpmdpkg/index.html
+[4]: http://zhang789.blog.51cto.com/11045979/1846543
+[5]: http://zhang789.blog.51cto.com/11045979/1846643
+[6]: http://haiwei2009.iteye.com/blog/2083177
+[7]: https://linux.cn/article-5100-1.html
