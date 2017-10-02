@@ -210,7 +210,7 @@ yum downgrade [软件包]...
 ```
 
 
-## 检出
+## 查询
 > 列出安装包
 
 ```
@@ -229,8 +229,6 @@ yum list updates
 yum list installed
 ```
 
-
-## 查询
 > 模糊查找软件包
 
 ```
@@ -267,6 +265,12 @@ yum deplist [软件包]...
 
 ```
 yum erase [软件包]...
+```
+
+> 删除软件包
+
+```
+yum remove [软件包]...
 ```
 
 
@@ -307,19 +311,19 @@ yum groupremove [软件包]...
 > 查看所有的yum仓库
 
 ```
-yum [选项] repolist all [软件包]...
+yum repolist all
 ```
 
 > 查看启用的的yum仓库
 
 ```
-yum [选项] repolist enable [软件包]...
+yum repolist enabled
 ```
 
 > 查看禁用的yum仓库
 
 ```
-yum [选项] repolist disable [软件包]...
+yum repolist disabled
 ```
 
 ### 缓存
@@ -331,10 +335,11 @@ yum clean <缓存范围>
 
 |缓存范围 | 说明 |
 |--- |--- |
+|headers | 软件包头信息 |
 |packages | 软件包缓存 |
 |metadata | 元数据缓存 |
 |expire-cache | 过期信息缓存 |
-|rpmdb | 数据库信息缓存 |
+|dbcache | 数据库信息缓存 |
 |plugins | 插件缓存 | 
 |all | 所有缓存 |
 
