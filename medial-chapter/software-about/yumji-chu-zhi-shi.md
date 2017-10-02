@@ -38,7 +38,9 @@ Debian系列
 3. 安装软件包：`make install`
 
 > `./configre --help`可以查看帮助信息来获得更多的设置选项
+
 > `make clean`（不一定有）可以清除编译连接过程中的临时文件
+
 > `make uninstall`（不一定有）可以根据Makefile文件来删除软件
 
 
