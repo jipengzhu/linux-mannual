@@ -107,6 +107,16 @@ rpm -q[其他选项] [参数]
 |-q –scripts | 查看软件包安装脚本 |
 |-p, package | 指定查询时使用的本地软件包 |
 
+> `-p` 参数的影响如下
+```
+[root@zhujipeng test]# rpm -q telnet
+telnet-0.17-48.el6.x86_64
+[root@zhujipeng test]# rpm -q telnet-0.17-48.el6.x86_64.rpm
+package telnet-0.17-48.el6.x86_64.rpm is not installed
+[root@zhujipeng test]# rpm -qp telnet-0.17-48.el6.x86_64.rpm
+telnet-0.17-48.el6.x86_64
+```
+
 
 ## 删除
 ```
