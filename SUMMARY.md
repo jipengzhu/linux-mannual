@@ -60,8 +60,8 @@
 
 * [进程相关](senior-chapter/process-about/README.md)
   * [进程基础知识](senior-chapter/process-about/jin-cheng-ji-chu-zhi-shi.md)
-  * [进程相关命令](senior-chapter/process-about/jin-cheng-xiang-guan-ming-ling.md)
   * [进程高级知识](senior-chapter/process-about/jin-cheng-gao-ji-zhi-shi.md)
+  * [进程相关命令](senior-chapter/process-about/jin-cheng-xiang-guan-ming-ling.md)
   * [进程通信方式](senior-chapter/process-about/jin-cheng-tong-xin-fang-shi.md)
   * [进程调试技术](senior-chapter/process-about/jin-cheng-diao-shi-ji-zhu.md)
   * [开机启动原理](senior-chapter/process-about/kai-ji-qi-dong-yuan-li.md)
