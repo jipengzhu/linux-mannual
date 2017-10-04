@@ -128,6 +128,16 @@
 列出了进程所需的全部资源及已经分配给该进程的资源，但不包括CPU
 
 
+
+# 线程结构
+详情参见[内核线程与用户线程的一点小总结][14]
+
+
+
+# 地址空间
+详情参见[浅谈进程地址空间与虚拟存储空间][15]
+
+
 <br/>
 
 ---
@@ -147,6 +157,8 @@
 [Linux进程与线程的区别][11]   
 [Unix / Linux 线程的实质][12]  
 [同一进程的线程共享的资源和独有的资源][13]  
+[内核线程与用户线程的一点小总结][14]  
+[浅谈进程地址空间与虚拟存储空间][15]  
 
 [1]: http://www.cnblogs.com/tianlangshu/p/5224178.html
 [2]: http://www.cnblogs.com/vamei/archive/2012/09/20/2694466.html
@@ -161,3 +173,5 @@
 [11]: https://my.oschina.net/cnyinlinux/blog/422207
 [12]: https://my.oschina.net/cnyinlinux/blog/367910
 [13]: http://www.cnblogs.com/tracylee/archive/2012/10/29/2744228.html
+[14]: http://www.jianshu.com/p/5a4fc2729c17
+[15]: http://blog.csdn.net/tennysonsky/article/details/45092229
