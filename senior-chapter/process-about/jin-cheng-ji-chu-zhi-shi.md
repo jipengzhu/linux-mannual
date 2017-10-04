@@ -145,7 +145,8 @@
 [数据段、代码段、堆栈段、BSS段的区别][9]  
 [关于 Linux 进程你所需要知道的一切][10] 
 [Linux进程与线程的区别][11]   
-[同一进程的线程共享的资源和独有的资源][12]  
+[Unix / Linux 线程的实质][12]  
+[同一进程的线程共享的资源和独有的资源][13]  
 
 [1]: http://www.cnblogs.com/tianlangshu/p/5224178.html
 [2]: http://www.cnblogs.com/vamei/archive/2012/09/20/2694466.html
@@ -158,4 +159,5 @@
 [9]: http://blog.csdn.net/jxhui23/article/details/8064766
 [10]: http://mp.weixin.qq.com/s/ixDqEK1KyJs9iitxgspAww
 [11]: https://my.oschina.net/cnyinlinux/blog/422207
-[12]: http://www.cnblogs.com/tracylee/archive/2012/10/29/2744228.html
+[12]: https://my.oschina.net/cnyinlinux/blog/367910
+[13]: http://www.cnblogs.com/tracylee/archive/2012/10/29/2744228.html
