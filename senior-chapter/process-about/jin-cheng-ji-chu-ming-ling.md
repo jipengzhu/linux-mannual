@@ -311,7 +311,6 @@ Swap:  4090876k total,        0k used,  4090876k free,   170424k cached
 |used | 已使用的内存总量 |
 |free | 空闲的内存总量 |
 |buffers | 缓存使用的内存量 |
-> `free + buffers` 是实际可用的内存
 
 第五行（Swap）
 
@@ -346,6 +345,43 @@ Swap:  4090876k total,        0k used,  4090876k free,   170424k cached
 
 
 # free 
+查看内存的使用情况
+
+```
+free 选项
+```
+|选项 | 说明 |
+|--- |--- |
+|-b, --bytes | 以字节（Byte）为单位显示 |
+|-k, --kilo | 以千字节（）为单位显示|
+|-m, --mega | 以兆字节（MegaByte）为单位显示 |
+|-g, --giga | 以吉字节（GigaByte）为单位显示 |
+|--tera | 以太字节（TeraByte）为单位显示 |
+|-h, --human | 自动决定更友好的显示单位 |
+|--si | 使用1000而不使用1024进位 |
+|-t, --total | 显示总计行 |
+
+
+## 输出详解
+```
+[root@zhujipeng /]# free -m
+             total       used       free     shared    buffers     cached
+Mem:          1999        268       1730        161          5        166
+-/+ buffers/cache:         97       1901
+Swap:         3994          0       3994
+```
+|输出 | 说明 |
+|--- |--- |
+|total	| 物理内存总数 |
+|used	| 已经使用的内存数 |
+|free	| 空闲的内存数 |
+|shared	| 多个进程共享的内存数 |
+|buffers | Buffer缓存内存数 |
+|cached | Page缓存内存数 |
+|-buffers/cache	| 减去`buffers/cache`后使用的内存数 |
+|+buffers/cache	| 加上`buffers/cache`后剩余的内存数 |
+|Swap	| 交换分区，虚拟内存 |
+> `free + buffers + cached + Swap` 是实际可用的内存
 
 
 <br/>
@@ -357,9 +393,17 @@ Swap:  4090876k total,        0k used,  4090876k free,   170424k cached
 [10个重要的Linux ps命令实战][1]  
 [Linux中ps命令详解][2]  
 [使用top命令查看CPU负载][3] 
-[Linux top命令的用法详细详解][4]
+[Linux top命令的用法详细详解][4]  
+[显示系统中空闲和已使用的内存][5]  
+[Linux 内存 buffer 和 cache 的区别][6]  
+[What is the difference between buffer vs cache memory in Linux][7]  
+[Linux Swap交换分区介绍总结][8]  
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
 [3]: https://linux.cn/article-1238-1.html
 [4]: http://blog.csdn.net/dxl342/article/details/53507673
+[5]: https://linux.cn/article-2443-1.html
+[6]: http://blog.csdn.net/tianlesoftware/article/details/6459044
+[7]: https://stackoverflow.com/questions/6345020/what-is-the-difference-between-buffer-vs-cache-memory-in-linux
+[8]: http://www.cnblogs.com/kerrycode/p/5246383.html
