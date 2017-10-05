@@ -147,6 +147,17 @@ SIGHUP会在以下3种情况下被发送给相应的进程，详见[这里][9]
 
 
 ## 信号快捷键
+```
+[root@zhujipeng /]# stty -a
+speed 38400 baud; rows 26; columns 115; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = <undef>; eol2 = <undef>; swtch = <undef>; start = ^Q;
+stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W; lnext = ^V; flush = ^O; min = 1; time = 0;
+-parenb -parodd cs8 -hupcl -cstopb cread -clocal -crtscts -cdtrdsr
+-ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr icrnl ixon -ixoff -iuclc -ixany -imaxbel -iutf8
+opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke
+```
+
 |信号 | 快捷键 |
 |--- |--- |
 |SIGINT | CTRL+C |
