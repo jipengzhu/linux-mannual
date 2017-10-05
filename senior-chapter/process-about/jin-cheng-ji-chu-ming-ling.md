@@ -239,50 +239,113 @@ root        49    16  0 13:30 pts/1    00:00:00 ps -ef --sort -pmem
 
 
 # top
+实时查看进程的信息
+
+```
+top [选项]
+```
+|选项 | 说明 |
+|--- |--- |
+|d | 指定每两次屏幕信息刷新之间的时间间隔，默认为5s |
+|p | 通过指定监控进程ID来仅仅监控某个进程的状态 |
+|q | 使top尽可能没有任何延迟的进行刷新 |
+|S | 指定累计模式 |
+|s | 在安全模式中运行，不支持交互 | 
+|i | 不显示任何闲置或者僵死进程 |
+|c | 显示整个命令行而不只是显示命令名 |
+
+
+## 输出详解
+```
+top - 13:47:56 up  1:06,  0 users,  load average: 0.00, 0.00, 0.00
+Tasks:   3 total,   1 running,   2 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.2%us,  0.0%sy,  0.0%ni, 99.7%id,  0.2%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   2047048k total,   275400k used,  1771648k free,     5144k buffers
+Swap:  4090876k total,        0k used,  4090876k free,   170424k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
+    1 root      20   0 13032 2776 2516 S  0.0  0.1   0:00.05 bash
+   16 root      20   0 13032 3104 2732 S  0.0  0.2   0:00.11 bash
+   53 root      20   0 14952 1964 1756 R  0.0  0.1   0:00.01 top
+```
+
+第一行（top）
+
+|输出 | 说明 |
+|--- |--- |
+|13:47:56 | 当前时间 |
+|up | 系统启动了多久 |
+|users | 用户数 |
+|load average | 最近1分钟前、5分钟前、15分钟前的平均负载 |
+
+第二行（Tasks）
+
+|输出 | 说明 |
+|--- |--- |
+|total | 系统总进程数 |
+|running | 运行中的进程数 |
+|sleeping | 睡眠中的进程数 |
+|stoped | 停止的进程数 |
+|zombie | 僵尸进程数 |
+
+第三行（Cpu）
+
+|输出 | 说明 |
+|--- |--- |
+|us |（user）用户空间占用CPU的百分比 |
+|sy |（system）内核空间占用CPU的百分比 |
+|ni |（nice）改变过优先级的进程占用CPU的百分比 |
+|id |（idle）空闲CPU百分比 |
+|wa |（wait）IO等待占用CPU的百分比 |
+|hi |（Hardware IRQ）硬中断占用CPU的百分比 |
+|si |（Software IRQ）软中断占用CPU的百分比 |
+|st | 虚拟机占用百分比 | 
+> IRQ全称为Interrupt Request，即是“中断请求”的意思
+
+
+第四行（Mem）
+
+|输出 | 说明 |
+|--- |--- |
+|total | 物理内存总量 |
+|used | 已使用的内存总量 |
+|free | 空闲的内存总量 |
+|buffers | 缓存使用的内存量 |
+> `free + buffers` 是实际可用的内存
+
+第五行（Swap）
+
+|输出 | 说明 |
+|--- |--- |
+|total| 交换区总量 |
+|used | 使用的交换区总量 |
+|free | 空闲交换区总量 |
+|cached | 缓冲使用的交换区总量 |
+
+第七行
+
+|输出 | 说明 |
+|--- |--- |
+|PID | 进程id |
+|USER | 进程所有者 |
+|PR | 进程优先级 |
+|NI | nice值。负值表示高优先级，正值表示低优先级 |
+|VIRT | 进程使用的虚拟内存总量，单位kb |
+|RES | 进程使用的未被换出的物理内存大小，单位kb |
+|SHR | 共享内存大小，单位kb |
+|S | 进程状态 |
+|%CPU | CPU占用百分比 |
+|%MEM | 物理内存百分比 |
+|TIME+ | 进程使用的CPU时间总计，单位1/100秒 |
+|COMMAND |  进程名称（命令名/命令行） |
+
+
+## 交互命令
+详情参[这里][3]或者在top中使用`h`按键
 
 
 
 # free 
-
-
-
-# kill
-
-
-
-# lsof
-
-
-
-# pidof
-
-
-
-# bg 
-
-
-
-# fg
-
-
-
-# runuser
-
-
-
-# pstree
-
-
-
-# pstack
-
-
-
-# strace
-
-
-
-# daemon
 
 
 <br/>
@@ -293,6 +356,10 @@ root        49    16  0 13:30 pts/1    00:00:00 ps -ef --sort -pmem
 
 [10个重要的Linux ps命令实战][1]  
 [Linux中ps命令详解][2]  
+[使用top命令查看CPU负载][3] 
+[Linux top命令的用法详细详解][4]
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
+[3]: https://linux.cn/article-1238-1.html
+[4]: http://blog.csdn.net/dxl342/article/details/53507673
