@@ -36,12 +36,12 @@
 
 
 # bg 
-将后台停止的进程变为运行，详情参考[这里][7]
+将后台停止的进程变为运行，详情参考[这里][8]
 
 
 
 # fg
-将后台运行的进程变为前台进程，详情参考[这里][7]
+将后台运行的进程变为前台进程，详情参考[这里][8]
 
 
 
@@ -57,7 +57,8 @@
 [lsof print numeric ports][4]  
 [我使用过的Linux命令之pidof][5] 
 [JVM性能调优监控工具][6]   
-[Linux的bg和fg命令][7]
+[jps出现– process information unavailable解决方法][7]
+[Linux的bg和fg命令][8]
 
 [1]: http://www.cnblogs.com/wangcp-2014/p/5146343.html
 [2]: https://linux.cn/article-4099-1.html
@@ -65,4 +66,5 @@
 [4]: https://stackoverflow.com/questions/34032299/lsof-print-numeric-ports
 [5]: http://codingstandards.iteye.com/blog/841123
 [6]: https://my.oschina.net/feichexia/blog/196575
-[7]: http://blog.csdn.net/zh521zh/article/details/43500795
+[7]: http://www.ttlsa.com/linux/jps-process-information-unavailable/
+[8]: http://blog.csdn.net/zh521zh/article/details/43500795
