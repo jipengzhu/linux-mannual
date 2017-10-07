@@ -30,19 +30,17 @@
 
 
 
-# jps
-查看Java继承信息，详情参考[这里][6]
-
-
-
 # bg 
-将后台停止的进程变为运行，详情参考[这里][8]
+将后台停止的进程变为运行，详情参考[这里][6]
 
 
 
 # fg
-将后台运行的进程变为前台进程，详情参考[这里][8]
+将后台运行的进程变为前台进程，详情参考[这里][6]
 
+
+# nmon
+分析AIX和Linux性能的免费工具，详情参考[这里][7]
 
 
 <br/>
@@ -55,16 +53,14 @@
 [Linux 命令神器：lsof 入门][2] 
 [lsof在Linux中的10个例子][3]   
 [lsof print numeric ports][4]  
-[我使用过的Linux命令之pidof][5] 
-[JVM性能调优监控工具][6]   
-[jps出现– process information unavailable解决方法][7]
-[Linux的bg和fg命令][8]
+[我使用过的Linux命令之pidof][5]  
+[Linux的bg和fg命令][6]  
+[分析 AIX 和 Linux 性能的免费工具][7]    
 
 [1]: http://www.cnblogs.com/wangcp-2014/p/5146343.html
 [2]: https://linux.cn/article-4099-1.html
 [3]: http://kumu-linux.github.io/blog/2013/04/08/lsof/
 [4]: https://stackoverflow.com/questions/34032299/lsof-print-numeric-ports
 [5]: http://codingstandards.iteye.com/blog/841123
-[6]: https://my.oschina.net/feichexia/blog/196575
-[7]: http://www.ttlsa.com/linux/jps-process-information-unavailable/
-[8]: http://blog.csdn.net/zh521zh/article/details/43500795
+[6]: http://blog.csdn.net/zh521zh/article/details/43500795
+[7]: https://www.ibm.com/developerworks/cn/aix/library/analyze_aix/index.html
