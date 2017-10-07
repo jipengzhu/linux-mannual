@@ -90,7 +90,6 @@
 [Linux中的文件描述符与打开文件之间的关系][5]  
 [Linux系统环境下关于多进程并发写同一个文件的讨论][6]  
 
-
 [1]: http://www.cnblogs.com/youngerchina/p/5624462.html
 [2]: http://blog.csdn.net/dlutbrucezhang/article/details/9050467
 [3]: http://www.cnblogs.com/huxiao-tee/p/4657851.html

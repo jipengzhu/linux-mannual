@@ -159,7 +159,8 @@
 [同一进程的线程共享的资源和独有的资源][13]  
 [内核线程与用户线程的一点小总结][14]  
 [浅谈进程地址空间与虚拟存储空间][15]  
-[what-is-the-difference-between-a-thread-process-task][16]      
+[what-is-the-difference-between-a-thread-process-task][16]  
+[Linux多线程与同步][17]        
 
 [1]: http://www.cnblogs.com/tianlangshu/p/5224178.html
 [2]: http://www.cnblogs.com/vamei/archive/2012/09/20/2694466.html
@@ -177,3 +178,4 @@
 [14]: http://www.jianshu.com/p/5a4fc2729c17
 [15]: http://blog.csdn.net/tennysonsky/article/details/45092229
 [16]: https://stackoverflow.com/questions/3042717/what-is-the-difference-between-a-thread-process-task
+[17]: http://www.cnblogs.com/vamei/archive/2012/10/09/2715393.html
