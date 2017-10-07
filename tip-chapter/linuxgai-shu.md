@@ -91,7 +91,15 @@ Security-Enhanced Linux，美国国家安全局（NSA）对于强制访问控制
 [Linux发行版：CentOS、Ubuntu、RedHat、Android、Tizen、MeeGo][1]  
 [Linux各发行版介绍][2]  
 [Linux下查看系统版本号信息的方法][3]  
+[inux各种发行版本概述（Redhat系 | Debian系）][4]  
+[Suse linux和OpenSuse的区别和联系][5]  
+[一个时代的结束：Solaris 系统的那些年，那些事][6]  
+[AIX 介绍][7]  
 
 [1]: http://blog.csdn.net/ithomer/article/details/9729933
 [2]: http://weibo.com/ttarticle/p/show?id=2309404113611055322504
 [3]: http://blog.csdn.net/alexander_phper/article/details/53010225
+[4]: http://blog.csdn.net/wangjianno2/article/details/51607847
+[5]: http://www.cnblogs.com/beanmoon/archive/2012/11/01/2749487.html
+[6]: https://linux.cn/article-8803-1.html
+[7]: http://morgan363.iteye.com/blog/1100160
