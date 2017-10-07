@@ -112,6 +112,8 @@ SIGHUP会在以下3种情况下被发送给相应的进程，详见[这里][9]
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
 63) SIGRTMAX-1	64) SIGRTMAX
 ```
+> `0`号信号是测试信号，可以检测进程是否存在
+
 
 ## 信号的响应
 
@@ -213,7 +215,8 @@ cmdline     exe              map_files  net         personality    setgroups   s
 [Linux进程的Uninterruptible sleep][14]  
 [Linux查看进程的启动和运行相关的文件][15]  
 [fork出的子进程和父进程][16] 
-[shell中的fork、source和exec总结][17]   
+[shell中的fork、source和exec总结][17]  
+[What does `kill -0` do][18]   
 
 [1]: http://www.jianshu.com/p/f64cd61d196c
 [2]: https://zhuanlan.zhihu.com/p/21250530
@@ -232,3 +235,4 @@ cmdline     exe              map_files  net         personality    setgroups   s
 [15]: http://www.netpc.com.cn/2240.html
 [16]: http://blog.csdn.net/theone10211024/article/details/13774669
 [17]: http://www.cnblogs.com/balaamwe/archive/2012/01/16/2323727.html
+[18]: https://unix.stackexchange.com/questions/169898/what-does-kill-0-do
