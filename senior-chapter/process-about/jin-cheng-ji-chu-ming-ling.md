@@ -401,7 +401,8 @@ Swap:         3994          0       3994
 [Linux 内存中Page cache和buffer cache 的区别][9]  
 [linux系统缓存机制][10]  
 [Linux 内核的文件 Cache 管理机制介绍][11]  
-[linux下查看最消耗CPU、内存的进程][12]  
+[手工释放linux内存——/proc/sys/vm/drop_cache][12]    
+[linux下查看最消耗CPU、内存的进程][13]  
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
@@ -414,4 +415,5 @@ Swap:         3994          0       3994
 [9]: http://blog.csdn.net/haiross/article/details/39478959
 [10]: http://lizhenliang.blog.51cto.com/7876557/1657448
 [11]: https://www.ibm.com/developerworks/cn/linux/l-cache/index.html
-[12]: https://my.oschina.net/goberl/blog/85816
+[12]: http://blog.csdn.net/wyzxg/article/details/7279986/
+[13]: https://my.oschina.net/goberl/blog/85816
