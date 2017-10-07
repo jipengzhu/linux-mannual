@@ -405,6 +405,8 @@ Swap:         3994          0       3994
 [linux下查看最消耗CPU、内存的进程][13]  
 [理解Linux的性能][14]  
 [理解Linux系统负荷][15]  
+[Linux中CPU负载和CPU使用率表示的含意][16]  
+[浅谈Linux下CPU利用率和CPU负载及其代码实现原理][17]  
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
@@ -421,3 +423,5 @@ Swap:         3994          0       3994
 [13]: https://my.oschina.net/goberl/blog/85816
 [14]: http://blog.csdn.net/shudaqi2010/article/details/51085039
 [15]: http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html
+[16]: http://www.cnblogs.com/york-hust/archive/2013/05/23/3094233.html
+[17]: http://blog.csdn.net/haiross/article/details/17303719
