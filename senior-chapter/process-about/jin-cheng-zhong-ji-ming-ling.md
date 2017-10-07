@@ -39,8 +39,13 @@
 将后台运行的进程变为前台进程，详情参考[这里][6]
 
 
+
+# screen
+用于命令行终端切换的自由软件，详情参考[这里][7]
+
+
 # nmon
-分析AIX和Linux性能的免费工具，详情参考[这里][7]
+分析AIX和Linux性能的免费工具，详情参考[这里][9]
 
 
 <br/>
@@ -55,7 +60,9 @@
 [lsof print numeric ports][4]  
 [我使用过的Linux命令之pidof][5]  
 [Linux的bg和fg命令][6]  
-[分析 AIX 和 Linux 性能的免费工具][7]    
+[screen命令][7]  
+[使用 screen 管理你的远程会话][8]  
+[分析 AIX 和 Linux 性能的免费工具][9]    
 
 [1]: http://www.cnblogs.com/wangcp-2014/p/5146343.html
 [2]: https://linux.cn/article-4099-1.html
@@ -63,4 +70,6 @@
 [4]: https://stackoverflow.com/questions/34032299/lsof-print-numeric-ports
 [5]: http://codingstandards.iteye.com/blog/841123
 [6]: http://blog.csdn.net/zh521zh/article/details/43500795
-[7]: https://www.ibm.com/developerworks/cn/aix/library/analyze_aix/index.html
+[7]: http://man.linuxde.net/screen
+[8]: https://www.ibm.com/developerworks/cn/linux/l-cn-screen/index.html
+[9]: https://www.ibm.com/developerworks/cn/aix/library/analyze_aix/index.html
