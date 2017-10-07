@@ -399,7 +399,9 @@ Swap:         3994          0       3994
 [What is the difference between buffer vs cache memory in Linux][7]  
 [Linux Swap交换分区介绍总结][8]  
 [Linux 内存中Page cache和buffer cache 的区别][9]  
-[linux下查看最消耗CPU、内存的进程][10]  
+[linux系统缓存机制][10]  
+[Linux 内核的文件 Cache 管理机制介绍][11]  
+[linux下查看最消耗CPU、内存的进程][12]  
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
@@ -410,4 +412,6 @@ Swap:         3994          0       3994
 [7]: https://stackoverflow.com/questions/6345020/what-is-the-difference-between-buffer-vs-cache-memory-in-linux
 [8]: http://www.cnblogs.com/kerrycode/p/5246383.html
 [9]: http://blog.csdn.net/haiross/article/details/39478959
-[10]: https://my.oschina.net/goberl/blog/85816
+[10]: http://lizhenliang.blog.51cto.com/7876557/1657448
+[11]: https://www.ibm.com/developerworks/cn/linux/l-cache/index.html
+[12]: https://my.oschina.net/goberl/blog/85816
