@@ -292,9 +292,11 @@ COMMAND1 || COMMAND2
 [linux shell 字符串操作（长度，查找，替换）详解][3]  
 [Linux Shell 通配符、元字符、转义符使用实例介绍][4]
 [Linux命令的执行顺序][5]  
+[从 shell 眼中看世界][6]  
 
 [1]: http://www.jianshu.com/p/403f3554e2c1
 [2]: http://skypegnu1.blog.51cto.com/8991766/1543319
 [3]: http://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html
 [4]: http://www.cnblogs.com/chengmo/archive/2010/10/17/1853344.html
 [5]: http://coolnull.com/3590.html
+[6]: https://billie66.github.io/TLCL/book/zh/chap08.html
