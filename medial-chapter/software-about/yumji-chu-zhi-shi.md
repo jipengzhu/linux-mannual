@@ -406,6 +406,7 @@ yum help <子命令>
 [configure、make、make install 命令][9]  
 [configure和make install背后的故事][10]  
 [GNU Autotools的使用方法][11]    
+[Makefile选项CFLAGS,LDFLAGS,LIBS][12]  
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
 [2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
@@ -418,3 +419,4 @@ yum help <子命令>
 [9]: http://www.cnblogs.com/tinywan/p/7230039.html
 [10]: http://azyet.github.io/2015/06/20/configureAndMakeInstall/index.html
 [11]: http://blog.csdn.net/scucj/article/details/6079052
+[12]: http://www.cnblogs.com/taskiller/archive/2012/12/14/2817650.html
