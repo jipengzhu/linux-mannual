@@ -411,6 +411,8 @@ DNF是新一代的rpm软件包管理器，详情参考[这里][13]
 [GNU Autotools的使用方法][11]    
 [Makefile选项CFLAGS,LDFLAGS,LIBS][12]  
 [dnf 命令用法详解][13]  
+[linux devel包 和 非devel包的区别][14]  
+[rpm.bin和bin区别][15]  
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
 [2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
@@ -425,3 +427,5 @@ DNF是新一代的rpm软件包管理器，详情参考[这里][13]
 [11]: http://blog.csdn.net/scucj/article/details/6079052
 [12]: http://www.cnblogs.com/taskiller/archive/2012/12/14/2817650.html
 [13]: http://man.linuxde.net/dnf
+[14]: http://blog.csdn.net/crazyhacking/article/details/16808199
+[15]: http://yyyyy5101.iteye.com/blog/975496
