@@ -187,6 +187,9 @@ cmdline     exe              map_files  net         personality    setgroups   s
 ```
 
 
+# fork
+由fork创建的新进程被称为子进程（child process），详情见[fork出的子进程和父进程][16]
+
 
 <br/>
 
@@ -209,6 +212,8 @@ cmdline     exe              map_files  net         personality    setgroups   s
 [Linux中ctrl-c, ctrl-z, ctrl-d 区别][13]  
 [Linux进程的Uninterruptible sleep][14]  
 [Linux查看进程的启动和运行相关的文件][15]  
+[fork出的子进程和父进程][16] 
+[shell中的fork、source和exec总结][17]   
 
 [1]: http://www.jianshu.com/p/f64cd61d196c
 [2]: https://zhuanlan.zhihu.com/p/21250530
@@ -225,3 +230,5 @@ cmdline     exe              map_files  net         personality    setgroups   s
 [13]: http://blog.csdn.net/mylizh/article/details/38385739
 [14]: http://dangzhiqiang.blog.51cto.com/7961271/1721396
 [15]: http://www.netpc.com.cn/2240.html
+[16]: http://blog.csdn.net/theone10211024/article/details/13774669
+[17]: http://www.cnblogs.com/balaamwe/archive/2012/01/16/2323727.html
