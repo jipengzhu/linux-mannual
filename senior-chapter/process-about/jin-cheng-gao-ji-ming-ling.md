@@ -42,8 +42,9 @@
 [一次服务器CPU占用率高的定位分析][7] 
 [JVM性能调优监控工具][8]   
 [jps出现– process information unavailable解决方法][9]   
-[Linux守护进程运行命令daemonize][10]    
-
+[Linux守护进程运行命令daemonize][10]  
+[各种工具使用手册-strace][11]  
+[使用truss、strace或ltrace诊断软件的"疑难杂症"][12]  
 
 [1]: http://www.cnblogs.com/bodhitree/p/6018369.html
 [2]: http://blog.csdn.net/weiwangchao_/article/details/51252081
@@ -55,3 +56,5 @@
 [8]: https://my.oschina.net/feichexia/blog/196575
 [9]: http://www.ttlsa.com/linux/jps-process-information-unavailable/
 [10]: http://blog.csdn.net/erlang_hell/article/details/51187205
+[11]: http://www.itshouce.com.cn/linux/linux-strace.html
+[12]: https://www.ibm.com/developerworks/cn/linux/l-tsl/index.html

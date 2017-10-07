@@ -403,6 +403,8 @@ Swap:         3994          0       3994
 [Linux 内核的文件 Cache 管理机制介绍][11]  
 [手工释放linux内存——/proc/sys/vm/drop_cache][12]    
 [linux下查看最消耗CPU、内存的进程][13]  
+[理解Linux的性能][14]  
+[理解Linux系统负荷][15]  
 
 [1]: https://linux.cn/article-4743-1.html
 [2]: http://blog.csdn.net/tanga842428/article/details/52742360
@@ -417,3 +419,5 @@ Swap:         3994          0       3994
 [11]: https://www.ibm.com/developerworks/cn/linux/l-cache/index.html
 [12]: http://blog.csdn.net/wyzxg/article/details/7279986/
 [13]: https://my.oschina.net/goberl/blog/85816
+[14]: http://blog.csdn.net/shudaqi2010/article/details/51085039
+[15]: http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html
