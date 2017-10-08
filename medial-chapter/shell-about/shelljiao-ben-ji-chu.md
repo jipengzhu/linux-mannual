@@ -321,6 +321,9 @@ here
 
 
 
+# xargs命令
+xargs命令是给其他命令传递参数的一个过滤器，详情参见[xargs命令][16]
+
 # shell中的括号
 详情参照[这里][6]
 
@@ -346,6 +349,7 @@ here
 [关于Shell的source、点（.）和export][13]   
 [sh/bash/csh/Tcsh/ksh/pdksh等shell本质区别][14]         
 [csh输出重定向][15]  
+[[xargs命令][16]  
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
@@ -362,3 +366,4 @@ here
 [13]: http://walkerqt.blog.51cto.com/1310630/1690202
 [14]: http://blog.csdn.net/dream_an/article/details/50548936
 [15]: http://blog.itpub.net/14710393/viewspace-2106342/
+[16]: http://man.linuxde.net/xargs

@@ -185,7 +185,8 @@ fstab记录了开机启动时加载的文件系统，详情参考[这里][6]
 [linux里挂载（mount）和取消挂载（umount）命令的使用][4]  
 [Linux中的loop设备][5]  
 [linux之fstab文件详解][6]  
-[Linux查看磁盘剩余空间方法][7]
+[Linux查看磁盘剩余空间方法][7]  
+[玩转 Linux 之：磁盘分区、挂载知多少][8]  
 
 [1]: http://www.cnblogs.com/peida/archive/2012/12/07/2806483.html
 [2]: http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html
@@ -194,3 +195,4 @@ fstab记录了开机启动时加载的文件系统，详情参考[这里][6]
 [5]: http://blog.csdn.net/scaleqiao/article/details/46777811
 [6]: http://blog.csdn.net/richerg85/article/details/17917129
 [7]: http://blog.sciencenet.cn/blog-2458445-999488.html
+[8]: https://my.oschina.net/leejun2005/blog/290073

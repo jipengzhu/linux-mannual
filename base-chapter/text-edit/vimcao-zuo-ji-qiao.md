@@ -91,7 +91,8 @@
 - [vim 退格键（backspace）不能用][3]
 - [vim fileencoding和encoding][9]
 - [vi/vim使用入门: vimrc在哪儿?][11]
-- [YouCompleteMe中Ctrl-P/Ctrl-N失效][21]
+- [YouCompleteMe中Ctrl-P/Ctrl-N失效][21] 
+- [UTF-8、BOM、<feff>的问题][26]
 
 
 # vim搭建IDE
@@ -132,7 +133,8 @@
 [在Linux下使用vim配合xxd查看并编辑二进制文件][22]  
 [像 IDE 一样使用 vim][23]  
 [vim编辑器---批量注释与反注释][24]  
-[Vimdiff 使用][25]
+[Vimdiff 使用][25]  
+[UTF-8、BOM、<feff>的问题][26]
 
 [1]: http://www.cnblogs.com/jiqingwu/archive/2012/06/14/vim_notes.html
 [2]: http://www.chenglin.name/linux/blog-linux/595.html
@@ -159,3 +161,4 @@
 [23]: https://github.com/yangyangwithgnu/use_vim_as_ide
 [24]: http://blog.csdn.net/xiajun07061225/article/details/8488210
 [25]: https://www.ibm.com/developerworks/cn/linux/l-vimdiff/index.html
+[26]: http://blog.csdn.net/zhaihaifei/article/details/18843159

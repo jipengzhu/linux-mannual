@@ -16,7 +16,7 @@
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
 63) SIGRTMAX-1	64) SIGRTMAX
 ```
-> 信号可以使用上面的数字或单词去掉`SIG`的部分
+> 信号可以使用上面的数字或单词去掉`SIG`的部分，详情参见
 
 
 
@@ -64,6 +64,7 @@
 [screen命令][7]  
 [使用 screen 管理你的远程会话][8]  
 [分析 AIX 和 Linux 性能的免费工具][9]    
+[invalid signal specification error in bash script][10]  
 
 [1]: http://www.cnblogs.com/wangcp-2014/p/5146343.html
 [2]: https://linux.cn/article-4099-1.html
@@ -74,3 +75,4 @@
 [7]: http://man.linuxde.net/screen
 [8]: https://www.ibm.com/developerworks/cn/linux/l-cn-screen/index.html
 [9]: https://www.ibm.com/developerworks/cn/aix/library/analyze_aix/index.html
+[10]: https://unix.stackexchange.com/questions/199360/kill-sigstop-invalid-signal-specification-error-in-bash-script
