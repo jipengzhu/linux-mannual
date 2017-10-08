@@ -413,6 +413,7 @@ DNF是新一代的rpm软件包管理器，详情参考[这里][13]
 [dnf 命令用法详解][13]  
 [linux devel包 和 非devel包的区别][14]  
 [rpm.bin和bin区别][15]  
+[GPG入门教程][16]  
 
 [1]: http://502245466.blog.51cto.com/7559397/1259949
 [2]: https://www.ibm.com/developerworks/cn/linux/l-lpic1-v3-102-5/index.html
@@ -429,3 +430,4 @@ DNF是新一代的rpm软件包管理器，详情参考[这里][13]
 [13]: http://man.linuxde.net/dnf
 [14]: http://blog.csdn.net/crazyhacking/article/details/16808199
 [15]: http://yyyyy5101.iteye.com/blog/975496
+[16]: http://www.ruanyifeng.com/blog/2013/07/gpg.html
