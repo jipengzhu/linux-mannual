@@ -343,7 +343,9 @@ here
 [我使用过的Linux命令之true][10]  
 [我使用过的Linux命令之:（冒号）][11]  
 [我使用过的Linux命令系列总目录][12]   
-[关于Shell的source、点（.）和export][13]          
+[关于Shell的source、点（.）和export][13]   
+[sh/bash/csh/Tcsh/ksh/pdksh等shell本质区别][14]         
+[csh输出重定向][15]  
 
 [1]: http://blog.csdn.net/u011204847/article/details/51184883
 [2]: http://blog.csdn.net/ithomer/article/details/7954577
@@ -358,3 +360,5 @@ here
 [11]: http://codingstandards.iteye.com/blog/1160298
 [12]: http://codingstandards.iteye.com/blog/1112967
 [13]: http://walkerqt.blog.51cto.com/1310630/1690202
+[14]: http://blog.csdn.net/dream_an/article/details/50548936
+[15]: http://blog.itpub.net/14710393/viewspace-2106342/
