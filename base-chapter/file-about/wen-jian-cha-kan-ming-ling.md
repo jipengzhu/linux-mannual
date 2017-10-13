@@ -140,6 +140,7 @@ less [选项] <命令>
 |Space | 向下滚动一页 |
 |[pagedown] | 向下滚动一页 |
 |[pageup] | 向上滚动一页 |
+|,, |（两次逗号）回到上一次的位置 |
 |h | 显示帮助界面 |
 |q | 退出less命令 |
 > f -> forward | b -> backward | d -> down | u-> up
