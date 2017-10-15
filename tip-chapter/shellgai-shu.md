@@ -139,10 +139,10 @@
 |Alt + l | 把光标后的词转化为小写。l -> lower |
 |Alt + c | 把光标后的词汇变成首字符大写。c -> capital |
 
+
  
 # shell快捷键（mac）
 和linux差不多，部分有区别
-
 
 |快捷键|说明|
 |---|---|
@@ -150,3 +150,31 @@
 |Ctrl + s | 正向搜索历史记录。s -> search |
 |Ctrl + u | 剪切整行 |
 |Ctrl + l | 会插入ls，然后回车 |
+
+
+
+# mac下常用快捷键
+|快捷键 | 说明 |
+|--- |--- |
+| command + q | 退出应用程序 |
+| command + w | 关闭当前窗口 |
+| command + r | 刷新当前页面 |
+| command + t | 新建页面 |
+| command + p | 打印 |
+| command + a | 全选 |
+| command + s | 保存 |
+| command + f | 查找 |
+| command + h | 隐藏当前窗口 |
+| command + z | 撤销 |
+| command + x | 前切 |
+| command + c | 复制 |
+| command + v | 粘贴 |
+| command + m | 最小化到Dock |
+| command + , |（逗号）打开设置界面 |
+| control + ← | 向左切换屏幕 |
+| control + → | 向右切换屏幕 |
+| control + ↑ | 显示任务管理界面 |
+| control + ↓ | 显示应用程序界面 |
+> `shift`一般是对`command`进行增强，`alt`则是辅助
+
+
