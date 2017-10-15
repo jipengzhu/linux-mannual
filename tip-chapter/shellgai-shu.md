@@ -170,7 +170,7 @@
 | command + c | 复制 |
 | command + v | 粘贴 |
 | command + m | 最小化到Dock |
-| command + , | 打开设置界面（逗号） |
+| command + , | 打开设置界面（逗号）|
 | command + TAB | 快速切换程序 |
 | command + SPACE | 切换输入法 |
 | control + SPACE | 呼出搜索框 |
