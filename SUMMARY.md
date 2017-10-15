@@ -69,6 +69,12 @@
   * [进程调试技术](senior-chapter/process-about/jin-cheng-diao-shi-ji-zhu.md)
   * [开机启动原理](senior-chapter/process-about/kai-ji-qi-dong-yuan-li.md)
 * [网络相关](senior-chapter/network-about/README.md)
+  * 网络基础命令
+  * 网络中级命令
+  * 网络高级命令
+  * 网络基础知识
+  * 网络高级知识
+  * 网络相关问题
 * [系统相关](senior-chapter/system-about/README.md)
 
 ## 综合篇
