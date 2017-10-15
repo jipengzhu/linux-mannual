@@ -166,6 +166,7 @@
 | command + f | 查找 |
 | command + h | 隐藏当前窗口 |
 | command + z | 撤销 |
+| shift + command + z | 重做 |
 | command + x | 前切 |
 | command + c | 复制 |
 | command + v | 粘贴 |
