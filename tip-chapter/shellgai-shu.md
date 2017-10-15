@@ -170,11 +170,12 @@
 | command + c | 复制 |
 | command + v | 粘贴 |
 | command + m | 最小化到Dock |
-| command + , |（逗号）打开设置界面 |
+| command + , | 打开设置界面（逗号） |
+| command + TAB | 快速切换程序 |
+| command + SPACE | 切换输入法 |
+| control + SPACE | 呼出搜索框 |
 | control + ← | 向左切换屏幕 |
 | control + → | 向右切换屏幕 |
 | control + ↑ | 显示任务管理界面 |
 | control + ↓ | 显示应用程序界面 |
 > `shift`一般是对`command`进行增强，`alt`则是辅助
-
-
