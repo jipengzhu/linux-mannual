@@ -234,6 +234,7 @@ hostname [选项] [主机名]
 [nslookup命令][13]  
 [linux下DNS解析（nslookup、dig、host）][14]  
 [Linux命令：使用dig命令解析域名][15]  
+[域名解析中A记录、CNAME、MX记录、NS记录的区别和联系][16]  
 
 [1]: http://www.cnblogs.com/peida/archive/2013/03/06/2945407.html
 [2]: http://sky9896.blog.51cto.com/2330653/1886609
@@ -250,3 +251,4 @@ hostname [选项] [主机名]
 [13]: http://man.linuxde.net/nslookup
 [14]: http://122269875.blog.51cto.com/1660536/1713947
 [15]: http://blog.csdn.net/reyleon/article/details/12976889
+[16]: http://blog.csdn.net/crazw/article/details/8986581
