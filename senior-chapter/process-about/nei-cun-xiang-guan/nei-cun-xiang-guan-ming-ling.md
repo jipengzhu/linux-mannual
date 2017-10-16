@@ -44,20 +44,20 @@ Swap:         3994          0       3994
 
 # 参考
 
-[显示系统中空闲和已使用的内存][5]  
-[Linux 内存 buffer 和 cache 的区别][6]  
-[What is the difference between buffer vs cache memory in Linux][7]  
-[Linux Swap交换分区介绍总结][8]  
-[Linux 内存中Page cache和buffer cache 的区别][9]  
-[linux系统缓存机制][10]  
-[Linux 内核的文件 Cache 管理机制介绍][11]  
-[手工释放linux内存——/proc/sys/vm/drop_cache][12]   
+[显示系统中空闲和已使用的内存][1]  
+[Linux 内存 buffer 和 cache 的区别][2]  
+[What is the difference between buffer vs cache memory in Linux][3]  
+[Linux Swap交换分区介绍总结][4]  
+[Linux 内存中Page cache和buffer cache 的区别][5]  
+[linux系统缓存机制][6]  
+[Linux 内核的文件 Cache 管理机制介绍][7]  
+[手工释放linux内存——/proc/sys/vm/drop_cache][8]   
 
-[5]: https://linux.cn/article-2443-1.html
-[6]: http://blog.csdn.net/tianlesoftware/article/details/6459044
-[7]: https://stackoverflow.com/questions/6345020/what-is-the-difference-between-buffer-vs-cache-memory-in-linux
-[8]: http://www.cnblogs.com/kerrycode/p/5246383.html
-[9]: http://blog.csdn.net/haiross/article/details/39478959
-[10]: http://lizhenliang.blog.51cto.com/7876557/1657448
-[11]: https://www.ibm.com/developerworks/cn/linux/l-cache/index.html
-[12]: http://blog.csdn.net/wyzxg/article/details/7279986/
+[1]: https://linux.cn/article-2443-1.html
+[2]: http://blog.csdn.net/tianlesoftware/article/details/6459044
+[3]: https://stackoverflow.com/questions/6345020/what-is-the-difference-between-buffer-vs-cache-memory-in-linux
+[4]: http://www.cnblogs.com/kerrycode/p/5246383.html
+[5]: http://blog.csdn.net/haiross/article/details/39478959
+[6]: http://lizhenliang.blog.51cto.com/7876557/1657448
+[7]: https://www.ibm.com/developerworks/cn/linux/l-cache/index.html
+[8]: http://blog.csdn.net/wyzxg/article/details/7279986/
