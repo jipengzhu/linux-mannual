@@ -139,6 +139,80 @@ lo        Link encap:Local Loopback
 |txqueuelen | 传输缓冲区Metric大小 |
 
 
+
+# lsof
+查看所有打开的文件，也可查看网络的信息，详情参考[这里][8]
+> linux下一切皆文件，网络也用文件表示
+
+## 显示连接信息
+### 显示所有连接
+```
+lsof -i 
+```
+
+### 仅获取IPv6流量
+```
+lsof -i 6
+```
+
+### 仅显示TCP/UDP连接
+```
+lsof -iTCP
+lsof -iUDP
+```
+
+### 显示指定端口的连接
+```
+lsof -i:22
+lsof -i :22
+```
+
+### 显示指定主机的连接
+```
+lsof -i@172.16.12.5
+```
+
+### 显示指定主机和端口的连接
+```
+lsof -i@172.16.12.5:22
+```
+
+### 显示监听端口
+```
+lsof -i -sTCP:LISTEN
+lsof -i | grep -i LISTEN
+```
+
+
+
+# hostname
+显示和设置主机名
+```
+hostname [选项] [主机名]
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-a, --alias | 显示主机别名 |
+|-A, --all-fqdns | 显示完全限定名FQDN（Fully Qualified Domain Name）和主机名 |
+|--d, --domain | 显示域名部分 |
+|-f, --fqdn, --long | 显示完全限定名FQDN（Fully Qualified Domain Name）|
+|-i, --ip-address | 显示主机对应的ip |
+|-I, --all-ip-addresses | 显示主机对应的所有ip |
+|-s, --short | 显示主机名在第一个点号前面的部分 |
+> 关于如何修改主机名请参考[这里][10]，FQDN的知识参考[这里][11]
+
+
+
+# nslookup
+查询DNS，详情参考[这里][13]
+
+
+
+# dig
+查询DNS，详情参考[这里][15]
+
+
 <br/>
 
 ---
@@ -152,6 +226,14 @@ lo        Link encap:Local Loopback
 [linux下怎么退出telnet][5]  
 [Centos 开启telnet-service服务][6]  
 [每天一个linux命令 ifconfig命令][7]  
+[Linux 命令神器：lsof 入门][8]  
+[hostname命令][9]  
+[深入理解Linux修改hostname][10]  
+[FQDN 是什么][11]  
+[Linux设置FQDN][12]  
+[nslookup命令][13]  
+[linux下DNS解析（nslookup、dig、host）][14]  
+[Linux命令：使用dig命令解析域名][15]  
 
 [1]: http://www.cnblogs.com/peida/archive/2013/03/06/2945407.html
 [2]: http://sky9896.blog.51cto.com/2330653/1886609
@@ -160,3 +242,11 @@ lo        Link encap:Local Loopback
 [5]: http://blog.csdn.net/love__coder/article/details/6733307
 [6]: http://www.cnblogs.com/xlmeng1988/archive/2012/04/24/telnet-server.html
 [7]: http://www.cnblogs.com/peida/archive/2013/02/27/2934525.html
+[8]: https://linux.cn/article-4099-1.html
+[9]: http://man.linuxde.net/hostname
+[10]: http://www.cnblogs.com/kerrycode/p/3595724.html
+[11]: http://blog.csdn.net/u012842205/article/details/51931017
+[12]: http://www.cnblogs.com/zhenyuyaodidiao/p/4947930.html
+[13]: http://man.linuxde.net/nslookup
+[14]: http://122269875.blog.51cto.com/1660536/1713947
+[15]: http://blog.csdn.net/reyleon/article/details/12976889
