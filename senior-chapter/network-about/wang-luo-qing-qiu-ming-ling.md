@@ -31,6 +31,7 @@ http://www.letters.com/file[a-z:2].txt
 |--compressed | 指定返回结果是解压后的 |
 |--connect-timeout &lt; seconds &gt; | 指定连接超时，重复指定时最后一个生效 |
 |-D, --dump-header &lt; file &gt; | 保存返回结果的请求头 |
+|-f, --fail | 忽略服务器导致的错误 |
 |-i, --include | 在输出结果中显示头信息 |
 |-I, --head | 只请求HTTP头信息 |
 |--interface &lt; name &gt; | 指定网络接口 |
@@ -41,6 +42,8 @@ http://www.letters.com/file[a-z:2].txt
 |-m, --max-time &lt; seconds &gt; | 指定整个操作的超时时间 |
 |--no-keepalive | 不使用keepalive |
 |--raw | 显示返回结果未解码的内容 |
+|-s | 不显示进度条和错误信息 |
+|-S | 和 `-s` 一起显示错误信息 |
 |--tcp-nodelay	| 使用TCP_NODELAY选项 |
 |-w, --write-out &lt; format &gt; | 指定输出格式 |
 
