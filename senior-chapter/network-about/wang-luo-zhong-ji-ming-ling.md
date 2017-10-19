@@ -87,6 +87,7 @@ http://www.letters.com/file[a-z:2].txt
 详情参考[这里][8]
 
 #### http method
+详情参考[这里][9]
 
 ### 加密选项
 |选项 | 说明 |
@@ -108,6 +109,7 @@ http://www.letters.com/file[a-z:2].txt
 |--pass | 指定SSL私钥文件的密码 | 
 
 #### TLS和SSL
+详情参考[这里][10]
 
 ### 认证选项 
 |选项 | 说明 |
@@ -119,8 +121,10 @@ http://www.letters.com/file[a-z:2].txt
 |--krb &lt; level &gt; | FTP指定Kerberos认证级别 |
 
 #### http认证
+详情参考[这里][12]
 
 #### Kerberos认证
+详情参考[这里][13]
 
 ### 代理选项
 |选项 | 说明 |
@@ -134,8 +138,10 @@ http://www.letters.com/file[a-z:2].txt
 |--socks5 &lt; host[:port] &gt; | 使用socks5代理 |
 
 #### http代理
+详情参考[这里][15]
 
 #### socks代理
+详情参考[这里][19]
 
 ### 文件选项
 |选项 | 说明 |
@@ -189,11 +195,21 @@ route  [-V] [--version] [-h] [--help]
 [curl网站开发指南][2]  
 [HTTP Keep-Alive是什么？][3]  
 [TCP_NODELAY 和 TCP_NOPUSH的解释][4]  
-[总结整理时下流行的浏览器User-Agent大全][]  
+[总结整理时下流行的浏览器User-Agent大全][5]  
 [说说http协议中的编码和解码][6]  
 [四种常见的 POST 提交数据方式][7]  
 [HTTP头部详解][8]  
-[HTTP的请求方法][]    
+[HTTP的请求方法][9]  
+[TLS和SSL详解][10]  
+[SSL与TLS的区别以及介绍][11]  
+[WEB 中的认证方式][12]  
+[Kerberos认证流程详解][13]  
+[什么是代理服务器][14]  
+[http请求细节和代理][15]  
+[HttpTunnel技术介绍][16]  
+[tcp和udp包穿透防火墙-Httptunnel][17]  
+[Shadowsocks原理和搭建][18]  
+[SOCKS5代理原理探索][19]  
 
 [1]: http://www.cnblogs.com/duhuo/p/5695256.html
 [2]: http://blog.csdn.net/wishfly/article/details/7004198
@@ -203,4 +219,14 @@ route  [-V] [--version] [-h] [--help]
 [6]: http://www.cnblogs.com/zhao1949/p/5545064.html
 [7]: https://imququ.com/post/four-ways-to-post-data-in-http.html
 [8]: http://ynhu33.blog.51cto.com/412835/408801
-[]: http://www.cnblogs.com/findumars/p/7086193.html
+[9]: http://www.cnblogs.com/findumars/p/7086193.html
+[10]: http://blog.csdn.net/chaosju/article/details/39897799
+[11]: http://kb.cnblogs.com/page/197396/
+[12]: http://ahuango.iteye.com/blog/779590
+[13]: http://blog.csdn.net/jewes/article/details/20792021
+[14]: http://www.cnblogs.com/Aiapple/p/6485426.html
+[15]: http://www.cnblogs.com/UnGeek/p/5828045.html
+[16]: http://m635674608.iteye.com/blog/2223682
+[17]: http://blog.csdn.net/educast/article/details/39472227
+[18]: http://blog.021xt.cc/archives/98
+[19]: http://blog.csdn.net/cszhouwei/article/details/74362427
