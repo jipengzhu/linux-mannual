@@ -73,7 +73,9 @@
   * [磁盘相关命令](senior-chapter/disk-about/ci-pan-xiang-guan-ming-ling.md)
 * [网络相关](senior-chapter/network-about/README.md)
   * [网络基础命令](senior-chapter/network-about/wang-luo-ji-chu-ming-ling.md)
-  * [网络中级命令](senior-chapter/network-about/wang-luo-zhong-ji-ming-ling.md)
+  * [网络请求命令](senior-chapter/network-about/wang-luo-qing-qiu-ming-ling.md)
+  * [网络交互命令](senior-chapter/network-about/wang-luo-jiao-hu-ming-ling.md)
+  * [网络路由命令](senior-chapter/network-about/wang-luo-lu-you-ming-ling.md)
   * [网络高级命令](senior-chapter/network-about/wang-luo-gao-ji-ming-ling.md)
   * [网络基础知识](senior-chapter/network-about/wang-luo-ji-chu-zhi-shi.md)
   * 网络高级知识
