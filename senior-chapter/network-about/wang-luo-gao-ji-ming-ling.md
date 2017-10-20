@@ -88,6 +88,9 @@ tcpdump [ -AbdDefhHIJKlLnNOpqRStuUvxX ] [ -B buffer_size ] [ -c count ]
 |-XX | 用16进制和ASCII码显示头信息 |
 > 想要监听发送到本地端口的数据包需要指定`-i lo0`
 
+表达式部分请参考文档末尾的链接
+
+
 
 # ip
 ip命令和ifconfig类似，但功能更强大，详情参考[这里][8]
