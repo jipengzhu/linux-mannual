@@ -234,10 +234,12 @@ route delete default 10.2.1.128
 [traceroute命令][2]  
 [linux 多网卡路由问题][3]  
 [mac osx修改mac地址和管理路由表的方法][4]  
-[windows route 命令详解][5]    
+[windows route 命令详解][5]  
+[关于个人对TCP/IP协议簇的理解 ][6]  
 
 [1]: http://man.linuxde.net/route
 [2]: http://man.linuxde.net/traceroute
 [3]: http://blog.csdn.net/yuanbinquan/article/details/51468886
 [4]: http://www.huilog.com/?p=660
 [5]: http://cwfsxlove.blog.51cto.com/43997/50389
+[6]: http://blog.chinaunix.net/uid-30077524-id-5074334.html

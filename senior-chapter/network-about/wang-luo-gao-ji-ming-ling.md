@@ -31,6 +31,27 @@ address_family_options:
        [--econet|--ec]
 ```
 
+|选项 | 说明 |
+|--- |--- |
+|--route , -r | 显示路由表 |
+|--interfaces=iface , -I=iface , -i | 指定网络接口 |
+|--masquerade , -M | 显示伪装的连接 |
+|--statistics , -s | 显示统计信息 |
+|--verbose , -v | 显示更加详细的信息 |
+|--wide , -W | 显示ip的所有部分 |
+|--numeric , -n | 显示数字而不是名称 |
+|--numeric-hosts | 主机部分显示为ip |
+|--numeric-ports | 端口部分显示为数字 |
+|--numeric-users | 用户部分显示用户id |
+|--protocol=family , -A | 指定协议族 |
+|-c, --continuous | 持续性的输出信息 |
+|-e, --extend | 输出额外的信息 |
+|-p, --program | 显示进程id |
+|-l, --listening | 只显示监听的网络 |
+|-a, --all | 显示所有的连接 |
+|-t | 显示tcp连接协议的 |
+|-u | 显示udp连接协议的 |
+
 
 
 # tcpdump
@@ -46,6 +67,24 @@ tcpdump [ -AbdDefhHIJKlLnNOpqRStuUvxX ] [ -B buffer_size ] [ -c count ]
                [ -y datalinktype ] [ -z postrotate-command ] [ -Z user ]
                [ expression ]
 ```
+
+|选项 | 说明 |
+|--- |--- |
+|-A | 使用ASCII码输出 |
+|-B | 指定buffer大小，单位为KB |
+|-c | 达到指定大小的包后退出 |
+|-D | 显示可以监听的网络接口 |
+|-i | 指定监听的网络接口 |
+|-n | 显示ip而不是主机名 |
+|-nn | 显示协议和端口的数字而不是名称 |
+|-N | 不显示域名部分 |
+|-v | 显示详细的输出 |
+|-vv | 显示详细的输出 |
+|-vvv | 显示详细的输出 |
+|-x | 显示头信息 |
+|-xx | 显示头信息 |
+|-X | 用16进制和ASCII码显示头信息 |
+|-XX | 用16进制和ASCII码显示头信息 |
 
 
 # ip
