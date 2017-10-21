@@ -78,7 +78,7 @@
   * [网络路由命令](senior-chapter/network-about/wang-luo-lu-you-ming-ling.md)
   * [网络高级命令](senior-chapter/network-about/wang-luo-gao-ji-ming-ling.md)
   * [网络基础知识](senior-chapter/network-about/wang-luo-ji-chu-zhi-shi.md)
-  * 网络高级知识
+  * [网络高级知识](senior-chapter/network-about/wang-luo-gao-ji-zhi-shi.md)
   * [网络相关问题](senior-chapter/network-about/wang-luo-xiang-guan-wen-ti.md)
 * [系统相关](senior-chapter/system-about/README.md)
 
