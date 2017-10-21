@@ -56,6 +56,7 @@ OSI模型主要由7层组成
 |SSH （22）| 远程会话协议（Secure Shell）|
 |SMTP（25）| 简单邮件协议（Simple Mail Transfer Protocol）|
 |DNS（53）| 域名解析系统（Domain Name System）|
+|DHCP（68）| 动态主机配置协议（Dynamic Host Configuration Protocol）|
 |TFTP（69）| 简单文件传输协议（Trivial File Transfer Protocol）|
 |HTTP（80）| 超文本传输协议（HyperText Transfer Protocol）|
 |POP3（110）| 邮局管理协议（Post Office Protocol 3）|
@@ -119,8 +120,9 @@ OSI模型主要由7层组成
 [TCP/UDP 常用端口列表][4]  
 [FTP主动模式和被动模式的比较][5]  
 [SMTP、IMAP和POP3的区别和联系][6]  
-[SNMP原理与实战详解][7]  
-[ldap介绍][8]  
+[DHCP协议详解][7]  
+[SNMP原理与实战详解][8]  
+[ldap介绍][9]  
 
 
 [1]: http://blog.csdn.net/songkai320/article/details/51754433
@@ -129,5 +131,6 @@ OSI模型主要由7层组成
 [4]: http://blog.csdn.net/joyous/article/details/41806771
 [5]: http://jackiechen.blog.51cto.com/196075/193883/
 [6]: http://www.jianshu.com/p/fc15b2546ef8
-[7]: http://freeloda.blog.51cto.com/2033581/1306743/
-[8]: http://407711169.blog.51cto.com/6616996/1439543
+[7]: http://blog.csdn.net/windeal3203/article/details/50677166
+[8]: http://freeloda.blog.51cto.com/2033581/1306743/
+[9]: http://407711169.blog.51cto.com/6616996/1439543
