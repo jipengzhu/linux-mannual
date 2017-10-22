@@ -80,8 +80,7 @@
   * [网络基础知识](senior-chapter/network-about/wang-luo-ji-chu-zhi-shi.md)
   * [网络体系结构](senior-chapter/network-about/wang-luo-ti-xi-jie-gou.md)
   * [网络传输过程](senior-chapter/network-about/wang-luo-chuan-shu-guo-cheng.md)
-  * [网络高级知识](senior-chapter/network-about/wang-luo-gao-ji-zhi-shi.md)
-  * 网络传输过程
+  * [网络IP地址](senior-chapter/network-about/wang-luo-IP-di-zhi.md)
 * [系统相关](senior-chapter/system-about/README.md)
 
 ## 综合篇
