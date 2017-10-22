@@ -276,4 +276,4 @@ tcp是面向无连接的报文传输协议，具有以下特点
 [23]: http://www.cnblogs.com/thankgoodness/articles/3146069.html
 [24]: http://www.cnblogs.com/linuxbug/p/4906000.html
 [25]: http://www.cnblogs.com/purpleraintear/p/6403053.html
-[26]: http://blog.csdn.net/abcd1f2/article/details/51726907
+[26]: http://mp.weixin.qq.com/s?__biz=MzI4MjA4ODU0Ng==&mid=402163560&idx=1&sn=5269044286ce1d142cca1b5fed3efab1&3rd=MzA3MDU4NTYzMw==&scene=6#rd
