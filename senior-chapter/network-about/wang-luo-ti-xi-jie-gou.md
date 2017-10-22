@@ -123,7 +123,9 @@ OSI模型主要由7层组成
 [DHCP协议详解][7]  
 [SNMP原理与实战详解][8]  
 [ldap介绍][9]  
-
+[DHCP原理及配置][10]  
+[ICMP协议详解][11]  
+[DHCP协议详解][12]  
 
 [1]: http://blog.csdn.net/songkai320/article/details/51754433
 [2]: http://blog.csdn.net/songkai320/article/details/51770377
@@ -134,3 +136,6 @@ OSI模型主要由7层组成
 [7]: http://blog.csdn.net/windeal3203/article/details/50677166
 [8]: http://freeloda.blog.51cto.com/2033581/1306743/
 [9]: http://407711169.blog.51cto.com/6616996/1439543
+[10]: http://minux.blog.51cto.com/8994862/1714849
+[11]: http://blog.csdn.net/snlying/article/details/4211396
+[12]: http://blog.csdn.net/windeal3203/article/details/50677166

@@ -250,6 +250,12 @@ udp是面向无连接的报文传输协议，具有以下特点
 [浅谈UDP(数据包长度，收包能力，丢包及进程结构选择)][24] 
 [告知你不为人知的UDP-疑难杂症和使用][25]   
 [又见CLOSE_WAIT][26]  
+[什么是TCP Window][27]  
+[IP数据报分片——Fragmentation和重组][28]  
+[TCP 的那些事儿（上）][29]  
+[TCP 的那些事儿（下）][30]  
+[浅谈TCP/IP网络编程中socket的行为][31]  
+[计算机网络信道复用技术][32]  
 
 [1]: http://blog.csdn.net/qq_14935437/article/details/71081546
 [2]: http://blog.csdn.net/study_zhxu/article/details/55212006
@@ -277,3 +283,9 @@ udp是面向无连接的报文传输协议，具有以下特点
 [24]: http://www.cnblogs.com/linuxbug/p/4906000.html
 [25]: http://www.cnblogs.com/purpleraintear/p/6403053.html
 [26]: http://mp.weixin.qq.com/s?__biz=MzI4MjA4ODU0Ng==&mid=402163560&idx=1&sn=5269044286ce1d142cca1b5fed3efab1&3rd=MzA3MDU4NTYzMw==&scene=6#rd
+[27]: http://www.cnblogs.com/awpatp/archive/2013/02/17/2914152.html
+[28]: https://my.oschina.net/xinxingegeya/blog/483138
+[29]: https://coolshell.cn/articles/11564.html
+[30]: https://coolshell.cn/articles/11564.html
+[31]: http://www.cnblogs.com/promise6522/archive/2012/03/03/2377935.html
+[32]: http://www.itdadao.com/articles/c15a851445p0.html
