@@ -173,29 +173,49 @@ PPPoE协议是宽带运营商用于对用户认证计费而设计的
 PPPoE头尾一共8字节，所以有效载荷实际为1492
 
 ### IP分片
-如果你的IP包大于1500字节，IP层就会分片了
+如果你的IP包大于1500字节，IP层就会分片了，详见[这里][6]
 
 ### TCP分片
-MSS是TCP每次能够传输的最大数据分段，不能超过1460（1500 - 20 - 20），所以TCP传输通常不会进行IP分片
+MSS是TCP每次能够传输的最大数据分段，不能超过1460（1500 - 20 - 20），如果数据段大于MSS就会进行TCP分片，所以TCP传输通常不会进行IP分片
 > TCP和IP的头信息都是20字节，详情参见[这里][17]
 
 ### UDP分片
+UDP不会分片，如果数据报大于1472（1500 - 20 - 8），就会进行IP分片，由于UDP是不可靠的传输协议，如果分片丢失就会导致重组失败和数据包被丢弃
+> UDP的头信息都是8字节，详情参见[这里][17]
 
 
 ## 窗口机制
+详情参见[这里][18]
 
 
 ## 拥塞机制
+详情参见[这里][18]
 
 
 ## 失败重传
+详情参见[这里][19]
 
 
 ## 信息校验
-
+详情参见[这里][20]
 
 
 # UDP传输
+tcp是面向无连接的报文传输协议，具有以下特点
+
+1. 面向无连接：通信双方不需要建立连接和释放链接
+2. 不可靠传输：只管将数据发送出去和尽最大努力交付数据
+3. 有大小限制：UDP协议规定UDP能够发送最大数据包是64K
+
+
+
+# 消息边界
+详情参见[这里][8]
+
+
+
+# UDP缓冲
+详情参见[这里][25]
 
 
 <br/>
@@ -221,6 +241,14 @@ MSS是TCP每次能够传输的最大数据分段，不能超过1460（1500 - 20 
 [处于CLOSE_WAIT和TIME_WAIT状态连接的原因及解决][15]  
 [HTTP TCP UDP Socket 关系][16]  
 [ip头、tcp头、udp头详解及定义][17]  
+[计算机网络【七】：可靠传输的实现][18]  
+[TCP错误恢复特性之一TCP重传][19]  
+[TCP新手误区--数据校验的意义][20]  
+[TCP的可靠性有多高][21]  
+[UDP 和 TCP 的 socket 分别一般用在什么地方][22]  
+[TCP与UDP的不同接包处理方式][23]  
+[浅谈UDP(数据包长度，收包能力，丢包及进程结构选择)][24] 
+[告知你不为人知的UDP-疑难杂症和使用][25]   
 
 [1]: http://blog.csdn.net/qq_14935437/article/details/71081546
 [2]: http://blog.csdn.net/study_zhxu/article/details/55212006
@@ -239,3 +267,11 @@ MSS是TCP每次能够传输的最大数据分段，不能超过1460（1500 - 20 
 [15]: http://jschu.blog.51cto.com/5594807/1732414
 [16]: http://www.cnblogs.com/ghj1976/p/4295346.html
 [17]: http://www.cnblogs.com/shenpengyan/p/5912567.html
+[18]: http://blog.chinaunix.net/uid-26275986-id-4109679.html
+[19]: http://www.cnblogs.com/huangchaosong/p/7154177.html
+[20]: http://blog.csdn.net/bjrxyz/article/details/75194716
+[21]: http://www.cnblogs.com/my_life/articles/5367814.html
+[22]: https://www.zhihu.com/question/20060141
+[23]: http://www.cnblogs.com/thankgoodness/articles/3146069.html
+[24]: http://www.cnblogs.com/linuxbug/p/4906000.html
+[25]: http://www.cnblogs.com/purpleraintear/p/6403053.html
