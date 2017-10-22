@@ -249,6 +249,7 @@ tcp是面向无连接的报文传输协议，具有以下特点
 [TCP与UDP的不同接包处理方式][23]  
 [浅谈UDP(数据包长度，收包能力，丢包及进程结构选择)][24] 
 [告知你不为人知的UDP-疑难杂症和使用][25]   
+[又见CLOSE_WAIT][26]  
 
 [1]: http://blog.csdn.net/qq_14935437/article/details/71081546
 [2]: http://blog.csdn.net/study_zhxu/article/details/55212006
@@ -275,3 +276,4 @@ tcp是面向无连接的报文传输协议，具有以下特点
 [23]: http://www.cnblogs.com/thankgoodness/articles/3146069.html
 [24]: http://www.cnblogs.com/linuxbug/p/4906000.html
 [25]: http://www.cnblogs.com/purpleraintear/p/6403053.html
+[26]: http://blog.csdn.net/abcd1f2/article/details/51726907
