@@ -19,6 +19,7 @@
   * [文件特殊权限](base-chapter/file-about/wen-jian-te-shu-quan-xian.md)
   * [文件时间简介](base-chapter/file-about/wen-jian-shi-jian-jian-jie.md)
   * [文件压缩解压](base-chapter/file-about/wen-jian-ya-suo-jie-ya.md)
+  * [文件监听同步](base-chapter/file-about/wen-jian-jian-ting-tong-bu.md)
   * [文件结构详解](base-chapter/file-about/wen-jian-jie-gou-xiang-jie.md)
 * [文本编辑](base-chapter/text-edit/README.md)
   * [vim文本编辑](base-chapter/text-edit/vimwen-ben-bian-ji.md)
@@ -39,6 +40,8 @@
 ## 中级篇
 
 * [用户相关](medial-chapter/user-about/README.md)
+  * [用户基础命令](medial-chapter/user-about/yong-hu-ji-chu-ming-ling.md)
+  * [用户登录命令](medial-chapter/user-about/yong-hu-deng-lu-ming-ling.md)
   * [用户和组管理](medial-chapter/user-about/yong-hu-he-zu-guan-li.md)
   * [用户和进程id](medial-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](medial-chapter/user-about/huan-jing-bian-liang.md)
@@ -82,6 +85,13 @@
   * [网络传输过程](senior-chapter/network-about/wang-luo-chuan-shu-guo-cheng.md)
   * [网络IP地址](senior-chapter/network-about/wang-luo-IP-di-zhi.md)
 * [系统相关](senior-chapter/system-about/README.md)
+  * 系统信息
+  * 定时任务
+  * 机器启动
+  * 日志搜集
+  * 防火墙基础
+  * 防火墙使用
+  * 语言和日期
 
 ## 综合篇
 

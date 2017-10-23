@@ -1,7 +1,9 @@
 # vim
 - vim（vi的增强版）是我最喜欢的编辑器，也是linux下第二强大的编辑器 
 - 虽然emacs是公认的世界第一，但我认为emacs并没有vi编辑来得高效
-- 如果是初学vi，运行一下vimtutor是个聪明的决定。(如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行vimtutor zh）
+- 如果是初学vi，运行一下vimtutor是个聪明的决定
+
+> 如果你的系统环境不是中文，而你想使用中文的vimtutor，就运行`vimtutor zh`
 
 
 
