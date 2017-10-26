@@ -69,11 +69,10 @@
   * [进程文件读写](senior-chapter/process-about/jin-cheng-wen-jian-du-xie.md)
   * [进程通信方式](senior-chapter/process-about/jin-cheng-tong-xin-fang-shi.md)
   * [进程调试技术](senior-chapter/process-about/jin-cheng-diao-shi-ji-zhu.md)
-  * [开机启动原理](senior-chapter/process-about/kai-ji-qi-dong-yuan-li.md)
-* [内存相关](senior-chapter/process-about/nei-cun-xiang-guan.md)
-  * [内存相关命令](senior-chapter/process-about/nei-cun-xiang-guan/nei-cun-xiang-guan-ming-ling.md)
+* [内存相关](senior-chapter/memory-about/README.md)
+  * [内存相关命令](senior-chapter/memory-about/nei-cun-xiang-guan-ming-ling.md)
   * [内存信息采集](senior-chapter/process-about/nei-cun-xiang-guan/nei-cun-xin-xi-cai-ji.md)
-* [磁盘相关](senior-chapter/process-about/ci-pan-xiang-guan.md)
+* [磁盘相关](senior-chapter/disk-about/README.md)
   * [磁盘相关命令](senior-chapter/disk-about/ci-pan-xiang-guan-ming-ling.md)
 * [网络相关](senior-chapter/network-about/README.md)
   * [网络基础命令](senior-chapter/network-about/wang-luo-ji-chu-ming-ling.md)
@@ -86,13 +85,14 @@
   * [网络传输过程](senior-chapter/network-about/wang-luo-chuan-shu-guo-cheng.md)
   * [网络IP地址](senior-chapter/network-about/wang-luo-IP-di-zhi.md)
 * [系统相关](senior-chapter/system-about/README.md)
-  * 系统信息
-  * 定时任务
-  * 机器启动
-  * 日志搜集
-  * 防火墙基础
-  * 防火墙使用
-  * 语言和日期
+  * [开机启动](senior-chapter/system-about/kai-ji-qi-dong.md)
+  * [系统信息](senior-chapter/system-about/xi-tong-xin-xi.md)
+  * [定时任务](senior-chapter/system-about/ding-shi-ren-wu.md)
+  * [机器启动](senior-chapter/system-about/ji-qi-qi-dong.md)
+  * [日志搜集](senior-chapter/system-about/ri-zhi-sou-ji.md)
+  * [防火墙基础](senior-chapter/system-about/fang-huo-qiang-ji-chu.md)
+  * [防火墙使用](senior-chapter/system-about/fang-huo-qiang-shi-yong.md)
+  * [语言和日期](senior-chapter/system-about/yu-yan-he-ri-qi.md)
 
 ## 综合篇
 
