@@ -76,38 +76,31 @@ Access via rsync daemon:
 |-v, --verbose | 输出更详细的信息 |
 |-a, --archive | 试用归档模式，等同于`-rlptgoD` |
 |-r, --recursive | 递归处理目录 |
-|-u, --update | 忽略比接收端更新的文件 |
+|-u, --update | 忽略接收端中更新的文件 |
 |--inplace | 替换接收端的文件 | 
 |--append | 追加到接收端的文件 |
 |-d, --dirs | 不递归处理目录 |
 |-l, --links | 保持软链接的形式 |
 |-L, --copy-links | 使用软链接对应的源文件 |
-|--copy-unsafe-links | 只传输软链接的源文件不存在的文件 |
-|--safe-links | 只传输软链接的源文件存在的文件 |
 |-H, --hard-links | 保持硬连接 |
 |-p, --perms | 保留文件的权限 |
 |-E, --executability  | 保留可执行权限 |
-|--chmod=CHMOD | 修改文件的权限 |
+|--chmod=CHMOD | 修改文件权限 |
 |-A, --acls | 保留访问策略 |
 |-X, --xattrs | 保留额外的属性 |
 |-o, --owner | 保留用户属性（只能超级用户使用）|
 |-g, --group | 保留组属性 |
 |-t, --times | 保留修改时间 |
+|--delete | 删除接收端多余的文件 |
 |-m, --prune-empty-dirs | 忽略空的文件 |
 |--exclude=PATTERN | 排除指定模式的文件 |
 |--exclude-from=FILE | 从文件中读取排除模式 |
 |--include=PATTERN | 包含指定模式的文件 |
-|--include-from=FILE     read include patterns from FILE
-             --files-from=FILE       read list of source-file names from FILE
-        -h, --human-readable        output numbers in a human-readable format
-            --progress              show progress during transfer
-            --list-only             list the files instead of copying them
-            
-            -4, --ipv4                  prefer IPv4
-        -6, --ipv6                  prefer IPv6
-            --version               print version number
-       
-            --daemon                run as an rsync daemon
+|--include-from=FILE | 从文件中读取包含模式 |
+|--files-from=FILE | 从文件中读取传输文件列表 |
+|--progress | 显示传输进度 |
+|--list-only | 只列出要传输的文件 |
+|--daemon | 后台运行 |
             
 
 <br/>
