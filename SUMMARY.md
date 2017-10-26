@@ -72,6 +72,7 @@
   * [开机启动原理](senior-chapter/process-about/kai-ji-qi-dong-yuan-li.md)
 * [内存相关](senior-chapter/process-about/nei-cun-xiang-guan.md)
   * [内存相关命令](senior-chapter/process-about/nei-cun-xiang-guan/nei-cun-xiang-guan-ming-ling.md)
+  * [内存信息采集](senior-chapter/process-about/nei-cun-xiang-guan/nei-cun-xin-xi-cai-ji.md)
 * [磁盘相关](senior-chapter/process-about/ci-pan-xiang-guan.md)
   * [磁盘相关命令](senior-chapter/disk-about/ci-pan-xiang-guan-ming-ling.md)
 * [网络相关](senior-chapter/network-about/README.md)
