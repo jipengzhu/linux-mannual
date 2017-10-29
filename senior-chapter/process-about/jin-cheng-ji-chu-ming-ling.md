@@ -37,10 +37,10 @@ pts/1
 TT
 tty1
 
-[root@mty-005 ~]# ps x -o user | sort -u
+[root@zhujipeng ~]# ps x -o user | sort -u
 root
 USER
-[root@mty-005 ~]# ps -e -o user | sort -u
+[root@zhujipeng ~]# ps -e -o user | sort -u
 avahi
 dbus
 dig
