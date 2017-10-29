@@ -40,8 +40,8 @@
 ## 中级篇
 
 * [用户相关](medial-chapter/user-about/README.md)
-  * [用户基础命令](medial-chapter/user-about/yong-hu-ji-chu-ming-ling.md)
   * [用户登录命令](medial-chapter/user-about/yong-hu-deng-lu-ming-ling.md)
+  * [用户基础命令](medial-chapter/user-about/yong-hu-ji-chu-ming-ling.md)
   * [用户和组管理](medial-chapter/user-about/yong-hu-he-zu-guan-li.md)
   * [用户和进程id](medial-chapter/user-about/yong-hu-he-jin-cheng-id.md)
   * [环境变量详解](medial-chapter/user-about/huan-jing-bian-liang.md)
