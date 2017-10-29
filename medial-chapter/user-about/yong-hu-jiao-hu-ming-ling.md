@@ -1,4 +1,5 @@
-# ssh
+# 用户登录
+## ssh
 远程登录和数据转发
 
 ```
@@ -24,13 +25,11 @@ ssh -NL 0.0.0.0:3000:127.0.0.1:3001 root@101.236.56.121
 上述命令代表将发送到`101.236.56.121`的`3000`端口的数据转发到本机（`127.0.0.1`）的`3001`端口
 
 
-
-# sshpass
+## sshpass
 可以指定密码的远程登录工具，需要额外安装，详情参见[这里][5]
 
 
-
-# expect  
+## expect  
 登陆脚本如下，参数为主机和密码，用户名按需修改，配合`item2`的`profile`非常不错
 ```
 #! /usr/bin/expect
@@ -49,7 +48,13 @@ interact
 
 
 
-# su
+# 免密登录
+每次登陆都需要输入密码很麻烦，可以通过免密来解决，详情参考[这里][7]
+
+
+
+# 用户切换
+## su
 切换用户
 
 格式如下
@@ -65,8 +70,7 @@ su [选项] [用户名]
 |-s SHELL, --shell=SHELL| 切换时指定使用的shell |
 
 
-
-# sudo
+## sudo
 提升普通用户的权限
 > su命令允许普通用户完全变更为root用户身份
 > 但这也无疑会暴露了超级管理员的密码，使得系统增添很多的安全隐患
@@ -90,9 +94,8 @@ sudo [选项] [用户名]
 sudo相关配置文件和visudo命令可以参考[这里][2]
 
 
-
-# runuser
-使用指定用户执行命令，详情参见[这里][10]
+## runuser
+使用指定用户执行命令，详情参见[这里][14]
 
 
 <br/> 
@@ -106,11 +109,15 @@ sudo相关配置文件和visudo命令可以参考[这里][2]
 [通过 SSH 实现 TCP / IP 隧道（端口转发）][3]  
 [动态端口转发：安装带有 SSH 的 SOCKS 服务器][4]  
 [sshpass：一个很棒的免交互 SSH 登录工具][5]  
-[expect - 自动交互脚本][6]  
-[实战演练su命令与sudo服务][7]    
-[Linux 下以其他用户身份运行程序—— su、sudo、runuser][8]  
-[linux 切换用户身份、su、sudo、/etc/sudoers][9]
-[linux 常用命令： runuser][10]
+[expect - 自动交互脚本][6] 
+[如何在 CentOS / RHEL 上设置 SSH 免密码登录][7]
+[Linux使用ssh公钥实现免密码登录Linux][8]  
+[ssh 免密码设置失败原因总结][9]  
+[KNOWN_HOSTS处理][10]  
+[实战演练su命令与sudo服务][11]    
+[Linux 下以其他用户身份运行程序—— su、sudo、runuser][12]  
+[linux 切换用户身份、su、sudo、/etc/sudoers][13]
+[linux 常用命令： runuser][14]
 
 [1]: https://linux.cn/article-3858-1.html
 [2]: http://www.cnblogs.com/sting2me/p/5167730.html
@@ -118,7 +125,11 @@ sudo相关配置文件和visudo命令可以参考[这里][2]
 [4]: https://linux.cn/article-8947-1.html
 [5]: https://linux.cn/article-8086-1.html
 [6]: http://xstarcd.github.io/wiki/shell/expect.html
-[7]: http://zhang789.blog.51cto.com/11045979/1846231
-[8]: http://blog.chopmoon.com/favorites/219.html
-[9]: http://desert3.iteye.com/blog/1663995
-[10]: http://www.cnblogs.com/doscho/p/6498148.html
+[7]: https://linux.cn/article-6901-1.html
+[8]: http://www.cnblogs.com/Percy_Lee/p/5698603.html
+[9]: http://www.cnblogs.com/yjmyzz/p/4481720.html
+[10]: https://yq.aliyun.com/articles/6827
+[11]: http://zhang789.blog.51cto.com/11045979/1846231
+[12]: http://blog.chopmoon.com/favorites/219.html
+[13]: http://desert3.iteye.com/blog/1663995
+[14]: http://www.cnblogs.com/doscho/p/6498148.html
