@@ -106,27 +106,6 @@ usermod [选项] <用户名>
 |-s, --shell SHELL | 修改默认终端 |
 |-u, --uid UID | 修改用户的UID |
 
-### who
-查看用户登录的相关信息
-
-格式如下
-```
-who [选项] [文件]
-```
-
-|选项 | 说明 |
-|--- |--- |
-|-b, --boot | 系统最新一次的启动时间 |
-|-H, --heading | 同时输出列名称，可以看到公网ip |
-|-l, --login | 输出登陆的进程信息 |
-|--lookup | 通过DNS查看登陆的来源信息，可以看到公网ip |
-|-r, --runlevel | 查看现在的运行级别 |
-|-u, --users | 查看已经登陆的用户，可以看到公网ip |
-
-### whoami
-whiami用来查看当前的用户名，和`id -un`命令一样
-
-
 
 ## 用户组管理
 用户可以属于多个组，并获得相关组的权限。用户的组分为主组和附属组
@@ -187,60 +166,6 @@ groups [选项] <群组名...>
 ```
 
 
-## 身份查看（id）
-id用来查看用户名和用户组
-
-格式如下
-```
-newgrp [选项] <群组名>
-```
-
-|选项 | 说明 |
-|--- |--- |
-|-u, --user | 只显示有效用户id |
-|-g, --group | 只显示有效组id |
-|-G, --groups | 显示所有的有效组id |
-|-n, --name | 显示名称而不是id，配合-ugG使用 |
-|-r, --real | 显示真实id而不是有效id，配合-ugG使用 |
-
-
-## 用户切换（su）
-su命令可以切换用户
-
-格式如下
-```
-su [选项] [用户名]
-```
-
-|选项 | 说明 |
-|--- |--- |
-|-c command, --command=command | 切换时执行命令 |
-|-, -l, --login | 切换时使用登陆模式，重新读取环境变量 |
-|-m, -p|切换时保留环境变量，如果使用了－l选项，忽略该选项|
-|-s SHELL, --shell=SHELL| 切换时指定使用的shell |
-
-
-## 权限提升（sudo）
-su命令允许普通用户完全变更为root用户身份，但这也无疑会暴露了超级管理员的密码，使得系统增添很多的安全隐患，因此我们需要使用sudo程序来仅将特定命令的执行权限赋予给指定的用户
-
-格式如下
-```
-sudo [选项] [用户名]
-```
-
-|选项 | 说明 |
-|--- |--- |
-|-b | 在后台执行指定的命令 |
-|-k | 清空安全时间，下次执行sudo时需要再次密码验证 |
-|-l | 列出当前用户可执行的命令 | 
-|-u user | 用户名或UID值 以指定的用户身份执行命令 |
-|-p prompt | 更改询问密码的提示语 |
-
-> l -> list | b -> background
-
-sudo相关配置文件和visudo命令可以参考[这里][2]
-
-
 ## 默认权限（umask）
 - umask命令可以查看和设置文件的默认权限
 - umask设置的是权限“补码”，而chmod设置的是文件权限码
@@ -260,15 +185,7 @@ sudo相关配置文件和visudo命令可以参考[这里][2]
 # 参考
 
 [linux用户和组管理详解][1]  
-[实战演练su命令与sudo服务][2]  
-[LINUX UMASK详解][3]  
-[Linux 下以其他用户身份运行程序—— su、sudo、runuser][4]  
-[linux 切换用户身份、su、sudo、/etc/sudoers][5]
-[linux 常用命令： runuser][6]
+[LINUX UMASK详解][2]  
 
 [1]: http://zhang789.blog.51cto.com/11045979/1845767
-[2]: http://zhang789.blog.51cto.com/11045979/1846231
-[3]: http://blog.csdn.net/linux7985/article/details/5993708
-[4]: http://blog.chopmoon.com/favorites/219.html
-[5]: http://desert3.iteye.com/blog/1663995
-[6]: http://www.cnblogs.com/doscho/p/6498148.html
+[2]: http://blog.csdn.net/linux7985/article/details/5993708
