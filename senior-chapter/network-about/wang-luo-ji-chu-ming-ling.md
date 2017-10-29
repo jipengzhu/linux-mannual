@@ -213,6 +213,15 @@ hostname [选项] [主机名]
 查询DNS，详情参考[这里][15]
 
 
+
+# arp
+操作主机的arp缓冲区，详情参考[这里][18]
+
+
+# ip
+ip命令和ifconfig类似，但功能更强大，详情参考[这里][19]
+
+
 <br/>
 
 ---
@@ -236,6 +245,8 @@ hostname [选项] [主机名]
 [Linux命令：使用dig命令解析域名][15]  
 [域名解析中A记录、CNAME、MX记录、NS记录的区别和联系][16]  
 [常用域名记录解释][17]  
+[arp命令][18]  
+[试试Linux下的ip命令，ifconfig已经过时了][19]  
 
 [1]: http://www.cnblogs.com/peida/archive/2013/03/06/2945407.html
 [2]: http://sky9896.blog.51cto.com/2330653/1886609
@@ -254,3 +265,5 @@ hostname [选项] [主机名]
 [15]: http://blog.csdn.net/reyleon/article/details/12976889
 [16]: http://blog.csdn.net/crazw/article/details/8986581
 [17]: https://www.ezloo.com/2011/04/a_mx_cname_txt_aaaa_ns.html
+[18]: http://man.linuxde.net/arp
+[19]: https://linux.cn/article-3144-1.html

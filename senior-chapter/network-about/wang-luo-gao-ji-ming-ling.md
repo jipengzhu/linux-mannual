@@ -1,5 +1,6 @@
 # netstat
 查看系统的网络连接信息
+
 ```
 netstat  [address_family_options]  [--tcp|-t]  [--udp|-u]  [--udplite|-U]   [--raw|-w]   [--listening|-l]
        [--all|-a]   [--numeric|-n]   [--numeric-hosts]   [--numeric-ports]   [--numeric-users]   [--symbolic|-N]
@@ -54,6 +55,57 @@ address_family_options:
 
 
 
+# ss(socket statistics)
+查看系统的网络连接信息
+
+```
+ss [options] [ FILTER ]
+```
+
+|选项 | 说明 |
+|--- |--- |
+|-n, --numeric | 显示数字而不是名称 |
+|-r, --resolve | 解析数字为名称  |
+|-a, --all | 显示所有的套接字 |
+|-l, --listening | 显示监听的套接字（默认不显示）|
+|-o, --options | 显示时间信息 |
+|-e, --extended | 显示额外的信息 |
+|-m, --memory | 显示内存使用 |
+|-p, --processes | 显示进程信息 |
+|-i, --info | 显示内部Tcp信息 |
+|-s, --summary | 显示统计信息 |
+|-4, --ipv4 | 显示ipv4的套接字 |
+|-6, --ipv6 | 显示ipv6的套接字 |
+|-t, --tcp| 显示tcp的套接字 |
+|-u, --udp| 显示udp的套接字 |
+|-x, --unix | 显示Unix domain的套接字 |
+|-f FAMILY, --family=FAMILY | 指定协议族 |
+
+```
+FILTER := [ state STATE-FILTER ] [ EXPRESSION ]
+```
+
+|状态 | 说明 |
+|--- |--- |
+|listen | 参考三次握手的状态 |
+|syn-sent| 参考三次握手的状态 |
+|syn-recv| 参考三次握手的状态 |
+|established| 参考三次握手的状态 |
+|fin-wait-1| 参考三次握手的状态 |
+|fin-wait-2| 参考三次握手的状态 |
+|last-ack| 参考三次握手的状态 |
+|time-wait| 参考三次握手的状态 | 
+|close-wait| 参考三次握手的状态 |
+|closing| 参考三次握手的状态 |
+|closed| 参考三次握手的状态 |
+|all | 所有的状态 |
+|connected | 除了`listen`和`closed`的状态 |
+|synchronized| 除了`syn-sent`的`connected`状态 |
+
+表达式部分请参考文档末尾的链接
+
+
+
 # tcpdump
 抓取网络上的数据包
 ```
@@ -91,11 +143,6 @@ tcpdump [ -AbdDefhHIJKlLnNOpqRStuUvxX ] [ -B buffer_size ] [ -c count ]
 表达式部分请参考文档末尾的链接
 
 
-
-# ip
-ip命令和ifconfig类似，但功能更强大，详情参考[这里][8]
-
-
 <br/>
 
 ---
@@ -103,19 +150,19 @@ ip命令和ifconfig类似，但功能更强大，详情参考[这里][8]
 # 参考
 
 [每天一个linux命令 netstat命令][1]  
-[netstat命令][2]  
-[netstat 的10个基本用法][3]  
-[Linux tcpdump命令详解][4]  
-[tcpdump命令][5]  
-[tcpdump使用技巧][6]  
-[tcpdump不能抓本机程序向本机端口发送的包吗][7]  
-[试试Linux下的ip命令，ifconfig已经过时了][8]  
+[每天一个linux命令 ss命令][2]  
+[netstat命令][3]  
+[netstat 的10个基本用法][4]  
+[Linux tcpdump命令详解][5]  
+[tcpdump命令][6]  
+[tcpdump使用技巧][7]  
+[tcpdump不能抓本机程序向本机端口发送的包吗][8]  
 
 [1]: http://www.cnblogs.com/peida/archive/2013/03/08/2949194.html
-[2]: http://man.linuxde.net/netstat
-[3]: https://linux.cn/article-2434-1.html
-[4]: http://www.cnblogs.com/ggjucheng/archive/2012/01/14/2322659.html
-[5]: http://man.linuxde.net/tcpdump
-[6]: https://linuxwiki.github.io/NetTools/tcpdump.html
-[7]: http://bbs.chinaunix.net/thread-1589327-1-1.html
-[8]: https://linux.cn/article-3144-1.html
+[2]: http://www.cnblogs.com/peida/archive/2013/03/11/2953420.html
+[3]: http://man.linuxde.net/netstat
+[4]: https://linux.cn/article-2434-1.html
+[5]: http://www.cnblogs.com/ggjucheng/archive/2012/01/14/2322659.html
+[6]: http://man.linuxde.net/tcpdump
+[7]: https://linuxwiki.github.io/NetTools/tcpdump.html
+[8]: http://bbs.chinaunix.net/thread-1589327-1-1.html
