@@ -86,6 +86,7 @@
   * [网络IP地址](senior-chapter/network-about/wang-luo-IP-di-zhi.md)
 * [系统相关](senior-chapter/system-about/README.md)
   * [开机启动](senior-chapter/system-about/kai-ji-qi-dong.md)
+  * [系统信息](senior-chapter/system-about/xi-tong-xin-xi.md)
   * [系统命令](senior-chapter/system-about/xi-tong-ming-ling.md)
   * [定时任务](senior-chapter/system-about/ding-shi-ren-wu.md)
   * [日志搜集](senior-chapter/system-about/ri-zhi-sou-ji.md)
