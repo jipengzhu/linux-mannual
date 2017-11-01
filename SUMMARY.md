@@ -88,6 +88,7 @@
   * [开机启动](senior-chapter/system-about/kai-ji-qi-dong.md)
   * [系统信息](senior-chapter/system-about/xi-tong-xin-xi.md)
   * [系统命令](senior-chapter/system-about/xi-tong-ming-ling.md)
+  * [实用命令](senior-chapter/system-about/shi-yong-ming-ling.md)
   * [定时任务](senior-chapter/system-about/ding-shi-ren-wu.md)
   * [日志搜集](senior-chapter/system-about/ri-zhi-sou-ji.md)
   * [语言和日期](senior-chapter/system-about/yu-yan-he-ri-qi.md)
