@@ -1,3 +1,94 @@
+# 系统日志
+系统日志对于问题追踪和安全防护非常重要，通常在 `/var/log` 目录下面，详情参考参考中的链接
+
+
+
+# 日志切割
+日志每时每刻都在产生，需要在某个时刻或达到指定大小后进行切割和备份，详情参考参考中的链接
+
+
+
+# 日志采集
+## 日志采集
+日志采集是指利用日志搜集工具将机器数据和网络数据采集到统一的地方进行分析和处理
+
+### 机器数据
+机器数据是指软件所能够产生的各种数据
+
+- 日志文件
+- 指标数据
+- 业务数据
+
+### 网络数据
+网络数据是指对网络流量进行抓包和解析
+
+
+## 日志分析
+日志分析是对日志数据进行解析，并结合实际业务进行分析和处理
+
+- 故障排查
+- 异常告警
+- 趋势预测
+- 性能监控
+- 业务分析
+- 安全审计
+
+
+## 技术特点
+- 日志集中分析，处理和存储
+- 全文检索，字段检索，关联分析
+- 可视化展示，及时预警
+
+
+
+# 采集工具
+## linux日志采集工具
+### rsyslog
+`rsyslog` 是大多数linux系统的默认采集工具，具有以下特点
+
+- 基于c语言开发的，支持多线程的高性能采集工具
+- 支持可靠的tcp传输，并且可以使用ssl加密
+- 模块化设计，支持按需加载模块使用
+- 支持基于内存和文件缓冲队列
+- 支持kafka等多种输出
+- 支持日志压缩
+
+> rsyslog的基础知识可以参照[这里][1]，官网参考[这里][2]，Github参考[这里][3]
+
+### syslog-ng
+`syslog-ng` 也是linux上比较好的采集工具，和 `rsyslog` 类似
+> `SUSE Linux`和 `OpenSUSE`默认使用`syslog-ng`，详情参照[这里][9]
+
+### logstash
+logstash是新兴的开源日志采集工具，是ELK中重要的一员
+
+|缩写 | 说明 |
+|--- |--- |
+|E | Elasticsearch（日志存储和检索引擎） |
+|L | Logstash（日志采集工具） |
+|K | Kibana（可视化展示工具） |
+
+
+但是由于logstash非常消耗性能，所以衍生了更加轻量的采集工具
+
+|工具 | 说明 |
+|--- |--- |
+|Filebeat   | 采集文件数据 |
+|Metricbeat | 采集指标数据 |
+|Packetbeat | 采集网络数据 |
+|Winlogbeat | 采集Windows系统日志 |
+|Heartbeat  | 监测应用存活状态 |
+
+> `rsyslog`，`syslog-ng`，`logstash`的对比可以参照[这里][10]
+
+
+## windows日志采集工具
+### nxlog
+nxlog是windows平台上比较常用的日志采集工具，详情参照[这里][11]
+
+### rsyslog
+rsyslog也有windows平台的客户端
+
 
 
 <br/> 
@@ -66,6 +157,15 @@
 [日志易官网][58]  
 [Loggly官网][59]  
 [Splunk官网][60]  
+[如何查看linux系统下的各种日志文件 linux 系统日志的分析大全][61]  
+[/var/log目录下的20个Linux日志文件功能详解][62]  
+[Linux系统中‘dmesg’命令处理故障和收集系统信息的7种用法][63]  
+[Linux中logrotate日志管理工具详解][64]  
+[被遗忘的Logrotate][65]  
+[logrotate机制和原理][66]  
+[Linux日志文件总管——logrotate][67]  
+[/dev/random和/dev/urandom的一点备忘][68]  
+[怎么使用 /dev/urandom 生成固定长度的随机数？][69]  
 
 [1]: http://www.rsyslog.com/
 [2]: http://areyouok.iteye.com/blog/251590
@@ -127,3 +227,12 @@
 [58]: https://www.rizhiyi.com/
 [59]: https://www.loggly.com/
 [60]: https://www.splunk.com/zh-hans_cn/
+[61]: http://blog.csdn.net/u013038461/article/details/44154221
+[62]: http://h2appy.blog.51cto.com/609721/781281/
+[63]: https://linux.cn/article-3587-1.html
+[64]: http://www.ywnds.com/?p=5471
+[65]: http://www.udpwork.com/item/9695.html
+[66]: http://www.lightxue.com/how-logrotate-works
+[67]: https://linux.cn/article-4126-1.html
+[68]: http://blog.csdn.net/ohmygirl/article/details/40385083
+[69]: https://segmentfault.com/q/1010000007761269/a-1020000007761350
