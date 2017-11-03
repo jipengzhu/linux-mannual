@@ -104,4 +104,5 @@
   * [Mac笔记本](zong-he-pian/gong-ju-ji-qiao-pian/macbi-ji-ben.md)
   * [Chrome浏览器](zong-he-pian/gong-ju-ji-qiao-pian/chromeliu-lan-qi.md)
   * [Sublime编辑器](zong-he-pian/gong-ju-ji-qiao-pian/sublimebian-ji-qi.md)
+  * [Idea编辑器](zong-he-pian/gong-ju-ji-qiao-pian/ideabian-ji-qi.md)
 

@@ -9,6 +9,7 @@
 |Command + A | 全选 |
 |Command + S | 保存 |
 |Command + F | 查找 |
+|Enter | 查找下一个 |
 |Command + H | 隐藏当前窗口 |
 |Command + Z | 撤销 |
 |Shift + Command + Z | 重做 |
