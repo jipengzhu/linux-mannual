@@ -1,5 +1,4 @@
-# Chrome快捷键
-
+# 快捷键
 |选项 | 说明 |
 |--- |--- |
 |Command + T | 新建标签页页 |
@@ -7,7 +6,6 @@
 |Command + N | 打开新的窗口 |
 |Command + O | 打开文件 |
 |Command + L | 定位到地址栏 |
-|Command + W | 关闭标签页 |
 |Command + + | 放大 |
 |Command + - | 缩小 |
 |Command + 0 | 还原 |
@@ -25,7 +23,7 @@
 |Space | 向下翻屏 |
 
 
-# Chrome插件
+# 插件
 1. Postman
 2. Postman Interceptor
 3. EditThisCookie
