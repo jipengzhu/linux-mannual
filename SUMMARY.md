@@ -101,4 +101,5 @@
   * [网站推荐](zong-he-pian/wang-zhan-tui-jian.md)
   * [书籍推荐](zong-he-pian/shu-ji-tui-jian.md)
 * [工具技巧篇](zong-he-pian/gong-ju-ji-qiao-pian.md)
+  * [Chrome浏览器](zong-he-pian/gong-ju-ji-qiao-pian/chromeliu-lan-qi.md)
 
