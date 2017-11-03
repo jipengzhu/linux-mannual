@@ -150,34 +150,3 @@
 |Ctrl + s | 正向搜索历史记录。s -> search |
 |Ctrl + u | 剪切整行 |
 |Ctrl + l | 会插入ls，然后回车 |
-
-
-
-# mac下常用快捷键
-|快捷键 | 说明 |
-|--- |--- |
-|Command + q | 退出应用程序 |
-|Command + w | 关闭当前页面 |
-|Command + r | 刷新当前页面 |
-|Command + t | 新建页面 |
-|Command + p | 打印 |
-|Command + a | 全选 |
-|Command + s | 保存 |
-|Command + f | 查找 |
-|Command + h | 隐藏当前窗口 |
-|Command + z | 撤销 |
-|Shift + Command + z | 重做 |
-|Command + x | 前切 |
-|Command + c | 复制 |
-|Command + v | 粘贴 |
-|Shift + Command + v | 粘贴并保留样式 |
-|Command + m | 最小化到Dock |
-|Command + , | 打开设置界面（逗号）|
-|Command + TAB | 快速切换程序 |
-|Command + SPACE | 切换输入法 |
-|Command + SPACE | 呼出搜索框 |
-|Command + ← | 向左切换屏幕 |
-|Command + → | 向右切换屏幕 |
-|Command + ↑ | 显示任务管理界面 |
-|Command + ↓ | 显示应用程序界面 |
-> `shift`一般是对`command`进行增强，`alt`则是辅助
