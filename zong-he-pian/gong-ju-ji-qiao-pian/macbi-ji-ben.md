@@ -30,7 +30,6 @@
 
 
 # Mac软件推荐
-
 |用途 | 软件 |
 |--- |--- |
 |浏览器 | chrome |
@@ -54,3 +53,14 @@
 |Windows登录客户端 | microsoft remote desktop |
 |java开发编辑器 | intellij idea |
 |python开发编辑器 | pycharm |
+
+
+
+# 小工具网站
+[json解析][1]  
+[ip地址查看][2]  
+[在线工具箱][3]
+
+[1]: https://www.json.cn/
+[2]: http://ip.cn/
+[3]: http://tool.lu/
