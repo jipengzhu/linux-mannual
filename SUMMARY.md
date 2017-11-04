@@ -97,12 +97,12 @@
 
 ## 综合篇
 
-* 资料推荐篇
-  * [网站推荐](zong-he-pian/wang-zhan-tui-jian.md)
-  * [书籍推荐](zong-he-pian/shu-ji-tui-jian.md)
-* [工具技巧篇](zong-he-pian/gong-ju-ji-qiao-pian.md)
-  * [Mac笔记本](zong-he-pian/gong-ju-ji-qiao-pian/macbi-ji-ben.md)
-  * [Chrome浏览器](zong-he-pian/gong-ju-ji-qiao-pian/chromeliu-lan-qi.md)
-  * [Sublime编辑器](zong-he-pian/gong-ju-ji-qiao-pian/sublimebian-ji-qi.md)
-  * [Idea编辑器](zong-he-pian/gong-ju-ji-qiao-pian/ideabian-ji-qi.md)
+* [资料推荐](zong-he-pian/zi-liao-tui-jian/README.md)
+  * [网站推荐](zong-he-pian/zi-liao-tui-jian/wang-zhan-tui-jian.md)
+  * [书籍推荐](zong-he-pian/zi-liao-tui-jian/shu-ji-tui-jian.md)
+* [工具技巧](zong-he-pian/gong-ju-ji-qiao/README.md)
+  * [Mac笔记本](zong-he-pian/gong-ju-ji-qiao/macbi-ji-ben.md)
+  * [Chrome浏览器](zong-he-pian/gong-ju-ji-qiao/chromeliu-lan-qi.md)
+  * [Sublime编辑器](zong-he-pian/gong-ju-ji-qiao/sublimebian-ji-qi.md)
+  * [Idea编辑器](zong-he-pian/gong-ju-ji-qiao/ideabian-ji-qi.md)
 
