@@ -118,6 +118,11 @@ date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 1509719840
 ➜  Downloads date -r 1509719840
 2017年11月 3日 星期五 22时37分20秒 CST
+
+➜  Downloads date -j -f '%Y-%m-%d %H:%M:%S' '1992-10-25 10:10:10' +%s
+719979010
+➜  Downloads date -r 719979010 +"%F %T"
+1992-10-25 10:10:10
 ```
 
 ### Linux
@@ -126,6 +131,11 @@ date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 1509719840
 [root@localhost ~]# date -d @1509719840
 2017年 11月 03日 星期五 10:37:20 EDT
+
+[root@localhost ~]# date -d '1992-10-25 10:10:10' +%s
+720025810
+[root@localhost ~]# date -d @720025810 +"%F %T"
+1992-10-25 10:10:10
 ```
 
 
