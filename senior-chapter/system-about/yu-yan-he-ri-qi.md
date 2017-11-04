@@ -111,6 +111,24 @@ date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 |%z | 显示时区 |
 
 
+## 时间戳与日期转换
+### Mac
+```
+➜  Downloads date +%s
+1509719840
+➜  Downloads date -r 1509719840
+2017年11月 3日 星期五 22时37分20秒 CST
+```
+
+### Linux
+```
+[root@localhost ~]# date +%s
+1509719840
+[root@localhost ~]# date -d @1509719840
+2017年 11月 03日 星期五 10:37:20 EDT
+```
+
+
 
 # cal
 显示日历
